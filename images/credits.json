@@ -27,6 +27,13 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_Last_Bookstore_(19270292680).jpg"
  },
+ "booth": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
  "broad": {
   "approx": false,
   "artist": "Dllu",
@@ -61,6 +68,13 @@
   "file": "File:Sunsetcliffswikibyreviewer.jpg",
   "license": "CC BY 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Sunsetcliffswikibyreviewer.jpg"
+ },
+ "concierge": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
  },
  "cove": {
   "approx": false,
@@ -357,6 +371,13 @@
   "page": "https://commons.wikimedia.org/wiki/File:Sushi_hand_roll_combo_set_B_-_Goemon_Hand_Roll_Bar_2024-09-12.jpg"
  },
  "sqirl": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "sunsetrow": {
   "approx": true,
   "artist": "Matsujima",
   "file": "File:Silver Lake Reservoir.jpg",
