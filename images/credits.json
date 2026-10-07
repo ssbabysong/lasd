@@ -1,0 +1,401 @@
+{
+ "adj": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "balboa": {
+  "approx": false,
+  "artist": "Rhododendrites",
+  "file": "File:El Prado Balboa Park 2.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:El_Prado_Balboa_Park_2.jpg"
+ },
+ "bh": {
+  "approx": false,
+  "artist": "Alan Light",
+  "file": "File:The Beverly Hills Hotel (2013).jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Beverly_Hills_Hotel_(2013).jpg"
+ },
+ "book": {
+  "approx": false,
+  "artist": "vagueonthehow from Tadcaster, York, England",
+  "file": "File:The Last Bookstore (19270292680).jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Last_Bookstore_(19270292680).jpg"
+ },
+ "booth": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "broad": {
+  "approx": false,
+  "artist": "Dllu",
+  "file": "File:Nighttime view of the Broad in LA, corner dllu.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nighttime_view_of_the_Broad_in_LA,_corner_dllu.jpg"
+ },
+ "catalina": {
+  "approx": false,
+  "artist": "Wikipedia user Codyman",
+  "file": "File:Catalina 160.jpg",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Catalina_160.jpg"
+ },
+ "cath": {
+  "approx": false,
+  "artist": "Daniel L. Lu (user:dllu)",
+  "file": "File:Exterior of Cathedral of Our Lady of the Angels dllu.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_Cathedral_of_Our_Lady_of_the_Angels_dllu.jpg"
+ },
+ "cliffs": {
+  "approx": false,
+  "artist": "Rob Reviewer, http://www.ReviewerPhoto.com",
+  "file": "File:Sunsetcliffswikibyreviewer.jpg",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunsetcliffswikibyreviewer.jpg"
+ },
+ "concierge": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "cove": {
+  "approx": false,
+  "artist": "Ajay Suresh from New York, NY, USA",
+  "file": "File:LaJolla-2 (45716612345).jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LaJolla-2_(45716612345).jpg"
+ },
+ "dayglow": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "disney": {
+  "approx": false,
+  "artist": "jjron",
+  "file": "File:Walt Disney Concert Hall, LA, CA, jjron 22.03.2012.jpg",
+  "license": "GFDL 1.2",
+  "page": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Concert_Hall,_LA,_CA,_jjron_22.03.2012.jpg"
+ },
+ "doto": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "dume": {
+  "approx": false,
+  "artist": "OMCV",
+  "file": "File:Point Dume Climbing.JPG",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Point_Dume_Climbing.JPG"
+ },
+ "erewhon": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "friday": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "gcm": {
+  "approx": false,
+  "artist": "Alossix",
+  "file": "File:Grand central market.jpg",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grand_central_market.jpg"
+ },
+ "geisel": {
+  "approx": false,
+  "artist": "https://www.flickr.com/photos/belisario/",
+  "file": "File:Geisel Library, UCSD.jpg",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Geisel_Library,_UCSD.jpg"
+ },
+ "getty": {
+  "approx": false,
+  "artist": "Jelson25",
+  "file": "File:Aerial Getty Museum.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Aerial_Getty_Museum.jpg"
+ },
+ "gonggan": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "griffith": {
+  "approx": false,
+  "artist": "Matthew Field",
+  "file": "File:Griffith observatory 2006.jpg",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg"
+ },
+ "hdc": {
+  "approx": false,
+  "artist": "Armandoartist",
+  "file": "File:Hotel Del Coronado Drone Picture Turf Lawn.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hotel_Del_Coronado_Drone_Picture_Turf_Lawn.jpg"
+ },
+ "hw": {
+  "approx": false,
+  "artist": "Caterpillar84",
+  "file": "File:Rose hauser & wirth.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rose_hauser_%26_wirth.jpg"
+ },
+ "innout": {
+  "approx": false,
+  "artist": "Northwalker",
+  "file": "File:SW Plane landing at LAX seen from Westchester In and Out Burger.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:SW_Plane_landing_at_LAX_seen_from_Westchester_In_and_Out_Burger.jpg"
+ },
+ "italy": {
+  "approx": false,
+  "artist": "",
+  "file": "File:Little Italy Sign in San Diego.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Little_Italy_Sign_in_San_Diego.jpg"
+ },
+ "keys": {
+  "approx": false,
+  "artist": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+  "file": "File:Joshua tree keys view pano more vertical.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joshua_tree_keys_view_pano_more_vertical.jpg"
+ },
+ "lacma": {
+  "approx": false,
+  "artist": "Gunnar Klack",
+  "file": "File:LACMA-Los-Angeles-County-Museum-of-Art-04-2014.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LACMA-Los-Angeles-County-Museum-of-Art-04-2014.jpg"
+ },
+ "lakehw": {
+  "approx": false,
+  "artist": "Gnaphron",
+  "file": "File:Hollywood sign (8485145044).jpg",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_(8485145044).jpg"
+ },
+ "lelabo": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "lib": {
+  "approx": false,
+  "artist": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+  "file": "File:Los-angeles-central-library.jpg",
+  "license": "GFDL 1.2",
+  "page": "https://commons.wikimedia.org/wiki/File:Los-angeles-central-library.jpg"
+ },
+ "manuela": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "maru": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "moca": {
+  "approx": false,
+  "artist": "Grandave-1986",
+  "file": "File:Moca-exterior.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Moca-exterior.jpg"
+ },
+ "modref": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "nhm": {
+  "approx": false,
+  "artist": "Natural History Museum of Los Angeles County",
+  "file": "File:Natural History Museum of Los Angeles County Logo.png",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Natural_History_Museum_of_Los_Angeles_County_Logo.png"
+ },
+ "olive": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "park": {
+  "approx": false,
+  "artist": "Al Pavangkanan",
+  "file": "File:Grand Park in Los Angeles 1.jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grand_Park_in_Los_Angeles_1.jpg"
+ },
+ "pas": {
+  "approx": false,
+  "artist": "Adbar",
+  "file": "File:Old Town Pasadena and Metro Local bus.JPG",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Town_Pasadena_and_Metro_Local_bus.JPG"
+ },
+ "playa": {
+  "approx": false,
+  "artist": "Jengod",
+  "file": "File:Playa Del Rey Los Angeles batch 2023 March 06.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Playa_Del_Rey_Los_Angeles_batch_2023_March_06.jpg"
+ },
+ "rail": {
+  "approx": false,
+  "artist": "Difference engine",
+  "file": "File:Angels Flight after reopening in September 2017.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Angels_Flight_after_reopening_in_September_2017.jpg"
+ },
+ "reform": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "row": {
+  "approx": false,
+  "artist": "ROW DTLA",
+  "file": "File:ROW DTLA Logo.png",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:ROW_DTLA_Logo.png"
+ },
+ "salk": {
+  "approx": false,
+  "artist": "Codera23",
+  "file": "File:Salk Institute 2.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salk_Institute_2.jpg"
+ },
+ "salt": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "sawdust": {
+  "approx": false,
+  "artist": "BC.Space",
+  "file": "File:Sawdust Art Festival Facade.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sawdust_Art_Festival_Facade.jpg"
+ },
+ "sdlib": {
+  "approx": false,
+  "artist": "Mzedp",
+  "file": "File:San Diego Central Library Exterior 2024.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Central_Library_Exterior_2024.jpg"
+ },
+ "skull": {
+  "approx": false,
+  "artist": "డా. గన్నవరపు నరసింహమూర్తి",
+  "file": "File:Skull Rock, Joshua Tree National Park.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Skull_Rock,_Joshua_Tree_National_Park.jpg"
+ },
+ "sm": {
+  "approx": false,
+  "artist": "web4camguy",
+  "file": "File:Santa monica pier entrance evening.jpg",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Santa_monica_pier_entrance_evening.jpg"
+ },
+ "sonmari": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "sqirl": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "sunsetrow": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "torrey": {
+  "approx": false,
+  "artist": "User:Nauticashades.",
+  "file": "File:Torrey Pines State Park Valley.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Torrey_Pines_State_Park_Valley.jpg"
+ },
+ "tramway": {
+  "approx": false,
+  "artist": "Bryanb7",
+  "file": "File:Palm Springs Visitor Center Sideview-(revised)2.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Palm_Springs_Visitor_Center_Sideview-(revised)2.jpg"
+ },
+ "villa": {
+  "approx": false,
+  "artist": "Bobak Ha'Eri",
+  "file": "File:060807-002-GettyVilla001.jpg",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:060807-002-GettyVilla001.jpg"
+ },
+ "wb": {
+  "approx": false,
+  "artist": "Warner Bros. Entertainment",
+  "file": "File:Warner Bros. Studio Tour Hollywood 2023.svg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Warner_Bros._Studio_Tour_Hollywood_2023.svg"
+ },
+ "windsor": {
+  "approx": false,
+  "artist": "Fabianokm",
+  "file": "File:Hollywood sign with palm tress.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_with_palm_tress.jpg"
+ }
+}
