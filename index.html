@@ -295,7 +295,7 @@ footer{color:var(--muted);font-size:13px;line-height:1.85;margin:40px 0 0;paddin
   <section id="v-days" class="hide"><div id="day"></div></section>
 
   <section id="v-years" class="hide">
-    <div class="sh"><span class="mono">Timeline · 1880 → 2026</span><h2>一路看完一百五十年</h2><p>这次能看到的建筑按建成年份排开，从 19 世纪的红砖老街到 2026 年刚开的 Zumthor 新馆。实心圆点是已经收进行程的。往右滑。</p></div>
+    <div class="sh"><span class="mono">Timeline · 1827 → 2026</span><h2>一路看完两百年</h2><p>这次能看到的建筑按建成年份排开，从 1827 年的墨西哥土坯老城到 2026 年刚开的 Zumthor 新馆。实心圆点是已经收进行程的。往右滑。</p></div>
     <div class="pills" style="margin-top:4px"><button class="pill" id="yrAll" aria-pressed="true">全部</button><button class="pill" id="yrMine" aria-pressed="false">只看已选</button></div>
   </section>
 </main>
@@ -315,7 +315,7 @@ footer{color:var(--muted);font-size:13px;line-height:1.85;margin:40px 0 0;paddin
       <h4>Catalina Island 值得去吗？</h4>
       <p>从 Dana Point 坐 Catalina Express 单程约 1.5 小时，Dana Point 离圣地亚哥市区再开 1 小时左右，一来一回基本要一整天。冬季船班少、风浪大，容易晕船，有时还会停航。</p>
       <p>对建筑爱好者来说，岛上最值得看的是 Avalon 港口边的 Catalina Casino（1929 年的 Art Deco 圆形舞厅，不是赌场），只能跟导览进内部。</p>
-      <p class="verdict">我的建议：不强推。圣地亚哥只有两个整天，La Jolla、Salk、Balboa Park 已经很满。如果 12/30 海况平稳、你又想要一天“岛屿假期”，可以拿它换掉 12/30 整天，在“每天 → 12/30”里点 + 加入。船班和导览以官网为准。</p>
+      <p class="verdict">我的建议：不强推。圣地亚哥只有两个整天，La Jolla、Salk、Balboa Park 已经很满。如果 12/31 海况平稳、你又想要一天“岛屿假期”，可以拿它换掉 12/31 整天，在“每天 → 12/31”里点 + 加入。船班和导览以官网为准。</p>
     </article>
     <article>
       <span class="mono" style="color:var(--muted)">Q · 你发过两次</span>
@@ -381,6 +381,8 @@ const M={
  tower:'<path d="M30 72V32H50V72M34 32V22H46V32M38 22V12H42V22M18 72V50H30M62 72V50H50M8 72H72"/>',
  hotel:'<path d="M6 72V40L22 26L38 40V72M38 40L54 22L74 40V72M54 22V10M6 72H74M14 52H30M46 52H66"/>',
  ship:'<path d="M8 50H72L62 68H18ZM24 50V36H52V50M30 36V26H44V36"/><path d="M4 74C14 70 24 78 34 74S54 70 64 74 76 76 76 76"/>',
+ light:'<path d="M32 72L35 26H45L48 72ZM33 26H47V18H33ZM36 18L40 10L44 18M20 72H60"/><path d="M47 22H62M47 18L60 10M33 22H18M33 18L20 10"/>',
+ city:'<path d="M6 54V30H16V54M18 54V14H30V54M32 54V24H42V54M44 54V8H56V54M58 54V34H70V54M4 54H76"/><path d="M10 62H70M18 70H62" stroke-dasharray="6 5"/>',
  cactus:'<path d="M40 74V14M40 40H26V28M40 52H56V36M30 74H50"/><path d="M14 74C24 70 56 70 66 74"/>'
 };
 const T={
@@ -455,18 +457,23 @@ const P={
  cholla:{s:'Cholla',sug:1,mp:'jt',ll:[33.9254,-115.9289],n:'Cholla 仙人掌园日出',a:'约书亚树国家公园',k:'cactus',tags:['spot','coast'],day:'1229',t:'06:30',dur:.8,d:'成千上万株泰迪熊仙人掌，日出时逆光会让每一根刺都发亮。沿着木栈道走一圈不到半小时。',sh:'压低机位，让太阳躲在仙人掌后面拍逆光轮廓。千万别碰，刺会粘在身上。',pk:'路边停车场',h:'全天',q:'Cholla Cactus Garden, Joshua Tree National Park',def:1,w:'Cholla_Cactus_Garden',cs:'Cholla Cactus Garden Joshua Tree'},
  skull:{s:'Skull Rock',sug:1,mp:'jt',ll:[34.0055,-116.0596],lo:[10,-10,'start'],n:'Skull Rock 与巨石阵',a:'约书亚树国家公园',k:'rock',tags:['spot'],day:'1229',t:'07:45',dur:.6,d:'风化出两个“眼窝”的巨石，就在公园主路边。周围是成片的约书亚树和圆滚滚的花岗岩，回程路上顺便拍。',sh:'早上侧光让眼窝的阴影最深。',pk:'路边小停车场',h:'全天',q:'Skull Rock, Joshua Tree National Park',def:1,cs:'Skull Rock Joshua Tree'},
  sawdust:{s:'Sawdust',n:'Sawdust 艺术节',a:'Laguna Beach · 冬季场',k:'gallery',tags:['art','shop'],day:'1229',t:'11:30',dur:2.5,d:'935 Laguna Canyon Rd。180+ 艺术家摊位、3 个舞台、3 个免费 studio（进门先约时间）；11:15 第一场木偶戏；建议待到傍晚看灯串。成人 $12，6–12 岁 $5。',sh:'傍晚灯串亮起时拍摊位间的小路。',pk:'停 Lot 16，坐免费 trolley',h:'往年在圣诞前的周末结束',q:'Sawdust Art Festival, 935 Laguna Canyon Rd, Laguna Beach',def:0,flag:'往年冬季场在圣诞前的周末就结束了，12/29 大概率赶不上。出发前查官网日期。',cs:'Sawdust Art Festival Laguna Beach'},
- geisel:{s:'Geisel',sug:1,mp:'sd',ll:[32.8812,-117.2376],lo:[10,10,'start'],n:'Geisel 图书馆',a:'William Pereira',y:'1970',m:'清水混凝土、玻璃',k:'geisel',tags:['arch','spot'],day:'1229',t:'14:30',dur:.6,d:'UCSD 校园里那座像倒立金字塔、又像外星飞船的粗野主义图书馆，以苏斯博士命名。外观随时可以看。',sh:'走到楼正下方，用广角往上拍层层外挑的混凝土。',pk:'校园访客停车场（按小时计费）',h:'年末寒假期间内部可能不开，外观随时可看',q:'Geisel Library, UC San Diego',def:1,w:'Geisel_Library'},
- salk:{s:'Salk',sug:1,mp:'sd',ll:[32.8874,-117.2460],lo:[-10,-10,'end'],n:'索尔克生物研究所',a:'Louis Kahn',y:'1965',m:'清水混凝土、柚木、石灰华广场',k:'salk',tags:['arch','coast'],day:'1229',t:'15:45',dur:1,d:'这次行程里最重要的一座建筑。两排对称的混凝土楼夹着一片空无一物的石灰华广场，一条细水渠笔直地指向太平洋。日落前后最美。',sh:'站在水渠起点，让水线、广场和海平线三条线对齐。',pk:'研究所访客停车场',h:'通常工作日白天开放广场，建筑导览需预约 · 年末可能放假，务必查官网',q:'Salk Institute for Biological Studies',def:1,bk:'Salk 建筑导览预约（12/29），确认年末是否开放',w:'Salk_Institute_for_Biological_Studies'},
+ delmar:{s:'Del Mar',mp:'sd',ll:[32.9590,-117.2660],lo:[10,4,'start'],n:'Del Mar 海崖步道',a:'Sea Cliff Coastal Trail',k:'cliff',tags:['coast','spot'],day:'1229',t:'13:30',dur:.8,d:'居民区边上的海崖步道，一侧是海岸线，能看到沙滩、海浪，火车就贴着悬崖开过去。紫色花是季节性的，冬天大概看不到。从约书亚树开下来正好顺路。',sh:'等火车开过时，把铁轨、悬崖和海放进同一张。注意别走上铁轨。',pk:'附近居民区路边停车',h:'白天',q:'Sea Cliff Coastal Trail, Del Mar',def:0,cs:'Del Mar bluffs train ocean'},
+ geisel:{s:'Geisel',sug:1,mp:'sd',ll:[32.8812,-117.2376],lo:[10,4,'start'],n:'Geisel 图书馆',a:'William Pereira',y:'1970',m:'清水混凝土、玻璃',k:'geisel',tags:['arch','spot'],day:'1229',t:'14:30',dur:.6,d:'UCSD 校园里那座像倒立金字塔、又像外星飞船的粗野主义图书馆，以苏斯博士命名。外观随时可以看。',sh:'走到楼正下方，用广角往上拍层层外挑的混凝土。',pk:'校园访客停车场（按小时计费）',h:'年末寒假期间内部可能不开，外观随时可看',q:'Geisel Library, UC San Diego',def:1,w:'Geisel_Library'},
+ soledad:{s:'Mt Soledad',mp:'sd',ll:[32.8397,-117.2445],lo:[10,4,'start'],n:'Mt Soledad 日落',a:'Mt Soledad National Veterans Memorial',k:'sunset',tags:['coast','spot','night'],day:'1229',t:'16:00',dur:1,d:'La Jolla 的山顶，能看到整个城市和海岸线的全景，视野很开阔，运气好能看到云海日落。离 Geisel 只有 10 分钟。',sh:'日落约 16:50，太阳下去后城市灯光一点点亮起来，再多留 20 分钟。',pk:'山顶停车场',h:'通常白天到晚上开放，以现场为准',q:'Mt. Soledad National Veterans Memorial',def:1,w:'Mount_Soledad'},
+ salk:{s:'Salk',mp:'sd',ll:[32.8874,-117.2460],lo:[-10,-8,'end'],n:'索尔克生物研究所',a:'Louis Kahn',y:'1965',m:'会发光的混凝土、柚木、石灰华广场',k:'salk',tags:['arch','coast'],day:'1230',t:'10:00',dur:1.5,d:'这次行程最重要的一座建筑。Salk 博士请路易斯·康造一座“值得毕加索来参观”的研究所。混凝土配方试了无数次，在加州阳光下泛着温暖的粉色，像罗马废墟。中间是一片没有一棵树的石灰华广场：康本想种树，巴拉甘劝他“把它留给天空吧”，一条细水渠笔直地流向太平洋。实验室和管道完全分开（“被服务”和“服务”空间），内部一根多余的柱子都没有。',sh:'站在水渠起点，让水线、广场边线和海平线对齐；上午阳光从背后照过来，混凝土的暖色最明显。',pk:'研究所访客停车场',h:'公众参观只在周三、周四、周五上午，至少提前两周预约 · 年末可能暂停，以官网为准',q:'Salk Institute for Biological Studies',def:1,bk:'Salk Institute 参观预约：12/30 周三上午（至少提前两周；备选 12/31 周四上午），确认年末是否开放',w:'Salk_Institute_for_Biological_Studies'},
+ cove:{s:'La Jolla',mp:'sd',ll:[32.8504,-117.2729],lo:[0,-13,'middle'],n:'La Jolla Cove 海狮',a:'La Jolla',k:'cliff',tags:['coast','spot'],day:'1230',t:'11:45',dur:1.5,d:'笔记作者“坠爱”的地方：清澈见底的海水、礁石和成群的海狮，还有人浮潜游泳，SD 必去。午饭在 La Jolla 小镇里解决。',sh:'别靠太近，用长焦拍海狮在礁石上的剪影。',pk:'路边停车很难找，可以停小镇里的付费停车场',h:'全天',q:'La Jolla Cove',def:1,w:'La_Jolla_Cove'},
+ torrey:{s:'Torrey Pines',mp:'sd',ll:[32.9190,-117.2530],lo:[10,4,'start'],n:'Torrey Pines 海崖步道',a:'州立自然保护区',k:'cliff',tags:['coast'],day:'1230',t:'13:30',dur:1.3,d:'沿悬崖步道看太平洋海景和全美最稀有的松树林，很受欢迎的徒步路线，步道尽头能俯瞰整片海滩。',sh:'Razor Point 一带的砂岩纹理和海。',pk:'保护区停车场（收费）或海滩边',h:'白天开放',q:'Torrey Pines State Natural Reserve',def:0,w:'Torrey_Pines_State_Natural_Reserve'},
+ cabrillo:{s:'Cabrillo',mp:'sd',ll:[32.6735,-117.2425],lo:[10,4,'start'],n:'Cabrillo 国家纪念地',a:'Point Loma · 旧灯塔',y:'1855',m:'砖石灯塔',k:'light',tags:['coast','spot','arch'],day:'1230',t:'14:45',dur:1.2,d:'圣地亚哥的西南角，可以俯瞰海湾、城市和海岸线，还有 1855 年的旧灯塔和历史展区，风景壮阔。看完开 10 分钟就到 Sunset Cliffs。',sh:'从观景台把海湾、市中心天际线和 Coronado 大桥拍进一张。',pk:'园区停车场 · 国家公园门票（约 $20/车）',h:'通常 9:00–17:00 · 元旦闭园，以官网为准',q:'Cabrillo National Monument',def:1,w:'Cabrillo_National_Monument'},
+ cliffs:{s:'Sunset Cliffs',mp:'sd',ll:[32.7210,-117.2560],lo:[10,4,'start'],n:'Sunset Cliffs 日落',a:'Point Loma',k:'sunset',tags:['coast','spot'],day:'1230',t:'16:15',dur:1,d:'沿着悬崖看海浪拍打岩壁，傍晚日落正对大海，很多人专门来看。日落约 16:50。',sh:'找一个海蚀拱，把落日框在拱里。悬崖边没有护栏，注意脚下。',pk:'Sunset Cliffs Blvd 路边停车',h:'全天',q:'Sunset Cliffs Natural Park',def:1,w:'Sunset_Cliffs'},
 
- balboa:{s:'Balboa',sug:1,mp:'sd',ll:[32.7341,-117.1446],lo:[-10,-10,'end'],n:'Balboa Park 加州塔',a:'Bertram Goodhue',y:'1915',m:'西班牙殖民复兴风格、彩色瓷砖穹顶',k:'tower',tags:['arch','art'],day:'1230',t:'09:30',dur:2.5,d:'1915 年博览会留下的一整片西班牙复兴风格建筑群，加州塔和洛杉矶中央图书馆是同一位建筑师。El Prado 走一遍，再看植物馆和睡莲池倒影。',sh:'植物馆木格穹顶前的睡莲池，早上无风时倒影最完整。',pk:'公园内多个免费停车场',h:'户外全天，各博物馆开放时间不同',q:'California Tower, Balboa Park',def:1,w:'Balboa_Park_(San_Diego)'},
- cove:{s:'La Jolla',sug:1,mp:'sd',ll:[32.8504,-117.2729],lo:[10,4,'start'],n:'La Jolla Cove 海狮',a:'La Jolla',k:'cliff',tags:['coast','spot'],day:'1230',t:'13:00',dur:1.5,d:'礁石上躺满了海狮和海豹，悬崖步道沿着海一路走。午饭在 La Jolla 小镇里解决。',sh:'别靠太近，用长焦拍海狮在礁石上的剪影。',pk:'路边停车很难找，可以停小镇里的付费停车场',h:'全天',q:'La Jolla Cove',def:1,w:'La_Jolla_Cove'},
- torrey:{s:'Torrey Pines',sug:1,mp:'sd',ll:[32.9190,-117.2530],lo:[10,4,'start'],n:'Torrey Pines 海崖步道',a:'州立自然保护区',k:'cliff',tags:['coast'],day:'1230',t:'14:45',dur:1.3,d:'砂岩海崖上长着全美最稀有的松树，步道尽头能俯瞰整片海滩。',sh:'Razor Point 一带的砂岩纹理和海。',pk:'保护区停车场（收费）或海滩边',h:'白天开放',q:'Torrey Pines State Natural Reserve',def:0,w:'Torrey_Pines_State_Natural_Reserve'},
- cliffs:{s:'Sunset Cliffs',sug:1,mp:'sd',ll:[32.7210,-117.2560],lo:[10,4,'start'],n:'Sunset Cliffs 日落',a:'Point Loma',k:'sunset',tags:['coast','spot'],day:'1230',t:'16:15',dur:1,d:'名字就是答案。海蚀拱、礁石和冲浪的人，日落约 16:50。',sh:'找一个海蚀拱，把落日框在拱里。悬崖边没有护栏，注意脚下。',pk:'Sunset Cliffs Blvd 路边停车',h:'全天',q:'Sunset Cliffs Natural Park',def:1,w:'Sunset_Cliffs'},
- catalina:{s:'Catalina',sug:1,n:'Catalina Island 一日游',a:'Avalon · Catalina Casino',y:'1929',m:'Art Deco 圆形舞厅',k:'ship',tags:['coast','arch'],day:'1230',t:'08:00',dur:9,d:'从 Dana Point 坐 Catalina Express，单程约 1.5 小时。Avalon 港口边的 Catalina Casino 是 1929 年的 Art Deco 圆形舞厅（不是赌场），跟导览才能进内部。选它就代替 12/30 整天。',sh:'从港口另一侧拍白色圆形 Casino 和整片海湾。',pk:'Dana Point 码头停车场',h:'冬季船班少、风浪大，可能停航',q:'Catalina Express Dana Point',def:0,bk:'Catalina Express 船票 + Casino 导览（如果去）',flag:'冬季船班减少、海浪较大，容易晕船也可能停航。要去整个 12/30 都给它。',w:'Catalina_Casino'},
-
- sdlib:{s:'中央图书馆',sug:1,mp:'sd',ll:[32.7083,-117.1536],lo:[10,4,'start'],n:'圣地亚哥中央图书馆',a:'Rob Wellington Quigley',y:'2013',m:'钢网格穹顶、混凝土',k:'dome',tags:['arch','spot'],day:'1231',t:'10:00',dur:1,d:'顶上是一个镂空的钢网格穹顶，9 楼阅览室和露台能看到整个市中心和海湾。',sh:'在顶层露台从穹顶下面往上拍网格。',pk:'图书馆地下停车场',h:'跨年夜可能提前闭馆，元旦闭馆',q:'San Diego Central Library',def:1,w:'San_Diego_Central_Library'},
- italy:{s:'Little Italy',sug:1,mp:'sd',ll:[32.7237,-117.1690],lo:[-10,-10,'end'],n:'Little Italy',a:'圣地亚哥小意大利',k:'mkt',tags:['food','spot'],day:'1231',t:'12:00',dur:1.5,d:'街口的霓虹招牌、意式咖啡和各种餐厅，午饭和咖啡都在这里。',sh:'站在 India St 路口拍霓虹招牌。',pk:'街区路边咪表或停车楼',h:'餐厅照常营业',q:'Little Italy, San Diego',def:1,w:'Little_Italy,_San_Diego'},
- hdc:{s:'Hotel del',sug:1,mp:'sd',ll:[32.6809,-117.1784],lo:[-10,14,'end'],n:'Hotel del Coronado',a:'James & Merritt Reid',y:'1888',m:'维多利亚式木构、红色尖顶',k:'hotel',tags:['arch','coast'],day:'1231',t:'14:30',dur:2,d:'1888 年的维多利亚式海滨酒店，红色尖顶在沙滩上特别显眼。玛丽莲·梦露在这里拍过《热情似火》。冬天大堂会有圣诞树。之后直接在 Coronado 海滩看跨年前最后一次日落。',sh:'走到沙滩上，回头拍红尖顶和棕榈。',pk:'酒店付费停车或周边路边',h:'公共区域全天',q:'Hotel del Coronado',def:1,w:'Hotel_del_Coronado'},
+ balboa:{s:'Balboa',mp:'sd',ll:[32.7341,-117.1446],lo:[-10,4,'end'],n:'Balboa Park 加州塔',a:'Bertram Goodhue',y:'1915',m:'西班牙殖民复兴风格、彩色瓷砖穹顶',k:'tower',tags:['arch','art','film'],day:'1231',t:'09:30',dur:1.2,d:'1915 年博览会留下的一整片西班牙复兴风格建筑群，加州塔和洛杉矶中央图书馆是同一位建筑师。《继承者们》在这里取景。笔记说“必打卡，但打一次就够”，走得快一小时就逛完。',sh:'植物馆木格穹顶前的睡莲池，早上无风时倒影最完整。',pk:'公园内多个免费停车场',h:'户外全天，各博物馆开放时间不同',q:'California Tower, Balboa Park',def:1,w:'Balboa_Park_(San_Diego)'},
+ oldtown:{s:'Old Town',mp:'sd',ll:[32.7549,-117.1970],lo:[-10,-8,'end'],n:'Old Town 老城',a:'Old Town San Diego 州立历史公园',y:'1827',m:'土坯房、墨西哥风格院落',k:'pink',tags:['arch','food','shop'],day:'1231',t:'11:00',dur:1.5,d:'加州最早的定居点之一，墨西哥风格的土坯建筑、彩色小店和餐厅，常有现场音乐，适合边逛边吃，午饭就吃墨西哥菜。',sh:'彩色剪纸彩旗下的土坯墙和院子。',pk:'Old Town 交通中心附近停车场',h:'历史公园白天开放，商店餐厅跨年夜可能提前打烊',q:'Old Town San Diego State Historic Park',def:1,w:'Old_Town_San_Diego_State_Historic_Park'},
+ italy:{s:'Little Italy',sug:1,mp:'sd',ll:[32.7237,-117.1690],lo:[-10,14,'end'],n:'Little Italy',a:'圣地亚哥小意大利',k:'mkt',tags:['food','spot'],day:'1231',t:'12:30',dur:1.2,d:'街口的霓虹招牌、意式咖啡和各种餐厅。想吃意大利菜就把午饭从 Old Town 换到这里。',sh:'站在 India St 路口拍霓虹招牌。',pk:'街区路边咪表或停车楼',h:'餐厅照常营业',q:'Little Italy, San Diego',def:0,w:'Little_Italy,_San_Diego'},
+ sdlib:{s:'中央图书馆',sug:1,mp:'sd',ll:[32.7083,-117.1536],lo:[0,17,'middle'],n:'圣地亚哥中央图书馆',a:'Rob Wellington Quigley',y:'2013',m:'钢网格穹顶、混凝土',k:'dome',tags:['arch','spot'],day:'1231',t:'13:30',dur:1,d:'顶上是一个镂空的钢网格穹顶，9 楼阅览室和露台能看到整个市中心和海湾。',sh:'在顶层露台从穹顶下面往上拍网格。',pk:'图书馆地下停车场',h:'跨年夜可能提前闭馆，元旦闭馆',q:'San Diego Central Library',def:1,w:'San_Diego_Central_Library'},
+ hdc:{s:'Hotel del',sug:1,mp:'sd',ll:[32.6809,-117.1784],lo:[-10,4,'end'],n:'Hotel del Coronado',a:'James & Merritt Reid',y:'1888',m:'维多利亚式木构、红色尖顶',k:'hotel',tags:['arch','coast'],day:'1231',t:'15:00',dur:1.8,d:'1888 年的维多利亚式海滨酒店，红色尖顶在沙滩上特别显眼，玛丽莲·梦露在这里拍过《热情似火》。冬天大堂会有圣诞树。之后在 Coronado 海滩看今年最后一次日落。',sh:'走到沙滩上，回头拍红尖顶和棕榈。',pk:'酒店付费停车或周边路边',h:'公共区域全天',q:'Hotel del Coronado',def:1,w:'Hotel_del_Coronado'},
+ skyline:{s:'天际线',mp:'sd',ll:[32.7240,-117.1950],lo:[-10,-8,'end'],n:'San Diego Skyline Viewpoint',a:'海湾对岸看市中心',k:'city',tags:['night','spot'],day:'1231',t:'17:15',dur:.8,d:'市中心高楼、海湾和桥梁构成的天际线，夜晚灯光亮起后更有氛围。跨年夜从 Coronado 回来顺路，蓝调时刻最好看。',sh:'三脚架或稳住手机，拍海面上高楼灯光的倒影。',pk:'观景点旁停车',h:'全天',q:'San Diego Skyline Viewpoint',def:1,cs:'San Diego skyline night from Harbor Island'},
+ catalina:{s:'Catalina',sug:1,n:'Catalina Island 一日游',a:'Avalon · Catalina Casino',y:'1929',m:'Art Deco 圆形舞厅',k:'ship',tags:['coast','arch'],day:'1231',t:'08:00',dur:9,d:'从 Dana Point 坐 Catalina Express，单程约 1.5 小时。Avalon 港口边的 Catalina Casino 是 1929 年的 Art Deco 圆形舞厅（不是赌场），跟导览才能进内部。选它就代替 12/31 整天。',sh:'从港口另一侧拍白色圆形 Casino 和整片海湾。',pk:'Dana Point 码头停车场',h:'冬季船班少、风浪大，可能停航',q:'Catalina Express Dana Point',def:0,bk:'Catalina Express 船票 + Casino 导览（如果去）',flag:'冬季船班减少、海浪较大，容易晕船也可能停航。要去整个 12/31 都给它。',w:'Catalina_Casino'},
+ northpark:{s:'North Park',mp:'sd',ll:[32.7480,-117.1300],lo:[-10,-8,'end'],n:'North Park',a:'咖啡、餐厅、街头涂鸦',k:'cup',tags:['food','shop','spot','art'],day:'0101',t:'10:00',dur:1.5,d:'很多有特色的咖啡店、餐厅和街头涂鸦，适合逛逛。元旦早上在这里吃个 brunch 再上路。',sh:'找一面涂鸦墙拍人像。',pk:'路边咪表或停车楼',h:'元旦部分店休息，以店家为准',q:'North Park, San Diego',def:1,w:'North_Park,_San_Diego'},
 };
 const ZW={'Silver Lake':'Silver_Lake,_Los_Angeles','Arts District':'Arts_District,_Los_Angeles'};
 
@@ -477,10 +484,10 @@ const D=[
  {id:'1226',d:'26',w:'周六',city:'la',no:'03',title:'古罗马与白色山城',map:'la',cur:'一座古罗马别墅，一座白色现代主义，中间可以插一段马里布海岸。两馆当天停车通用。'},
  {id:'1227',d:'27',w:'周日',city:'la',no:'04',title:'片场、园林与星空',map:'la',cur:'上午走进老友记，下午走进流芳园，晚饭后上山看城市夜景。<br>想慢一点：跳过华纳和 Huntington，换成 Silver Lake 早午餐、照相亭和小店，傍晚从那里上天文台只要 15 分钟。'},
  {id:'1228',d:'28',w:'周一',city:'la',no:'05',title:'最后两座馆，然后进沙漠',map:'la',jt:true,cur:'周一 Getty、Broad、天文台都闭馆，Holbox 也休息，但自然史和 LACMA 开门。早上退房，看完往东开约 2.5 小时，赶在 16:40 日落前到 Keys View。<br>如果更想看沙漠现代主义：跳过一座馆，下午在 Palm Springs 停一下。'},
- {id:'1229',d:'29',w:'周二',city:'jt',no:'06',title:'沙漠日出 → Kahn 的海',map:'jt',cur:'天没亮就出门拍 Cholla 日出，回程看 Skull Rock，9 点前出公园。往圣地亚哥开约 2.5–3 小时，下午先看 UCSD 的 Geisel，再去 Salk 等日落。<br>这一天的地点是我按建筑主题先排的，你发来约书亚树的笔记后再换。'},
- {id:'1230',d:'30',w:'周三',city:'sd',no:'07',title:'公园与海崖',map:'sd',cur:'上午在 Balboa Park 看 1915 年博览会留下的建筑群，下午去 La Jolla 看海狮、走海崖，日落去 Sunset Cliffs。<br>想要一天岛屿假期的话，可以整天换成 Catalina（见页尾问答）。'},
- {id:'1231',d:'31',w:'周四',note:'跨年夜',city:'sd',no:'08',title:'穹顶、红尖顶与跨年',map:'sd',cur:'上午登上中央图书馆的钢穹顶，中午在 Little Italy，下午过桥去 Coronado，在 Hotel del 前看今年最后一次日落。跨年的去处发给我再补进来。'},
- {id:'0101',d:'1',w:'周五',note:'元旦',city:'sd',no:'09',title:'闭幕',map:'sd',cur:'元旦早上睡个懒觉，中午前从圣地亚哥出发，约 2–2.5 小时到 LAX 还车（元旦路上车可能多，留足时间）。17:46 起飞，20:42 回到西雅图。'},
+ {id:'1229',d:'29',w:'周二',city:'jt',no:'06',title:'沙漠日出 → 海边山顶',map:'jt',cur:'天没亮就出门拍 Cholla 日出，回程看 Skull Rock，9 点前出公园，往圣地亚哥开约 2.5–3 小时。下午先到 UCSD 看 Geisel，傍晚上 Mt Soledad 看日落，运气好有云海。<br>Salk 只在周三到周五上午开放，挪到了明天。'},
+ {id:'1230',d:'30',w:'周三',city:'sd',no:'07',title:'Kahn 的广场，然后一路海岸',map:'sd',cur:'上午去 Salk 朝圣（要提前两周预约），中午去隔壁 La Jolla Cove 看海狮、吃午饭，下午到 Point Loma，先上 Cabrillo 看海湾全景，再去 Sunset Cliffs 等日落。<br>笔记里的 Millennia 油菜花（3 月底）和 South Lake Park 紫色花海（4 月）季节对不上，这次没放进来。'},
+ {id:'1231',d:'31',w:'周四',note:'跨年夜',city:'sd',no:'08',title:'老城、穹顶、红尖顶与跨年',map:'sd',cur:'Balboa Park 一小时就够，接着去 Old Town 吃墨西哥菜。下午登上中央图书馆的钢穹顶，再过桥去 Coronado，在 Hotel del 前看今年最后一次日落，回来时在海湾边拍亮灯的天际线。跨年夜很多店会提前打烊。<br>想要一天岛屿假期的话，可以整天换成 Catalina（见页尾问答）。'},
+ {id:'0101',d:'1',w:'周五',note:'元旦',city:'sd',no:'09',title:'闭幕',map:'sd',cur:'元旦早上在 North Park 吃个 brunch，中午前出发，约 2–2.5 小时到 LAX 还车（元旦路上车可能多，留足时间）。17:46 起飞，20:42 回到西雅图。'},
 ];
 const SUN={la:[6.97,16.83],jt:[6.75,16.67],sd:[6.83,16.87]};
 
@@ -622,11 +629,11 @@ const MAPS={
   <path d="M60,200 C90,120 130,40 150,28 L300,28" stroke="var(--line)" stroke-width="1" fill="none"/>
   <text x="150" y="20" font-size="10" fill="var(--muted)">Joshua Tree 镇</text><text x="270" y="20" font-size="10" fill="var(--muted)">29 Palms</text>
   <text x="300" y="232" font-size="10" fill="var(--muted)">I-10</text><text x="235" y="128" font-size="10" fill="var(--muted)" opacity=".8">国家公园</text>`},
- sd:{vb:[300,330],n:'圣地亚哥',proj:([la,lo])=>[(lo+117.30)/.18*300,(32.94-la)/.28*320],base:()=>`<rect width="300" height="330" fill="var(--card)"/>
-  <path d="M0,0 L63,0 L78,57 L33,103 L33,120 L70,160 L80,200 L75,217 L72,251 L100,309 L167,303 L217,306 L250,330 L0,330Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
+ sd:{vb:[300,360],n:'圣地亚哥',proj:([la,lo])=>[(lo+117.30)/.18*300,(32.97-la)*1142.86],base:()=>`<rect width="300" height="360" fill="var(--card)"/><g transform="translate(0,34)">
+  <path d="M0,-34 L55,-34 L63,0 L78,57 L33,103 L33,120 L70,160 L80,200 L75,217 L72,251 L100,309 L167,303 L217,306 L250,330 L0,330Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
   <path d="M183,234 L225,251 L242,274 L275,309 L290,330 L262,330 L233,291 L183,280 L125,269 L125,246Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
   <ellipse cx="112" cy="183" rx="22" ry="14" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
-  <text x="12" y="300" font-size="11" fill="var(--muted)">太平洋</text><text x="244" y="322" font-size="9" fill="var(--muted)">海湾</text>`}
+  <text x="12" y="300" font-size="11" fill="var(--muted)">太平洋</text><text x="258" y="318" font-size="9" fill="var(--muted)">海湾</text></g>`}
 };
 function coord(k,key){const p=P[k];if(key==='la'||key==='dt')return p[key]||null;const m=MAPS[key];return p.mp===key&&p.ll?m.proj(p.ll).map(v=>Math.round(v)):null}
 const dayStops=id=>KEYS.filter(k=>P[k].day===id).sort((a,b)=>P[a].t.localeCompare(P[b].t));
