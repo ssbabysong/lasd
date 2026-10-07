@@ -188,15 +188,8 @@
   "license": "CC BY 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg"
  },
- "h_29": {
-  "approx": false,
-  "artist": "Lance Cpl. Medina Ayala-Lo",
-  "file": "File:3rd LAR spouses get creative at Annual 'Wolfpack' Spouses Mixer 150319-M-RO214-941.jpg",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:3rd_LAR_spouses_get_creative_at_Annual_%27Wolfpack%27_Spouses_Mixer_150319-M-RO214-941.jpg"
- },
  "h_line": {
-  "approx": false,
+  "approx": true,
   "artist": "Downtowngal",
   "file": "File:Wilshire Boulevard at Normandie, Los Angeles.jpg",
   "license": "CC BY-SA 4.0",
