@@ -1,0 +1,45 @@
+name: Fetch place photos
+
+on:
+  push:
+    branches: [main]
+    paths: [index.html, tools/fetch_images.py, .github/workflows/fetch-images.yml]
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Re-download photos that were fetched before (your own photos are never touched)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency: fetch-images
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/fetch_images.py
+        env:
+          FORCE: ${{ inputs.force && '1' || '0' }}
+      - name: Commit new photos
+        id: commit
+        run: |
+          git add images
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Fetch place photos from Wikimedia Commons"
+          git push
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.changed == '1'
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+        env:
+          GH_TOKEN: ${{ github.token }}

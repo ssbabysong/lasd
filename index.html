@@ -515,7 +515,7 @@ async function wikiBatch(titles){
  titles.forEach(t=>{if(t in cache.w)out[t]=cache.w[t];else todo.push(t)});
  for(let i=0;i<todo.length;i+=40){const part=todo.slice(i,i+40);
   try{
-   const u='https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&prop=pageimages&piprop=thumbnail%7Cname&pithumbsize=1200&pilicense=free&titles='+encodeURIComponent(part.join('|'));
+   const u='https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&prop=pageimages&piprop=thumbnail%7Cname&pithumbsize=960&pilicense=free&titles='+encodeURIComponent(part.join('|'));
    const r=await fetch(u);if(!r.ok)continue;const q=(await r.json()).query||{};
    const fwd={};(q.normalized||[]).concat(q.redirects||[]).forEach(n=>fwd[n.from]=n.to);
    const byT={};(q.pages||[]).forEach(p=>byT[p.title]=p);
@@ -526,14 +526,17 @@ async function wikiBatch(titles){
 async function commons(q){
  if(q in cache.c)return cache.c[q];
  try{
-  const u='https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&generator=search&gsrnamespace=6&gsrlimit=4&gsrsearch='+encodeURIComponent(q+' filetype:bitmap')+'&prop=imageinfo&iiprop=url&iiurlwidth=1200';
+  const u='https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&generator=search&gsrnamespace=6&gsrlimit=4&gsrsearch='+encodeURIComponent(q+' filetype:bitmap')+'&prop=imageinfo&iiprop=url&iiurlwidth=960';
   const r=await fetch(u);if(!r.ok)return null;const j=await r.json();
   const ps=((j.query||{}).pages||[]).slice().sort((a,b)=>(a.index||0)-(b.index||0));let hit=null;
   for(const p of ps){const ii=p.imageinfo&&p.imageinfo[0];if(ii&&okSrc(ii.thumburl)){hit={s:ii.thumburl,f:p.title};break}}
   cache.c[q]=hit;return hit}catch(e){return null}}
 let paintH=0;const repaint=()=>{cancelAnimationFrame(paintH);paintH=requestAnimationFrame(()=>{renderAll();slideNext(true)})};
 async function loadPhotos(){
- await Promise.all(KEYS.map(async k=>{const own='images/'+k+'.jpg';if(await probe(own))IMG[k]={s:own,own:1}}));repaint();
+ let cr={};try{const r=await fetch('images/credits.json',{cache:'no-cache'});if(r.ok)cr=await r.json()}catch(e){}
+ const v=encodeURIComponent((cr&&Object.keys(cr).length)||0);
+ KEYS.forEach(k=>{const c=cr[k];if(c)IMG[k]={s:'images/'+k+'.jpg?v'+v,f:c.file,page:c.page,artist:c.artist,lic:c.license,approx:c.approx}});repaint();
+ await Promise.all(KEYS.filter(k=>!IMG[k]).map(async k=>{const own='images/'+k+'.jpg';if(await probe(own))IMG[k]={s:own,own:1}}));repaint();
  const titles=[...new Set(KEYS.filter(k=>!IMG[k]).flatMap(k=>[P[k].w,ZW[P[k].zone]]).filter(Boolean))];
  const W=await wikiBatch(titles);
  KEYS.forEach(k=>{if(!IMG[k]&&P[k].w&&W[P[k].w])IMG[k]={...W[P[k].w]}});repaint();
@@ -598,7 +601,7 @@ function openSheet(k){const p=P[k],s=$('sheet'),i=IMG[k];
   <p>${p.d}</p><p class="note">📷 ${p.sh}</p>
   <dl class="facts"><dt>停车</dt><dd>${p.pk}</dd><dt>时间</dt><dd>${p.h}</dd><dt>安排</dt><dd>${dayName(p.day)}，建议 ${p.t}，约 ${p.dur} 小时</dd>${p.bk?`<dt>预约</dt><dd>${p.bk}</dd>`:''}</dl>
   <div class="btns"><button class="btn dark" id="sAdd">${pick[k]?'从行程移出':'收入行程'}</button><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}">在地图中打开 ↗</a></div>
-  <p class="credit">${i?(i.own?'照片：自己拍的':`图片：<a href="${fileUrl(i.f)}" target="_blank" rel="noopener">Wikimedia Commons</a>${i.approx?' · 附近街区，不是店本身':''}`):'还没有照片 · 放一张 images/'+k+'.jpg 就会显示'}</p></div>`;
+  <p class="credit">${i?(i.own?'照片：自己拍的':`图片：<a href="${esc(i.page||fileUrl(i.f))}" target="_blank" rel="noopener">${esc([i.artist,i.lic].filter(Boolean).join(' · ')||'Wikimedia Commons')}</a> · Wikimedia Commons${i.approx?' · 附近街区，不是店本身':''}`):'还没有照片 · 放一张 images/'+k+'.jpg 就会显示'}</p></div>`;
  s.querySelector('.x').onclick=closeSheet;$('sAdd').onclick=()=>{toggle(k);closeSheet()};
  $('veil').classList.add('open');s.scrollTop=0;requestAnimationFrame(()=>s.classList.add('open'));s.querySelector('.x').focus()}
 function closeSheet(){$('sheet').classList.remove('open');$('veil').classList.remove('open')}
