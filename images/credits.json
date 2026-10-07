@@ -98,7 +98,7 @@
   "page": "https://commons.wikimedia.org/wiki/File:Coppa_Cafe_Latte_art,_Brisbane,_Queensland.jpg"
  },
  "delmar": {
-  "approx": false,
+  "approx": true,
   "artist": "Don Ramey Logan",
   "file": "File:North Corona Del Mar CA photo Don Ramey Logan.jpg",
   "license": "CC BY-SA 3.0",
