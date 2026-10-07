@@ -35,8 +35,12 @@ def api(host, **params):
 
 def parse_places():
     src = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
-    block = src[src.index("const P={"):]
-    block = block[: block.index("\n};")]
+    blocks = []
+    for name in ("const P={", "const H={"):
+        if name in src:
+            b = src[src.index(name):]
+            blocks.append(b[: b.index("\n};")])
+    block = "\n".join(blocks)
     places = {}
     for m in re.finditer(r"^\s*(\w+):\{(.*)\},?\s*$", block, re.M):
         body = m.group(2)
