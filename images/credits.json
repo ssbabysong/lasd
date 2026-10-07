@@ -41,6 +41,13 @@
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Nighttime_view_of_the_Broad_in_LA,_corner_dllu.jpg"
  },
+ "cabrillo": {
+  "approx": false,
+  "artist": "Blervis",
+  "file": "File:Cabrillo National Monument and Lighthouse.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cabrillo_National_Monument_and_Lighthouse.jpg"
+ },
  "catalina": {
   "approx": false,
   "artist": "Wikipedia user Codyman",
@@ -272,6 +279,20 @@
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Exterior_view_of_the_facade_of_Los_Angeles_Natural_History_Museum_(formerly_Los_Angeles_County_Historical_Art_Museum%3F),_ca.1905_(CHS-5698).jpg"
  },
+ "northpark": {
+  "approx": false,
+  "artist": "Jlantzy",
+  "file": "File:NorthParkUni30th.JPG",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NorthParkUni30th.JPG"
+ },
+ "oldtown": {
+  "approx": false,
+  "artist": "Roman Eugeniusz",
+  "file": "File:Old Town, San Diego, CA, USA - panoramio (87) crop.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Town,_San_Diego,_CA,_USA_-_panoramio_(87)_crop.jpg"
+ },
  "olive": {
   "approx": true,
   "artist": "Irvan Ary Maulana",
@@ -356,12 +377,26 @@
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Skull_Rock,_Joshua_Tree_National_Park.jpg"
  },
+ "skyline": {
+  "approx": false,
+  "artist": "Eric",
+  "file": "File:San Diego Night Skyline.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Night_Skyline.jpg"
+ },
  "sm": {
   "approx": false,
   "artist": "web4camguy",
   "file": "File:Santa monica pier entrance evening.jpg",
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Santa_monica_pier_entrance_evening.jpg"
+ },
+ "soledad": {
+  "approx": false,
+  "artist": "SusanLesch",
+  "file": "File:Soledad from Torrey Pines.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soledad_from_Torrey_Pines.jpg"
  },
  "sonmari": {
   "approx": true,
