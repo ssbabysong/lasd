@@ -3,255 +3,343 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>南加州 · 一场十天的建筑展</title>
+<title>南加州十日 · 建筑手记</title>
+<meta name="description" content="2026.12.23 – 2027.01.01 洛杉矶 · 约书亚树 · 圣地亚哥 自驾，按心情挑地点的建筑摄影手记。">
+<meta name="theme-color" content="#F3EFE7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110F" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://en.wikipedia.org" crossorigin>
+<link rel="preconnect" href="https://upload.wikimedia.org">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@500;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#ECE8E6; --wall:#F7F5F4; --ink:#241B2F; --muted:#6E6478; --line:#D8D0D3;
-  --pink:#D9668A; --mint:#3F9A96; --violet:#6A4C9C; --sun:#F08A3C; --sand:#D9B26A; --sea:#5E93C9; --sage:#8FB09A;
-  --sky1:#F7C9A8; --sky2:#EE9BB0; --sky3:#8C6BB8;
-  --la:var(--pink); --jt:var(--sand); --sd:var(--sea);
-  --display:"Syne","ZCOOL XiaoWei",system-ui,sans-serif;
-  --cn:"ZCOOL XiaoWei","Songti SC","Noto Serif SC",serif;
-  --body:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  --paper:#F3EFE7; --card:#FBF9F5; --ink:#171512; --muted:#6F695F; --line:#DCD5C8; --shade:rgba(23,21,18,.08);
+  --arch:#B4502C; --art:#BE3A68; --spot:#C98612; --coast:#2E6D9E; --night:#4D3F92; --film:#8A6A2C; --food:#56834A; --shop:#2B827C;
+  --la:#D2603C; --jt:#B98A2E; --sd:#2E79A8;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --latin:"Instrument Serif","Noto Serif SC",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --sans:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#17121D; --wall:#211A29; --ink:#F1E9EE; --muted:#A99EB2; --line:#3A3043;
-  --pink:#F2A6BA; --mint:#6CC3BF; --violet:#B39BE0; --sun:#F59A55; --sand:#E2C07E; --sea:#7FAEDD; --sage:#9DC1A8;
-  --sky1:#5B3550; --sky2:#3E2A55; --sky3:#1E1830;
+  --paper:#12110F; --card:#1C1A17; --ink:#EEE8DD; --muted:#A39B8E; --line:#34302A; --shade:rgba(0,0,0,.35);
+  --arch:#E2805C; --art:#EC7BA2; --spot:#E8B04A; --coast:#79AEDB; --night:#A897EC; --film:#D2B06E; --food:#93C383; --shop:#6CC6BE;
+  --la:#EB8763; --jt:#DDB563; --sd:#73B3DD; color-scheme:dark;
 }}
 :root[data-theme="dark"]{
-  --bg:#17121D; --wall:#211A29; --ink:#F1E9EE; --muted:#A99EB2; --line:#3A3043;
-  --pink:#F2A6BA; --mint:#6CC3BF; --violet:#B39BE0; --sun:#F59A55; --sand:#E2C07E; --sea:#7FAEDD; --sage:#9DC1A8;
-  --sky1:#5B3550; --sky2:#3E2A55; --sky3:#1E1830;
+  --paper:#12110F; --card:#1C1A17; --ink:#EEE8DD; --muted:#A39B8E; --line:#34302A; --shade:rgba(0,0,0,.35);
+  --arch:#E2805C; --art:#EC7BA2; --spot:#E8B04A; --coast:#79AEDB; --night:#A897EC; --film:#D2B06E; --food:#93C383; --shop:#6CC6BE;
+  --la:#EB8763; --jt:#DDB563; --sd:#73B3DD; color-scheme:dark;
 }
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 150px);height:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
-button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:120px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.hide{display:none!important}
+
+/* ---------- photo frame (sketch underneath, photo on top) ---------- */
+.ph{position:relative;overflow:hidden;background:color-mix(in srgb,var(--tc,var(--ink)) 10%,var(--card));color:var(--tc,var(--muted))}
+.ph .sk{position:absolute;inset:0;display:grid;place-items:center}
+.ph .sk svg{width:38%;max-width:120px;height:auto;opacity:.75}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .6s ease}
+.ph img.ok{opacity:1}
+.ph img.bad{display:none}
+.ph .approx{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.55);color:#fff;font-family:var(--mono);font-size:9px;letter-spacing:.06em;padding:2px 6px;border-radius:2px}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:88vh;min-height:88svh;overflow:hidden;
-  background:linear-gradient(180deg,var(--sky3) 0%,var(--sky2) 52%,var(--sky1) 100%);
-  display:flex;flex-direction:column;justify-content:flex-end;padding:0 22px 34px;color:#fff}
-.sun{position:absolute;width:min(78vw,420px);aspect-ratio:1;border-radius:50%;
-  left:50%;top:44%;transform:translate(-50%,-50%);
-  background:radial-gradient(circle at 50% 40%,#FFE3B8 0%,var(--sun) 62%,#E2577A 100%);
-  animation:set 2.6s cubic-bezier(.3,.6,.2,1) both}
-@keyframes set{from{top:20%;filter:saturate(.7)}to{top:44%}}
-.horizon{position:absolute;left:0;right:0;top:55%;bottom:0;
-  background:linear-gradient(180deg,transparent 0,rgba(36,27,47,.08) 0) ;}
-.skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%}
-.hero-text{position:relative;z-index:2}
-.big{font-family:var(--display);font-weight:800;font-size:clamp(64px,22vw,150px);line-height:.82;letter-spacing:-.04em;margin:0;mix-blend-mode:overlay;color:#fff}
-.big span{display:block}
-.big span:nth-child(2){padding-left:.5em}
-.big span:nth-child(3){padding-left:1em}
-.hero h1{font-family:var(--cn);font-weight:400;font-size:clamp(22px,6vw,32px);margin:18px 0 4px}
-.hero .dates{font-family:var(--display);font-weight:500;letter-spacing:.06em;opacity:.9}
-.tickets{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
-.ticket{border:1.5px solid rgba(255,255,255,.7);border-radius:6px;padding:8px 12px;font-size:13px;line-height:1.4;backdrop-filter:blur(4px);background:rgba(255,255,255,.08)}
-.ticket b{font-family:var(--display);font-size:16px;letter-spacing:.02em}
-@media (prefers-reduced-motion:reduce){.sun{animation:none}}
+.hero{min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:calc(env(safe-area-inset-top,0px) + 18px) 16px 22px}
+.hero-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted)}
+.hero-mid{display:grid;gap:22px;align-content:center;padding:26px 0 18px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(54px,17vw,148px);line-height:.92;letter-spacing:-.02em;margin:0}
+.hero h1 .l2{display:block;font-size:.42em;letter-spacing:.02em;font-weight:500;margin-top:.35em}
+.hero h1 .l2 i{font-family:var(--latin);font-style:italic;font-weight:400;font-size:1.25em;letter-spacing:0}
+.slide{position:relative;aspect-ratio:4/5;max-height:62vh;width:100%;border-radius:2px;box-shadow:0 30px 60px -36px var(--shade)}
+.slide .ph{position:absolute;inset:0}
+.slide .ph img{transform:scale(1.06);transition:opacity 1.2s ease,transform 7s ease-out}
+.slide .ph img.ok{transform:scale(1)}
+.slide-cap{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.slide-cap b{font-family:var(--serif);font-weight:500;font-size:18px;display:block;line-height:1.3}
+.slide-cap span{font-family:var(--mono);font-size:10px;letter-spacing:.06em;opacity:.85}
+@media (min-width:820px){
+  .hero-mid{grid-template-columns:1.2fr 1fr;align-items:end}
+  .slide{max-height:72vh}
+}
+.route{display:grid;grid-template-columns:auto 1fr auto 1fr auto 1fr auto;align-items:center;gap:8px;margin-top:6px}
+.route .rs{text-align:center}
+.route .rs b{font-family:var(--latin);font-weight:400;font-size:30px;line-height:1;display:block}
+.route .rs span{font-size:11px;color:var(--muted)}
+.route .seg-l{height:2px;background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 11px);position:relative}
+.route .seg-l small{position:absolute;left:50%;top:-20px;transform:translateX(-50%);font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap}
+.flights{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.flight{border:1px solid var(--line);border-radius:2px;padding:7px 11px;font-size:12px;line-height:1.5;background:var(--card)}
+.flight b{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.02em}
 
-/* ---------- ribbon ---------- */
-.ribbon{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
-.ribbon-in{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none;scroll-snap-type:x proximity}
-.ribbon-in::-webkit-scrollbar{display:none}
-.day-tab{flex:0 0 auto;scroll-snap-align:center;width:58px;border:0;background:var(--wall);border-radius:10px;padding:6px 0 8px;cursor:pointer;
-  border-top:4px solid var(--c);text-align:center;transition:transform .2s}
-.day-tab .d{font-family:var(--display);font-weight:700;font-size:17px;display:block;line-height:1.2}
-.day-tab .w{font-size:11px;color:var(--muted)}
-.day-tab[aria-selected="true"]{background:var(--ink);color:var(--bg);transform:translateY(-2px)}
-.day-tab[aria-selected="true"] .w{color:var(--bg);opacity:.75}
+/* ---------- dock ---------- */
+.dock{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.dock-in{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0}
+.tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.tabs button{padding:6px 14px;border-radius:999px;font-size:14px;color:var(--muted);white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.count{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;line-height:1.3}
+.count b{font-family:var(--latin);font-weight:400;font-size:24px;color:var(--ink);letter-spacing:0}
+.ribbon{display:flex;gap:6px;overflow-x:auto;padding:0 0 10px;scrollbar-width:none;scroll-snap-type:x proximity}
+.ribbon::-webkit-scrollbar{display:none}
+.dt{flex:0 0 auto;scroll-snap-align:center;min-width:52px;padding:4px 6px 6px;border-radius:2px;text-align:center;border-bottom:3px solid var(--c);background:var(--card)}
+.dt b{font-family:var(--latin);font-weight:400;font-size:24px;line-height:1.05;display:block}
+.dt span{font-size:10px;color:var(--muted);white-space:nowrap}
+.dt[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.dt[aria-selected="true"] span{color:var(--paper);opacity:.7}
 
-/* ---------- day ---------- */
-main{max-width:760px;margin:0 auto;padding:0 18px 80px}
-.hall{padding-top:30px}
-.hall-no{font-family:var(--display);font-weight:800;font-size:clamp(56px,18vw,104px);line-height:.9;letter-spacing:-.04em;color:var(--c);margin:0}
-.hall h2{font-family:var(--cn);font-weight:400;font-size:clamp(26px,7vw,36px);margin:6px 0 2px;line-height:1.25}
-.hall .wk{color:var(--muted);font-size:14px}
-.curator{font-family:var(--cn);font-size:17px;line-height:1.8;margin:18px 0 0;padding-left:16px;border-left:2px solid var(--c)}
+/* ---------- section heads ---------- */
+.sh{margin:42px 0 16px}
+.sh .mono{color:var(--muted)}
+.sh h2{font-family:var(--serif);font-weight:900;font-size:clamp(34px,9vw,58px);line-height:1.05;margin:6px 0 8px;letter-spacing:-.01em}
+.sh p{margin:0;color:var(--muted);max-width:40em}
 
-.panel{background:var(--wall);border-radius:4px;margin-top:22px;padding:14px;box-shadow:0 1px 0 var(--line)}
-.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
-.panel-title{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--muted)}
-.seg{display:inline-flex;background:var(--bg);border-radius:999px;padding:3px}
-.seg button{border:0;background:none;border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer;color:var(--muted)}
-.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.mapbox{overflow-x:auto}
-.mapbox svg{display:block;width:100%;min-width:330px;height:auto}
+/* ---------- moods ---------- */
+.moods{display:flex;flex-wrap:wrap;gap:4px 18px;margin:8px 0 6px}
+.mood{font-family:var(--serif);font-weight:500;font-size:clamp(22px,6vw,30px);line-height:1.35;color:var(--muted);display:inline-flex;align-items:baseline;gap:4px;transition:color .2s}
+.mood sup{font-family:var(--mono);font-size:10px;letter-spacing:.04em}
+.mood[aria-pressed="true"]{color:var(--tc,var(--ink));text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.filters{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:14px 0 4px;padding-top:12px;border-top:1px solid var(--line)}
+.pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;background:var(--card)}
+.pill[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.blurb{font-family:var(--serif);font-size:17px;margin:14px 0 0;color:var(--ink)}
+
+/* masonry */
+.grid{columns:2 160px;column-gap:12px;margin-top:18px}
+@media (min-width:820px){.grid{columns:3 220px;column-gap:18px}}
+.card{break-inside:avoid;margin:0 0 16px;display:block;width:100%;text-align:left;position:relative}
+.card .ph{border-radius:2px}
+.card .ph.r0{aspect-ratio:4/5}.card .ph.r1{aspect-ratio:1/1}.card .ph.r2{aspect-ratio:3/4}
+.card .no{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:6px}
+.card h3{font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.35;margin:2px 0 0}
+.card .by{font-size:12px;color:var(--muted);margin:2px 0 0;line-height:1.5}
+.card.picked .ph{outline:2px solid var(--ink);outline-offset:3px}
+.add{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;background:var(--card);color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.18);display:grid;place-items:center;font-size:18px;line-height:1;z-index:2}
+.add[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.badge{position:absolute;top:10px;left:10px;z-index:2;background:var(--card);color:var(--ink);font-family:var(--mono);font-size:9px;letter-spacing:.06em;padding:3px 6px;border-radius:2px}
+.badge.warn{background:#7A2E1C;color:#fff}
+
+/* ---------- day view ---------- */
+.day-head{margin:30px 0 0}
+.day-no{font-family:var(--latin);font-style:italic;font-size:clamp(80px,26vw,180px);line-height:.8;color:var(--c);margin:0}
+.day-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(28px,8vw,46px);line-height:1.15;margin:10px 0 4px}
+.day-head .mono{color:var(--muted)}
+.curator{font-family:var(--serif);font-size:17px;line-height:1.85;margin:16px 0 0;padding-left:14px;border-left:2px solid var(--c);max-width:40em}
+.stat{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:var(--muted)}
+.stat b{font-family:var(--latin);font-weight:400;font-size:28px;color:var(--ink);margin-right:3px}
+.warn-t{color:var(--arch)}
+.panels{display:grid;gap:12px;margin-top:20px}
+@media (min-width:820px){.panels{grid-template-columns:1.4fr 1fr;align-items:start}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:12px}
+.panel-h{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.panel-h .mono{color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px}
+.seg button{padding:3px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.mapbox svg{display:block;width:100%;height:auto;max-height:68vh}
 .pin{cursor:pointer}
-.pin text{font-size:11px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--wall);stroke-width:3px}
+.pin .lb{font-size:11px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--card);stroke-width:3px}
 .pin.on circle{stroke:var(--ink);stroke-width:2.5}
-
 .light svg{display:block;width:100%;height:auto}
-.light-legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:4px;flex-wrap:wrap}
-.light-legend i{display:inline-block;width:12px;height:8px;border-radius:2px;margin-right:4px;vertical-align:middle}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:4px}
+.legend i{display:inline-block;width:12px;height:7px;border-radius:1px;margin-right:4px;vertical-align:middle}
 
-/* wall labels */
-.labels{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px}
-.label{background:var(--wall);border-radius:4px;position:relative;cursor:pointer;
-  box-shadow:0 1px 0 var(--line), 0 12px 24px -18px rgba(36,27,47,.35);transition:box-shadow .2s}
-.label.on{box-shadow:0 0 0 2px var(--c), 0 12px 24px -16px rgba(36,27,47,.4)}
-.label-top{display:grid;grid-template-columns:64px 1fr auto;gap:14px;padding:16px 16px 14px;align-items:start}
-.thumb{width:64px;height:64px;color:var(--c);background:var(--bg);border-radius:2px;display:grid;place-items:center}
-.thumb svg{width:46px;height:46px}
-.lt-time{font-family:var(--display);font-weight:700;font-size:13px;color:var(--muted);letter-spacing:.04em}
-.artist{font-size:13px;color:var(--muted);margin:0}
-.ttl{font-family:var(--cn);font-size:21px;line-height:1.3;margin:2px 0 0;font-weight:400}
-.ttl em{font-style:normal;font-family:var(--display);font-weight:500;font-size:15px;color:var(--muted);margin-left:6px}
-.medium{font-size:13px;color:var(--muted);font-style:italic;margin:2px 0 0}
-.seen{border:1.5px solid var(--line);background:none;border-radius:999px;width:34px;height:34px;cursor:pointer;display:grid;place-items:center;font-size:16px;line-height:1}
-.seen[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}
+/* contact sheet timeline */
+.sheetline{list-style:none;margin:26px 0 0;padding:0;position:relative}
+.sheetline::before{content:"";position:absolute;left:52px;top:6px;bottom:6px;border-left:1px dashed var(--line)}
+.stop{display:grid;grid-template-columns:44px 1fr;gap:16px;margin-bottom:20px;position:relative}
+.stop .tm{font-family:var(--mono);font-size:12px;text-align:right;padding-top:2px}
+.stop .tm small{display:block;color:var(--muted);font-size:10px}
+.stop .dot{position:absolute;left:48px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 0 3px var(--paper)}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:2px;overflow:hidden;cursor:pointer;margin-left:8px}
+.frame.on{border-color:var(--ink)}
+.frame .ph{aspect-ratio:16/9}
+.frame-b{padding:12px 14px 14px}
+.frame-b .by{font-size:12px;color:var(--muted);margin:0}
+.frame-b h3{font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.35;margin:2px 0 0}
+.frame-b h3 em{font-style:italic;font-family:var(--latin);font-weight:400;font-size:18px;color:var(--muted);margin-left:6px}
+.frame-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px}
+.skip{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--muted)}
+.tags{display:flex;gap:5px;flex-wrap:wrap}
+.tag{font-size:11px;padding:0 7px;border-radius:999px;border:1px solid color-mix(in srgb,var(--tc) 55%,transparent);background:color-mix(in srgb,var(--tc) 12%,transparent)}
 .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
-.label.on .more{grid-template-rows:1fr}
+.frame.on .more{grid-template-rows:1fr}
 .more>div{overflow:hidden}
-.more-in{padding:0 16px 18px 94px}
-.more-in p{margin:0 0 10px;font-size:15px}
-.shot{font-family:var(--cn);font-size:16px;border-top:1px dashed var(--line);padding-top:10px}
-.meta{font-size:13px;color:var(--muted)}
-@media (max-width:440px){.more-in{padding-left:16px}.label-top{grid-template-columns:52px 1fr auto;gap:12px}.thumb{width:52px;height:52px}.thumb svg{width:38px;height:38px}}
-.drive{font-size:13px;color:var(--muted);text-align:center;margin:-4px 0;display:flex;align-items:center;gap:10px}
-.drive::before,.drive::after{content:"";flex:1;border-top:1px dotted var(--line)}
-.go{display:inline-flex;align-items:center;gap:8px;margin-top:22px;text-decoration:none;font-weight:600;font-size:15px;
-  background:var(--ink);color:var(--bg);border-radius:999px;padding:12px 20px}
-.empty{border:2px dashed var(--line);border-radius:4px;padding:26px 20px;margin-top:22px;font-family:var(--cn);font-size:18px;line-height:1.8;color:var(--muted)}
-.empty b{color:var(--ink);font-weight:400}
+.more p{margin:10px 0 0;font-size:15px}
+.note{font-family:var(--serif);font-size:16px;border-top:1px dashed var(--line);padding-top:10px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin-top:10px}
+.facts dt{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted);padding-top:3px}
+.facts dd{margin:0}
+.go{display:inline-flex;align-items:center;gap:8px;margin:6px 0 0 68px;background:var(--ink);color:var(--paper);border-radius:999px;padding:11px 18px;font-weight:600;font-size:14px;text-decoration:none}
+.empty{border:1px dashed var(--line);padding:22px 18px;margin-top:20px;font-family:var(--serif);font-size:17px;color:var(--muted);line-height:1.8}
+.pool{margin-top:34px}
+.pool h4{font-family:var(--serif);font-weight:500;font-size:20px;margin:0 0 10px}
+.pool-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.pool-c{flex:0 0 150px;scroll-snap-align:start;text-align:left;position:relative}
+.pool-c .ph{aspect-ratio:1/1;border-radius:2px}
+.pool-c b{display:block;font-family:var(--serif);font-weight:500;font-size:14px;line-height:1.35;margin-top:6px}
+.pool-c span{font-size:11px;color:var(--muted)}
+.pool-c .add{width:30px;height:30px;font-size:16px;top:8px;right:8px}
 
-/* checklist */
-.prep{margin-top:64px;border-top:2px solid var(--ink);padding-top:18px}
-.prep h3{font-family:var(--cn);font-weight:400;font-size:28px;margin:0 0 4px}
-.prep .sub{color:var(--muted);font-size:14px;margin:0 0 12px}
-.check{list-style:none;padding:0;margin:0}
+/* ---------- years ---------- */
+.years{overflow-x:auto;padding:20px 0 16px;scrollbar-width:thin}
+.years-in{display:flex;align-items:flex-start;position:relative;min-width:max-content;padding:0 16px}
+.years-in::before{content:"";position:absolute;left:0;right:0;top:64px;border-top:1px solid var(--ink)}
+.yr{flex:0 0 132px;text-align:left;position:relative}
+.yr .y{font-family:var(--latin);font-size:44px;line-height:1;display:block;height:56px}
+.yr .tick{position:absolute;top:58px;left:0;width:11px;height:11px;border-radius:50%;background:var(--paper);border:2px solid var(--tc)}
+.yr.picked .tick{background:var(--tc)}
+.yr .ph{aspect-ratio:3/4;margin-top:24px;border-radius:2px;width:118px}
+.yr b{display:block;font-family:var(--serif);font-weight:500;font-size:14px;line-height:1.35;margin-top:6px;width:118px}
+.yr span{display:block;font-size:11px;color:var(--muted);width:118px;line-height:1.45}
+.gap{flex:0 0 auto;align-self:flex-start;margin-top:70px;font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center}
+
+/* ---------- prep + notes ---------- */
+.prep{margin-top:64px;border-top:2px solid var(--ink);padding-top:16px}
+.prep h3{font-family:var(--serif);font-weight:900;font-size:30px;margin:0}
+.prep .sub{color:var(--muted);font-size:14px;margin:4px 0 10px}
+.check{list-style:none;margin:0;padding:0}
 .check label{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:15px}
-.check input{appearance:none;flex:0 0 20px;width:20px;height:20px;border:2px solid var(--muted);border-radius:50%;margin:3px 0 0;cursor:pointer;display:grid;place-items:center}
-.check input:checked{background:var(--violet);border-color:var(--violet)}
-.check input:checked::after{content:"";width:6px;height:6px;background:#fff;border-radius:50%}
+.check input{appearance:none;-webkit-appearance:none;flex:0 0 20px;width:20px;height:20px;border:1.5px solid var(--muted);border-radius:2px;margin:3px 0 0;display:grid;place-items:center;cursor:pointer}
+.check input:checked{background:var(--ink);border-color:var(--ink)}
+.check input:checked::after{content:"✓";color:var(--paper);font-size:13px;line-height:1}
 .check input:checked+span{color:var(--muted);text-decoration:line-through}
-.progress{font-family:var(--display);font-weight:700;color:var(--violet)}
-footer{color:var(--muted);font-size:13px;margin-top:36px;line-height:1.8}
+.prog{font-family:var(--mono);color:var(--ink)}
+.qa{display:grid;gap:12px;margin-top:40px}
+@media (min-width:820px){.qa{grid-template-columns:1fr 1fr}}
+.qa article{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:16px}
+.qa h4{font-family:var(--serif);font-weight:900;font-size:20px;margin:6px 0 6px}
+.qa p{margin:0 0 8px;font-size:14.5px}
+.qa .verdict{font-family:var(--serif);font-size:16px;border-left:2px solid var(--coast);padding-left:10px}
+footer{color:var(--muted);font-size:13px;line-height:1.85;margin:40px 0 0;padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
 
-/* ---------- v3 additions ---------- */
-.thumb img,.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:2px}
-.thumb.has{padding:0;overflow:hidden}
-.photo{width:calc(100% + 40px);margin:-18px -20px 14px;aspect-ratio:4/3;background:var(--bg);border-radius:14px 14px 0 0;overflow:hidden;display:grid;place-items:center;color:var(--tc)}
-.photo svg{width:30%}
-
-.dock{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
-.views{display:flex;justify-content:center;padding:10px 16px 2px}
-.views .seg{background:var(--wall)}
-.views .seg button{padding:7px 18px;font-size:14px}
-.dock .ribbon-in{padding:8px 16px 10px}
-.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
-.tag{font-size:11px;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--tc) 16%,transparent);color:var(--ink);border:1px solid color-mix(in srgb,var(--tc) 50%,transparent)}
-.chips{display:flex;gap:8px;overflow-x:auto;padding:22px 0 6px;scrollbar-width:none}
-.chips::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;border:1.5px solid var(--line);background:var(--wall);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
-.chip i{width:9px;height:9px;border-radius:50%;background:var(--tc);display:inline-block}
-.chip small{color:var(--muted);font-size:12px}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.chip[aria-pressed="true"] small{color:var(--bg);opacity:.7}
-.theme-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:18px 0 6px}
-.theme-head h2{font-family:var(--cn);font-weight:400;font-size:clamp(28px,8vw,40px);margin:0;line-height:1.1}
-.theme-head p{margin:4px 0 0;color:var(--muted);font-size:14px}
-.bulk{display:flex;gap:6px;flex-shrink:0}
-.bulk button{border:1px solid var(--line);background:none;border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:14px}
-.card{background:var(--wall);border-radius:4px;padding:12px;position:relative;cursor:pointer;display:flex;flex-direction:column;gap:6px;
-  box-shadow:0 1px 0 var(--line);border:2px solid transparent;transition:border-color .2s}
-.card.picked{border-color:var(--ink)}
-.card .thumb{width:100%;height:auto;aspect-ratio:4/3;background:color-mix(in srgb,var(--tc) 14%,var(--bg));color:var(--tc)}
-.card .thumb svg{width:44%;height:auto}
-.card h3{font-family:var(--cn);font-weight:400;font-size:17px;line-height:1.3;margin:2px 0 0}
-.card .when{font-size:12px;color:var(--muted)}
-.add{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;border:0;cursor:pointer;background:var(--wall);box-shadow:0 1px 4px rgba(0,0,0,.18);font-size:18px;line-height:1;display:grid;place-items:center}
-.add[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.sum{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;font-size:14px;color:var(--muted)}
-.sum b{font-family:var(--display);color:var(--ink);font-size:18px}
-.pool{margin-top:26px}
-.pool h4{font-family:var(--cn);font-weight:400;font-size:19px;margin:0 0 8px}
-.pool-list{display:flex;flex-direction:column;gap:8px}
-.pool-item{display:flex;align-items:center;gap:12px;background:none;border:1.5px dashed var(--line);border-radius:4px;padding:10px 12px;cursor:pointer;text-align:left;width:100%}
-.pool-item .pi-t{flex:1}
-.pool-item .pi-t b{font-family:var(--cn);font-weight:400;font-size:16px;display:block}
-.pool-item .pi-t span{font-size:12px;color:var(--muted)}
-.pool-item .plus{font-size:20px;color:var(--muted)}
-.label .rm{border:1.5px solid var(--line);background:none;border-radius:999px;padding:3px 10px;font-size:12px;cursor:pointer;color:var(--muted);white-space:nowrap}
-.park{font-size:13px;background:var(--bg);border-radius:4px;padding:8px 10px;margin:0 0 10px}
-.sheet-bg{position:fixed;inset:0;background:rgba(20,14,26,.45);z-index:40;display:none}
-.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--wall);border-radius:14px 14px 0 0;max-height:82vh;overflow:auto;
-  padding:18px 20px calc(24px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .3s ease;max-width:640px;margin:0 auto}
+/* ---------- detail sheet ---------- */
+.veil{position:fixed;inset:0;background:rgba(10,9,8,.5);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s}
+.veil.open{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;max-width:680px;margin:0 auto;max-height:92vh;overflow:auto;overscroll-behavior:contain;background:var(--card);border-radius:10px 10px 0 0;transform:translateY(105%);transition:transform .32s cubic-bezier(.2,.7,.2,1);padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
 .sheet.open{transform:none}
-.sheet-bg.open{display:block}
-.sheet .x{position:absolute;top:12px;right:14px;border:0;background:var(--bg);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
-.sheet .ttl{font-size:26px;padding-right:40px}
-.sheet p{font-size:15px;margin:8px 0}
-.sheet .row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
-.btn{border:0;border-radius:999px;padding:11px 18px;font-weight:600;font-size:15px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
-.btn.dark{background:var(--ink);color:var(--bg)} .btn.ghost{background:var(--bg);color:var(--ink)}
-.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s;pointer-events:none}
+.sheet .ph{aspect-ratio:4/3}
+.sheet .x{position:absolute;top:12px;right:12px;z-index:3;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:16px}
+.sheet-b{padding:16px 20px 0}
+.sheet-b .by{font-size:13px;color:var(--muted);margin:0}
+.sheet-b h3{font-family:var(--serif);font-weight:900;font-size:28px;line-height:1.25;margin:4px 0 2px}
+.sheet-b h3 em{font-family:var(--latin);font-style:italic;font-weight:400;font-size:24px;color:var(--muted);margin-left:8px}
+.sheet-b .mat{font-size:13px;color:var(--muted);font-style:italic;margin:0 0 8px}
+.sheet-b>p{font-size:15.5px;margin:12px 0 0}
+.flag{background:color-mix(in srgb,var(--arch) 14%,transparent);border-left:2px solid var(--arch);padding:8px 10px;font-size:14px;margin-top:12px}
+.credit{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.btn{border-radius:999px;padding:11px 18px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.ghost{border:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:999px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
-.hide{display:none!important}
-@media (prefers-reduced-motion:reduce){.sheet{transition:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="sun" aria-hidden="true"></div>
-  <svg class="skyline" viewBox="0 0 400 180" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,180 V120 C30,118 40,96 62,92 C78,90 84,112 98,110 L98,80 L110,80 L110,70 L118,70 L118,108 L150,108 L150,96 L176,96 L176,118 L190,118 C200,90 214,70 232,64 C246,60 250,82 240,96 C262,74 280,78 270,104 L300,104 L300,86 L318,86 L318,100 L338,100 L338,84 L346,72 L354,84 L354,112 C370,110 388,118 400,116 V180Z" fill="#241B2F" opacity=".92"/>
-    <path d="M0,180 V150 C80,140 160,156 240,146 C300,140 350,150 400,144 V180Z" fill="#241B2F"/>
-  </svg>
-  <div class="hero-text">
-    <p class="big"><span>LA</span><span>JT</span><span>SD</span></p>
-    <h1>南加州十天，按心情策展</h1>
-    <div class="dates">23.12.2026 — 01.01.2027</div>
-    <div class="tickets">
-      <div class="ticket">去程 · 12/23<br><b>SEA 17:55 → LAX 20:39</b></div>
-      <div class="ticket">返程 · 1/1<br><b>LAX 17:46 → SEA 20:42</b></div>
+<header class="hero wrap">
+  <div class="hero-top mono"><span>Field Notes · No.01</span><span>12.23 — 01.01</span></div>
+  <div class="hero-mid">
+    <div>
+      <h1>南加州<span class="l2">十日建筑手记 <i>by car</i></span></h1>
+      <div class="route" aria-label="路线：洛杉矶 5 晚，约书亚树 1 晚，圣地亚哥 3 晚">
+        <div class="rs"><b>LA</b><span>5 晚</span></div><div class="seg-l"><small>2.5h</small></div>
+        <div class="rs"><b>JT</b><span>1 晚</span></div><div class="seg-l"><small>2.5h</small></div>
+        <div class="rs"><b>SD</b><span>3 晚</span></div><div class="seg-l"><small>2h</small></div>
+        <div class="rs"><b>LAX</b><span>还车</span></div>
+      </div>
+      <div class="flights">
+        <div class="flight">去程 · 12/23 周三<br><b>SEA 17:55 → LAX 20:39</b></div>
+        <div class="flight">返程 · 1/1 周五<br><b>LAX 17:46 → SEA 20:42</b></div>
+      </div>
     </div>
+    <figure class="slide" id="slide" style="margin:0"></figure>
   </div>
+  <div class="mono" style="color:var(--muted)">↓ 先挑心情，再看每天怎么走</div>
 </header>
 
 <div class="dock">
-  <div class="views"><span class="seg" role="tablist"><button data-v="pick" aria-pressed="true">按心情挑</button><button data-v="plan" aria-pressed="false">按天走</button></span></div>
-  <div class="ribbon-in hide" role="tablist" id="ribbon" aria-label="选择日期"></div>
+  <div class="wrap">
+    <div class="dock-in">
+      <div class="tabs" role="tablist">
+        <button role="tab" data-v="mood" aria-selected="true">心情</button>
+        <button role="tab" data-v="days" aria-selected="false">每天</button>
+        <button role="tab" data-v="years" aria-selected="false">年表</button>
+      </div>
+      <div class="count"><b id="cnt">0</b> 站<br>已收入行程</div>
+    </div>
+    <div class="ribbon hide" id="ribbon" role="tablist" aria-label="选择日期"></div>
+  </div>
 </div>
 
-<main>
-  <section id="pick">
-    <div class="chips" id="chips"></div>
-    <div id="themeHead"></div>
+<main class="wrap">
+  <section id="v-mood">
+    <div class="sh"><span class="mono">Index · 按心情挑</span><h2>今天想看什么？</h2><p>点一个心情，挑几张喜欢的，点 + 收进行程。不一定每个都去，选中的会自动排进“每天”。</p></div>
+    <div class="moods" id="moods"></div>
+    <div class="filters"><div class="pills" id="cities"></div><div class="pills"><button class="pill" id="allOn">全选</button><button class="pill" id="allOff">清空</button></div></div>
+    <p class="blurb" id="blurb"></p>
     <div class="grid" id="grid"></div>
   </section>
-  <section id="plan" class="hide"><div class="hall" id="hall" aria-live="polite"></div></section>
 
+  <section id="v-days" class="hide"><div id="day"></div></section>
+
+  <section id="v-years" class="hide">
+    <div class="sh"><span class="mono">Timeline · 1880 → 2026</span><h2>一路看完一百五十年</h2><p>这次能看到的建筑按建成年份排开，从 19 世纪的红砖老街到 2026 年刚开的 Zumthor 新馆。实心圆点是已经收进行程的。往右滑。</p></div>
+    <div class="pills" style="margin-top:4px"><button class="pill" id="yrAll" aria-pressed="true">全部</button><button class="pill" id="yrMine" aria-pressed="false">只看已选</button></div>
+  </section>
+</main>
+<div class="years hide" id="years"><div class="years-in" id="yearsIn"></div></div>
+
+<div class="wrap">
   <section class="prep">
-    <h3>布展清单</h3>
-    <p class="sub">根据你选中的地点自动生成，勾选会保存在这台设备上。已完成 <span class="progress" id="prog"></span></p>
+    <span class="mono" style="color:var(--muted)">Checklist</span>
+    <h3>出发前要订的</h3>
+    <p class="sub">根据你选的地点自动生成，勾选保存在这台设备上。已完成 <span class="prog" id="prog"></span></p>
     <ul class="check" id="check"></ul>
   </section>
 
-  <footer>
-    节假日营业时间每年会调整：平安夜多数场馆提前闭馆，圣诞当天大多闭馆，出发前一周请到各官网再核对一次。停车价格来自小红书笔记，以现场为准。<br>
-    市中心 Pershing Square 一带人比较杂，天黑后不要在附近闲逛，车里别留任何东西。<br>
-    图片来自维基共享资源（Wikimedia Commons），版权归各自作者，点开地点详情可看来源；自己拍的照片会替换掉它们。没有图片的地方先用线条速写代替。
-  </footer>
-</main>
+  <section class="qa">
+    <article>
+      <span class="mono" style="color:var(--muted)">Q · 你问过</span>
+      <h4>Catalina Island 值得去吗？</h4>
+      <p>从 Dana Point 坐 Catalina Express 单程约 1.5 小时，Dana Point 离圣地亚哥市区再开 1 小时左右，一来一回基本要一整天。冬季船班少、风浪大，容易晕船，有时还会停航。</p>
+      <p>对建筑爱好者来说，岛上最值得看的是 Avalon 港口边的 Catalina Casino（1929 年的 Art Deco 圆形舞厅，不是赌场），只能跟导览进内部。</p>
+      <p class="verdict">我的建议：不强推。圣地亚哥只有两个整天，La Jolla、Salk、Balboa Park 已经很满。如果 12/30 海况平稳、你又想要一天“岛屿假期”，可以拿它换掉 12/30 整天，在“每天 → 12/30”里点 + 加入。船班和导览以官网为准。</p>
+    </article>
+    <article>
+      <span class="mono" style="color:var(--muted)">Q · 你发过两次</span>
+      <h4>Sawdust 艺术节还去得上吗？</h4>
+      <p>冬季场（Winter Fantasy）往年在圣诞前的周末结束，12/29 经过 Laguna Beach 时大概率已经收摊。我先把它放进 12/29 的备选里，默认不选。</p>
+      <p>如果今年延期了：935 Laguna Canyon Rd，停 Lot 16 坐免费 trolley；成人 $12，6–12 岁 $5；180+ 艺术家摊位、3 个舞台；3 个免费 studio 进门先约时间；11:15 第一场木偶戏；待到傍晚看灯串。</p>
+      <p class="verdict">出发前一周去官网看一眼日期就行。</p>
+    </article>
+  </section>
 
-<div class="sheet-bg" id="sheetBg"></div>
+  <footer>
+    营业时间来自官网、网络和小红书笔记。节假日每年都会调整：平安夜多数场馆提前闭馆，圣诞当天大多闭馆，元旦也有不少地方不开。出发前一周请到各官网再核对一次。停车价格以现场为准。<br>
+    市中心 Pershing Square 一带人比较杂，天黑后不要在附近闲逛。车里不要留任何东西，包括后备箱。<br>
+    标着“Claude 推荐”的是我按建筑主题先布置的地点，你发来笔记后可以替换。<br>
+    图片来自维基共享资源（Wikimedia Commons），版权归各自作者，地点详情里有来源链接。标“街区”的是附近街区的照片，不是这家店本身。把自己拍的照片按“地点代号.jpg”放进 images/ 就会自动替换。
+  </footer>
+</div>
+
+<div class="veil" id="veil"></div>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="地点详情"></div>
 <div class="toast" id="toast" role="status"></div>
+
 <script>
+/* ---------- line sketches (fallback when no photo) ---------- */
 const M={
  getty:'<rect x="10" y="10" width="60" height="60"/><path d="M10 30H70M10 50H70M30 10V70M50 10V70"/><circle cx="56" cy="56" r="20"/>',
  villa:'<path d="M8 22H72M12 22V62M24 22V62M36 22V62M48 22V62M60 22V62M70 22V62M6 66H74"/><path d="M14 74H66" stroke-dasharray="4 4"/>',
@@ -269,16 +357,15 @@ const M={
  book:'<path d="M10 70V40A30 30 0 0 1 70 40V70M22 70V42A18 18 0 0 1 58 42V70M10 70H70M16 26L24 32M64 26L56 32M40 10V22"/>',
  lib:'<path d="M14 72V40H66V72M24 40V28H56V40M28 28L40 10L52 28M8 72H72M34 72V56H46V72"/>',
  wb:'<path d="M10 30H70V70H10ZM10 30L14 16L70 10L70 22L10 30M24 14L30 26M40 12L46 24M56 11L62 22"/>',
- plane:'<path d="M8 50L72 26M30 42L22 22L30 20L46 36M44 38L56 60L48 62L36 46M8 70H72"/>',
- burger:'<path d="M12 40C12 22 68 22 68 40ZM10 46H70M12 52H68M14 58C14 66 66 66 66 58"/><path d="M52 8L64 16" />',
- palm:'<path d="M24 74C26 50 28 34 30 20M56 74C54 50 52 34 50 20M30 20C22 14 14 16 10 22M30 20C36 12 44 12 48 16M50 20C44 14 36 16 34 22M50 20C58 12 66 14 70 20"/><path d="M34 70H46" />',
+ burger:'<path d="M12 40C12 22 68 22 68 40ZM10 46H70M12 52H68M14 58C14 66 66 66 66 58"/><path d="M52 8L64 16"/>',
+ palm:'<path d="M24 74C26 50 28 34 30 20M56 74C54 50 52 34 50 20M30 20C22 14 14 16 10 22M30 20C36 12 44 12 48 16M50 20C44 14 36 16 34 22M50 20C58 12 66 14 70 20"/><path d="M34 70H46"/>',
  sign:'<path d="M4 64L22 40L36 52L52 30L76 64Z"/><path d="M24 40V32M30 44V36M36 48V40M42 44V36M48 40V32"/>',
  pink:'<path d="M10 72V30H70V72M10 30L40 14L70 30M20 42H30V52H20ZM35 42H45V52H35ZM50 42H60V52H50ZM34 72V60H46V72"/>',
  pier:'<circle cx="54" cy="30" r="18"/><path d="M54 30L54 12M54 30L70 30M54 30L42 18M4 56H76M10 56V72M24 56V72M38 56V72M52 56V72M66 56V72"/>',
  sunset:'<path d="M4 54H76M14 54A26 26 0 0 1 66 54M10 64H70M20 72H60"/>',
  lamps:'<path d="M14 72V20M28 72V20M42 72V20M56 72V20M70 72V20"/><circle cx="14" cy="16" r="4"/><circle cx="28" cy="16" r="4"/><circle cx="42" cy="16" r="4"/><circle cx="56" cy="16" r="4"/><circle cx="70" cy="16" r="4"/>',
  dome:'<path d="M8 72H72M14 72V56H66V72M26 56A14 14 0 0 1 54 56M8 56A8 8 0 0 1 22 56M58 56A8 8 0 0 1 72 56M40 42V30"/>',
- cliff:'<path d="M4 72H76M4 72C10 50 20 40 34 36C44 34 50 30 56 22L76 22V72"/><path d="M8 60C20 58 30 62 40 60" />',
+ cliff:'<path d="M4 72H76M4 72C10 50 20 40 34 36C44 34 50 30 56 22L76 22V72"/><path d="M8 60C20 58 30 62 40 60"/>',
  ware:'<path d="M8 72V34L22 24L36 34L50 24L64 34V72M8 72H72M18 44H28V58H18ZM40 44H50V58H40Z"/>',
  taco:'<path d="M8 56A32 32 0 0 1 72 56Z"/><path d="M20 50C26 42 34 40 40 44C46 40 54 42 60 50"/>',
  brunch:'<circle cx="40" cy="44" r="26"/><circle cx="40" cy="44" r="10"/><path d="M72 20V70M8 20V70M4 20C4 30 12 30 12 20"/>',
@@ -287,244 +374,361 @@ const M={
  bag:'<path d="M14 28H66L62 72H18ZM28 28V20A12 12 0 0 1 52 20V28"/>',
  gallery:'<path d="M6 72H74M10 72V24H70V72M10 24L40 8L70 24"/><rect x="22" y="36" width="14" height="18"/><rect x="44" y="36" width="14" height="18"/>',
  cone:'<path d="M26 36L40 74L54 36"/><circle cx="40" cy="28" r="14"/>',
- dune:'<path d="M4 64C20 50 34 50 48 58S68 62 76 56M20 64V40M20 46H14V36M20 50H26V42M56 58V30M56 38H50V28M56 42H62V34"/><circle cx="62" cy="16" r="6"/>'
+ dune:'<path d="M4 64C20 50 34 50 48 58S68 62 76 56M20 64V40M20 46H14V36M20 50H26V42M56 58V30M56 38H50V28M56 42H62V34"/><circle cx="62" cy="16" r="6"/>',
+ rock:'<path d="M6 72C8 50 18 34 34 30C50 26 66 36 74 72Z"/><circle cx="32" cy="48" r="5"/><circle cx="50" cy="48" r="5"/>',
+ salk:'<path d="M8 72L30 10V72M72 72L50 10V72M30 72H50M40 72V26"/>',
+ geisel:'<path d="M40 8L72 30H8ZM16 30L26 52H54L64 30M26 52V72M54 52V72M8 72H72M34 52L30 30M46 52L50 30"/>',
+ tower:'<path d="M30 72V32H50V72M34 32V22H46V32M38 22V12H42V22M18 72V50H30M62 72V50H50M8 72H72"/>',
+ hotel:'<path d="M6 72V40L22 26L38 40V72M38 40L54 22L74 40V72M54 22V10M6 72H74M14 52H30M46 52H66"/>',
+ ship:'<path d="M8 50H72L62 68H18ZM24 50V36H52V50M30 36V26H44V36"/><path d="M4 74C14 70 24 78 34 74S54 70 64 74 76 76 76 76"/>',
+ cactus:'<path d="M40 74V14M40 40H26V28M40 52H56V36M30 74H50"/><path d="M14 74C24 70 56 70 66 74"/>'
 };
-const T={arch:{n:'建筑',c:'--violet',d:'从古罗马到 Zumthor，一路看建筑史。'},art:{n:'艺术',c:'--pink',d:'美术馆、书店与公共艺术。'},spot:{n:'机位',c:'--sun',d:'小红书上最出片的那些角度。'},coast:{n:'海岸日落',c:'--sea',d:'太平洋边的码头、岬角和晚霞。'},night:{n:'夜景',c:'--violet',d:'天黑之后才最好看的地方。'},film:{n:'影视',c:'--sand',d:'老友记、爱乐之城和好莱坞。'},food:{n:'美食',c:'--sage',d:'一路吃过去，早午餐、咖啡和夜宵。'},shop:{n:'逛街',c:'--mint',d:'买手店、香氛和设计小店，拿灵感也拿战利品。'}};
+const T={
+ arch:{n:'建筑',c:'--arch',d:'从 19 世纪红砖老街到 Gehry、Moneo、Kahn、Zumthor，这次的主线。'},
+ art:{n:'艺术',c:'--art',d:'美术馆、画廊、书店和公共艺术。'},
+ spot:{n:'机位',c:'--spot',d:'小红书上最出片的角度，配好了停车位。'},
+ coast:{n:'海岸日落',c:'--coast',d:'太平洋边的码头、岬角和晚霞。'},
+ night:{n:'夜景',c:'--night',d:'天黑以后才最好看的地方。'},
+ film:{n:'影视',c:'--film',d:'老友记、爱乐之城和好莱坞。'},
+ food:{n:'美食',c:'--food',d:'早午餐、咖啡、市场和夜宵，一路吃过去。'},
+ shop:{n:'逛街',c:'--shop',d:'买手店、香氛和设计小店，拿灵感也拿战利品。'}
+};
+const CITY={la:{n:'洛杉矶',c:'--la'},jt:{n:'约书亚树',c:'--jt'},sd:{n:'圣地亚哥',c:'--sd'}};
 
-/* id: n name, a creator, y year, m medium, k motif, tags, day, t time, dur hours, la/dt coords, d desc, sh tip, pk parking, h hours, q maps, def default, bk booking */
+/* P: n name, s short map label, a creator, y year, m materials, k sketch, tags, day, t time, dur hours,
+   la/dt LA map coords, mp+ll JT/SD map (lat,lon), d desc, sh shot tip, pk parking, h hours, q maps query,
+   def default picked, bk booking item, w Wikipedia title, cs Commons search, zone, sug Claude suggestion, flag warning */
 const P={
- innout:{s:'In-N-Out',n:'In-N-Out 机场店',a:'加州汉堡',k:'burger',tags:['food','spot'],day:'1223',t:'21:30',dur:.7,la:[157,201],d:'取完车就在机场边上，飞机几乎贴着头顶降落，晚上也有人专门来拍。到洛杉矶的第一口加州味道。',sh:'站在停车场边用慢门拍飞机降落的灯轨。',pk:'门口停车场',h:'通常营业到深夜，以门店为准',q:'In-N-Out Burger, 9149 S Sepulveda Blvd',def:1},
- cath:{s:'大教堂',n:'天使之后主教座堂',a:'Rafael Moneo',y:'2002',m:'赭色混凝土、雪花石膏窗',k:'cath',tags:['arch'],day:'1224',t:'09:00',dur:.7,la:[269,107],dt:[240,22],d:'西班牙建筑师莫内奥的作品，几乎没有直角，光透过雪花石膏窗洒进来非常震撼。适合 10 点前其他地方还没开门时来。',sh:'进门后先回头，看光从石膏窗透进来的那一刻。',pk:'教堂地下停车场',h:'平安夜有弥撒，进去保持安静',q:'Cathedral of Our Lady of the Angels',def:1},
- park:{s:'Grand Park',n:'Grand Park',a:'Rios Clementi Hale Studios',y:'2012',m:'草坪、喷泉、洋红色长椅',k:'park',tags:['spot'],day:'1224',t:'09:40',dur:.3,la:[269,107],dt:[265,70],d:'从教堂往音乐厅走顺路穿过，市政厅和音乐厅能同框。',sh:'喷泉边把市政厅塔楼放进背景。',pk:'步行经过',h:'全天',q:'Grand Park, Los Angeles',def:1},
- disney:{s:'音乐厅',n:'华特·迪士尼音乐厅',a:'Frank Gehry',y:'2003',m:'不锈钢板、花旗松',k:'disney',tags:['arch'],day:'1224',t:'10:00',dur:1.2,la:[269,107],dt:[143,89],d:'免费语音导览走一遍大厅和公共区域，木质立柱和曲面天花很好看，约 1 小时，不用预约。之后爬上屋顶的 Blue Ribbon Garden。想拍没人没车的外观，可以 25 号早上再来一趟。',sh:'贴着外墙用广角往上拍不锈钢曲线。',pk:'音乐厅地下停车场，车停这里全天步行',h:'导览通常 10:00 起，最后一场 14:00',q:'Walt Disney Concert Hall',def:1},
- broad:{s:'Broad',n:'The Broad',a:'Diller Scofidio + Renfro',y:'2015',m:'玻璃纤维增强混凝土“面纱”',k:'broad',tags:['art','arch'],day:'1224',t:'11:15',dur:1.5,la:[269,107],dt:[136,114],d:'白色蜂窝外壳包住整座馆，内部长扶梯隧道是经典机位。草间弥生无限镜屋、杰夫·昆斯气球狗都在这里。免费。',sh:'上午东侧来光，蜂窝纹理最立体。',pk:'Broad 地下停车场',h:'周四 11:00 起 · 周一、圣诞闭馆',q:'The Broad, Los Angeles',def:1,bk:'The Broad 免费预约（12/24），无限镜屋另约'},
- moca:{s:'MOCA',n:'当代艺术博物馆 MOCA',a:'矶崎新 Arata Isozaki',y:'1986',m:'红色砂岩、金字塔天窗',k:'moca',tags:['art','arch'],day:'1224',t:'12:45',dur:1,la:[269,107],dt:[122,145],d:'Broad 对面那座常被忽略的砖红色建筑，金字塔天窗很有辨识度。馆内书店有很多潮流艺术书刊，一逛就很久。免费。',sh:'站在下沉广场往上拍金字塔天窗。',pk:'步行 1 分钟',h:'周一闭馆',q:'MOCA Grand Avenue',def:1,bk:'MOCA 线上免费预约（12/24）'},
- rail:{s:'天使铁路',n:'天使铁路 Angels Flight',a:'1901 年至今',k:'rail',tags:['spot','film'],day:'1224',t:'13:45',dur:.2,la:[269,107],dt:[134,189],d:'藏在市中心的复古缆车，“世界最短铁路”，不到两分钟到坡底。橙黑色小车厢，随手一拍都是电影感，《爱乐之城》也在这里取景。',sh:'坡顶往下拍小车和老街。',pk:'从 MOCA 走过来',h:'每天 6:45–22:00 · 单程 $1.50',q:'Angels Flight Railway',def:1,bk:'天使铁路零钱或 TAP 卡'},
- gcm:{s:'中央市场',n:'中央市场 Grand Central Market',a:'1917 年至今',k:'mkt',tags:['food'],day:'1224',t:'14:00',dur:.8,la:[269,107],dt:[164,214],d:'下了缆车就是。墨西哥 tacos、生蚝、鲜榨果汁、阿根廷牛肉饼，各族裔小摊挤在一起。',sh:'门口的老霓虹招牌。',pk:'市场对面有停车楼',h:'节假日营业时间请确认',q:'Grand Central Market',def:1},
- book:{s:'书店',n:'The Last Bookstore',a:'旧银行大楼改造',m:'二手书、旧金库',k:'book',tags:['art','spot'],day:'1224',t:'15:00',dur:.8,la:[269,107],dt:[150,300],d:'门口不起眼，里面很好逛。二楼有用书搭成的拱洞隧道，二手书也多。',sh:'二楼书洞正面对称构图。',pk:'从中央市场步行约 8 分钟',h:'节假日营业时间请确认',q:'The Last Bookstore',def:1},
- lib:{s:'图书馆',n:'洛杉矶中央图书馆',a:'Bertram Goodhue',y:'1926',m:'混凝土、马赛克金字塔顶、壁画',k:'lib',tags:['arch','art'],day:'1224',t:'16:00',dur:.8,la:[269,107],dt:[23,223],d:'典型 Art Deco，融合古埃及和西班牙殖民风格。圆形大厅的加州历史壁画和楼前的 Maguire 花园都值得看。',sh:'圆厅正中仰拍吊灯与天顶。',pk:'步行约 6 分钟',h:'平安夜可能提前闭馆，可与书店调换顺序',q:'Los Angeles Central Library',def:1},
- row:{s:'Row DTLA',n:'Row DTLA',a:'老仓库创意园区',k:'ware',tags:['spot','food'],day:'1224',t:'17:00',dur:1,la:[278,127],d:'艺术区的老工业仓库改造，白色立面和长廊很出片，园区里有不少咖啡和小店。',sh:'傍晚拍长廊的透视线。',pk:'园区停车前两小时免费',h:'商铺营业时间各不相同',q:'Row DTLA',def:0},
- holbox:{s:'Holbox',lo:[11,-8,'start'],n:'Holbox',a:'Gilberto Cetina · 米其林一星',k:'taco',tags:['food'],day:'1224',t:'11:00',dur:1.5,la:[251,138],d:'藏在 Mercado La Paloma 市场里的墨西哥海鲜柜台，海鲜现开现做。选它的话把午饭改到这里，Broad 和 MOCA 挪到下午。',sh:'提前半小时以上去排队，看到吧台空位可以直接去坐。',pk:'市场自带停车场，从市中心开约 10 分钟',h:'11:30 开门 · 周一休息',q:'Holbox, 3655 S Grand Ave',def:0},
- windsor:{s:'棕榈大道',lo:[11,16,'start'],n:'Windsor 棕榈大道',a:'S Windsor Blvd × W 6th St',k:'palm',tags:['spot','film'],day:'1225',t:'09:00',dur:.5,la:[212,98],d:'两排高高的棕榈树，路的尽头就是 Hollywood 招牌，大概是最“加州”的一条街，在街上走走就拍不完。离住处很近。',sh:'用长焦压缩棕榈和远处的招牌，注意来车。',pk:'路边免费停车',h:'全天',q:'S Windsor Blvd & W 6th St, Los Angeles',def:1},
- lakehw:{s:'好莱坞招牌',lo:[-11,-8,'end'],n:'Lake Hollywood Park',a:'好莱坞招牌正面',k:'sign',tags:['spot','film'],day:'1225',t:'10:00',dur:.6,la:[207,44],d:'开车上山，停好车走几步，Hollywood 大招牌就稳稳出现在草坪后面。',sh:'上午顺光，招牌最清楚。',pk:'山路两边免费停',h:'公园白天开放',q:'Lake Hollywood Park, 3160 Canyon Lake Dr',def:1},
- bh:{s:'比佛利酒店',n:'The Beverly Hills Hotel',a:'粉色酒店 · 1912',m:'粉色灰泥、手写体招牌',k:'pink',tags:['spot','arch'],day:'1225',t:'11:30',dur:.5,la:[144,82],d:'粉绿配色和手写体招牌，好莱坞黄金时代的符号。',sh:'在 Sunset 大道一侧拍招牌和棕榈。',pk:'N Crescent Dr 路两边可停',h:'外观全天',q:'The Beverly Hills Hotel',def:1},
- sm:{s:'圣塔莫尼卡',n:'圣塔莫尼卡码头',a:'Santa Monica Pier',m:'木栈道、摩天轮、Route 66 终点',k:'pier',tags:['coast','spot'],day:'1225',t:'13:30',dur:1.5,la:[79,149],d:'老码头、摩天轮和 66 号公路终点牌，下午在沙滩上散步。',sh:'从沙滩上仰拍码头桥墩和摩天轮。',pk:'Parking Structure 6，步行约 5 分钟，笔记里说前 90 分钟 $1',h:'圣诞当天部分设施可能不开',q:'Santa Monica Pier',def:1},
- playa:{s:'Playa del Rey',n:'Playa del Rey 日落',a:'Vista Del Mar Ln',k:'sunset',tags:['coast'],day:'1225',t:'16:15',dur:.8,la:[120,190],d:'一条安静的海边小路，人比圣塔莫尼卡少很多，看太阳沉进海里。',sh:'日落约 16:50，落下后再等十几分钟拍晚霞。',pk:'路两边可以临时停',h:'全天',q:'6931 Vista Del Mar Ln, Playa Del Rey',def:1},
- urban:{s:'Urban Light',lo:[-11,16,'end'],n:'Urban Light',a:'Chris Burden',y:'2008',m:'202 盏老式铸铁路灯',k:'lamps',tags:['art','spot','night'],day:'1225',t:'18:00',dur:.5,la:[185,98],d:'LACMA 门口的路灯森林，天黑后亮灯最好看；旁边就是 Zumthor 新馆横跨 Wilshire 的混凝土桥。',sh:'人少时从灯阵中间往里拍纵深。',pk:'LACMA 停车场或路边咪表',h:'户外全天，傍晚亮灯',q:'Urban Light, LACMA',def:1},
- villa:{s:'Getty Villa',n:'盖蒂别墅 Getty Villa',a:'Langdon & Wilson',y:'1974',m:'大理石、青铜、倒影池',k:'villa',tags:['arch','art'],day:'1226',t:'10:00',dur:2,la:[27,115],d:'按维苏威火山下的古罗马别墅复建，长柱廊围着倒影池，地中海感很强。',sh:'外柱廊倒影池两端是对称构图的最佳位置。',pk:'停车 $25，当天两馆通用',h:'10:00–17:00 · 周二闭馆',q:'Getty Villa',def:1,bk:'Getty Villa 免费分时段预约（12/26）'},
- dume:{s:'Point Dume',lo:[10,-8,'start'],n:'Point Dume 岬角',a:'马里布州立海滩',k:'cliff',tags:['coast','spot'],day:'1226',t:'12:30',dur:1.2,la:[6,106],d:'马里布最美的岬角，悬崖步道能俯瞰整片弧形海湾，冬天运气好能看到灰鲸迁徙。从 Villa 沿海岸再往西开约 30 分钟。',sh:'爬到岬角顶端拍弧形海湾。',pk:'7103 Westward Beach Rd 停车场',h:'白天开放',q:'Point Dume State Beach',def:0},
- getty:{s:'Getty Center',n:'盖蒂中心 Getty Center',a:'Richard Meier',y:'1997',m:'意大利石灰华、白色铝板',k:'getty',tags:['arch','art'],day:'1226',t:'14:00',dur:3,la:[97,85],d:'白色网格建筑群，坐小火车上山俯瞰整个洛杉矶。2027 年 3 月起闭馆翻修一年，这次正好赶上。',sh:'中央花园和仙人掌园，日落时去西侧平台看城市和海。',pk:'和 Villa 同一张停车票',h:'周六通常开到较晚 · 节假日请确认',q:'Getty Center',def:1,bk:'Getty Center 免费分时段预约（12/26）'},
- wb:{s:'华纳影城',lo:[0,22,'middle'],n:'华纳兄弟影城',a:'Warner Bros. Studio Tour',m:'摄影棚、片场外景街、礼品店',k:'wb',tags:['film'],day:'1227',t:'09:30',dur:3.5,la:[203,20],d:'电瓶车导览约 1 小时：老友记拍摄棚、片头沙发和喷泉，还有哈利波特和 DC 区域；Central Perk 咖啡馆和礼品店很好逛。进场前先上厕所。',sh:'片头喷泉和橙色沙发可以慢慢拍。',pk:'影城停车场约 $15 不限时',h:'圣诞当天闭馆',q:'Warner Bros. Studio Tour Hollywood, Burbank',def:1,bk:'华纳兄弟影城门票（12/27 上午），提前一两天买'},
- hunt:{s:'Huntington',lo:[8,24,'end'],n:'汉廷顿图书馆与植物园',a:'Myron Hunt & Elmer Grey',y:'1910s',m:'宅邸、流芳园、日式庭园',k:'hunt',tags:['art','arch'],day:'1227',t:'14:00',dur:3,la:[373,38],d:'豪宅美术馆加上中式园林流芳园和日式庭园，时间有限就优先逛园林。',sh:'流芳园月洞门与湖边亭子，下午侧光最柔和。',pk:'自带停车场',h:'10:00–17:00 · 周二闭馆',q:'The Huntington Library, San Marino',def:1,bk:'The Huntington 门票（12/27），需提前买'},
- pas:{s:'Pasadena',lo:[-12,-6,'end'],n:'帕萨迪纳老城',a:'Old Pasadena',y:'1880s–1920s',m:'红砖、拱窗、铸铁立面',k:'pas',tags:['arch','food'],day:'1227',t:'17:00',dur:1.3,la:[346,23],d:'19 世纪末的红砖商业街，傍晚亮灯后很有氛围，在这里吃晚饭。顺路看看市政厅的穹顶。',sh:'蓝调时刻拍街角红砖楼和暖色橱窗。',pk:'老城公共停车楼',h:'商店餐厅照常营业',q:'Old Pasadena',def:1},
- griffith:{s:'天文台',lo:[11,-4,'start'],n:'格里菲斯天文台',a:'John C. Austin & F. M. Ashley',y:'1935',m:'Art Deco、铜绿穹顶',k:'dome',tags:['arch','spot','night','film'],day:'1227',t:'19:00',dur:1.5,la:[230,48],d:'白色 Art Deco 建筑和铜绿穹顶，平台上一边是市中心夜景，一边是好莱坞招牌，《爱乐之城》的经典场景。周日开到晚上 10 点，入场免费。',sh:'西侧平台拍穹顶和城市灯海。',pk:'山顶停车约 $10/小时，周末很难停，可以停山腰走上去',h:'周二–周五 12:00–22:00，周末 10:00–22:00 · 周一、圣诞闭馆',q:'Griffith Observatory',def:1},
- nhm:{s:'自然史',lo:[-11,16,'end'],n:'洛杉矶自然历史博物馆',a:'Beaux-Arts 圆厅 · CO Architects 玻璃展亭',y:'1913 / 2013',m:'大理石圆顶、玻璃、鲸鱼骨架',k:'nhm',tags:['arch'],day:'1228',t:'09:30',dur:1.5,la:[240,142],d:'百年老馆的大理石圆顶大厅，加上玻璃展亭里悬挂的鲸鱼骨架，新旧对照。',sh:'在玻璃展亭外往里拍鲸骨的轮廓。',pk:'博物馆停车场',h:'通常 9:30–17:00',q:'Natural History Museum of Los Angeles County',def:1},
- lacma:{s:'LACMA',lo:[-11,16,'end'],n:'LACMA · Geffen Galleries',a:'Peter Zumthor',y:'2026',m:'清水混凝土、玻璃',k:'lacma',tags:['art','arch'],day:'1228',t:'11:15',dur:2.3,la:[185,98],d:'Zumthor 在美国的第一座建成作品，整层高架展厅横跨 Wilshire 大道，藏品按海洋而不是年代排布。旁边还有 Renzo Piano 的两座展馆。',sh:'从桥下仰拍混凝土横梁切开天空。',pk:'LACMA Pritzker 停车场',h:'周一 11:00–18:00 · 周三、圣诞闭馆',q:'LACMA, Wilshire Blvd',def:1,bk:'LACMA 门票（12/28）'},
-sqirl:{s:'Sqirl',zone:'Silver Lake',n:'Sqirl',a:'Silver Lake · 早午餐',k:'brunch',tags:['food'],day:'1227',t:'09:30',dur:1,la:[254,77],d:'很有自己风格的加州早午餐，招牌 ricotta toast 好吃而且不太甜。',sh:'果酱吐司俯拍。',pk:'周边路边停车',h:'早午餐时段，节假日营业请确认',q:'Sqirl, 720 N Virgil Ave, Los Angeles',def:0},
- doto:{s:'doto',zone:'Silver Lake',n:'doto',a:'Silver Lake · 小众早午餐',k:'brunch',tags:['food'],day:'1227',t:'09:30',dur:1,la:[254,77],d:'很可爱的小众早午餐小店，可以带狗狗。',sh:'窗边自然光。',pk:'路边停车',h:'营业时间请确认',q:'doto Silver Lake Los Angeles',def:0},
- gonggan:{s:'Gonggan',zone:'Silver Lake',n:'Gonggan',a:'Silver Lake · 咖啡',k:'cup',tags:['food','spot'],day:'1227',t:'10:00',dur:1,la:[254,77],d:'baby blue 色调的漂亮咖啡店，下午 4 点前也有早午餐。',sh:'整面浅蓝墙前的人像。',pk:'路边停车',h:'营业时间请确认',q:'Gonggan Silver Lake',def:0},
- dayglow:{s:'Dayglow',zone:'Silver Lake',n:'Dayglow',a:'Silver Lake · 咖啡',k:'cup',tags:['food','spot'],day:'1227',t:'11:00',dur:.5,la:[254,77],d:'博主最爱的黑芝麻拿铁，店里粉粉的很可爱。',sh:'粉色吧台和杯子同框。',pk:'路边停车',h:'营业时间请确认',q:'Dayglow Silver Lake',def:0},
- olive:{s:'Olive & James',zone:'Silver Lake',n:'Olive & James',a:'Silver Lake · 抹茶',k:'cup',tags:['food'],day:'1227',t:'11:30',dur:.4,la:[254,77],d:'颜值很高的抹茶饮品。',sh:'抹茶分层的侧面。',pk:'路边停车',h:'营业时间请确认',q:'Olive & James Los Angeles',def:0},
- booth:{s:'照相亭博物馆',zone:'Silver Lake',n:'Photo Booth Museum',a:'Photomatica',m:'1950–70 年代修复的胶片照相亭',k:'booth',tags:['spot','art'],day:'1227',t:'13:00',dur:.8,la:[254,77],d:'像 70 年代客厅的小空间，几台老式胶片照相亭可以选背景，拍完是复古黑白大头贴，还要用吹风机吹干。免费入场，按条付费。',sh:'拍完可以在手作台把照片做成钥匙扣。',pk:'Sunset Blvd 路边停车',h:'通常 13:00–21:00 · 常要排队',q:'Photo Booth Museum, 3827 W Sunset Blvd',def:0},
- lelabo:{s:'Le Labo',zone:'Silver Lake',n:'Le Labo',a:'香氛',k:'bag',tags:['shop'],day:'1227',t:'13:45',dur:.4,la:[254,77],d:'就在照相亭博物馆对面，依旧好闻好逛。',sh:'试香台的玻璃瓶。',pk:'步行过街',h:'营业时间请确认',q:'Le Labo Silver Lake',def:0},
- sunsetrow:{s:'Sunset 小店街',zone:'Silver Lake',n:'Sunset Junction 小店',a:'BAGGU · DS & Durga · Malin+Goetz',k:'bag',tags:['shop'],day:'1227',t:'14:15',dur:1,la:[254,77],d:'一小片聚集了很多小店的区域：BAGGU 很可爱的包店，隔壁 DS & Durga 和 Malin+Goetz 都是好逛的香氛。',sh:'BAGGU 的彩色包墙。',pk:'路边停车',h:'营业时间各店不同',q:'BAGGU Silver Lake',def:0},
- salt:{s:'Salt & Straw',zone:'Silver Lake',n:'Salt & Straw',a:'冰淇淋',k:'cone',tags:['food'],day:'1227',t:'15:00',dur:.3,la:[254,77],d:'博主每次路过都会吃一个薰衣草口味。',sh:'举着甜筒对着街景。',pk:'路边停车',h:'营业时间请确认',q:'Salt & Straw Silver Lake',def:0},
- erewhon:{s:'Erewhon',zone:'Silver Lake',n:'Erewhon Silver Lake',a:'加州超市',k:'mkt',tags:['food'],day:'1227',t:'15:30',dur:.6,la:[254,77],d:'博主最常来的一家，奇亚籽和奶昔很好喝。店在坡上，边吃边能看到远处的天文台。',sh:'拿着奶昔把天文台放进背景。',pk:'超市停车场',h:'营业时间请确认',q:'Erewhon Silver Lake',def:0},
- sonmari:{s:'Sonmari',zone:'Silver Lake',n:'Sonmari',a:'手卷',k:'taco',tags:['food'],day:'1227',t:'18:00',dur:1.2,la:[254,77],d:'漂亮的手卷饭，还有海胆吐司。',sh:'吧台上手卷递过来的瞬间。',pk:'路边停车',h:'晚餐建议提前订位',q:'Sonmari Los Angeles',def:0},
- concierge:{s:'Concierge',zone:'Arts District',n:'Concierge Coffee',a:'来自柏林',k:'cup',tags:['food','spot'],day:'1224',t:'10:30',dur:.5,la:[281,118],d:'乍看像绿植店，拱形落地窗配几株绿植很出片，原木桌椅。店里有条隐秘通道通往对面的买手店。咖啡偏苦，主要是来拍。',sh:'从门外拍拱窗和绿植。',pk:'路边咪表',h:'营业时间请确认',q:'Concierge Coffee Arts District Los Angeles',def:0},
+ innout:{s:'In-N-Out',n:'In-N-Out 机场店',a:'加州汉堡',k:'burger',tags:['food','spot'],day:'1223',t:'21:30',dur:.7,la:[157,201],d:'取完车就在机场边上，飞机几乎贴着头顶降落，晚上也有人专门来拍。到洛杉矶的第一口加州味道。',sh:'站在停车场边用慢门拍飞机降落的灯轨。',pk:'门口停车场',h:'通常营业到深夜，以门店为准',q:'In-N-Out Burger, 9149 S Sepulveda Blvd',def:1,cs:'In-N-Out Burger LAX Sepulveda'},
+ cath:{s:'大教堂',n:'天使之后主教座堂',a:'Rafael Moneo',y:'2002',m:'赭色混凝土、雪花石膏窗',k:'cath',tags:['arch'],day:'1224',t:'09:00',dur:.7,la:[269,107],dt:[240,22],d:'西班牙建筑师莫内奥的作品，几乎没有直角，光透过雪花石膏窗洒进来非常震撼。适合 10 点前其他地方还没开门时来，之后经 Grand Park 走去音乐厅。',sh:'进门后先回头，看光从石膏窗透进来的那一刻。',pk:'教堂地下停车场',h:'平安夜有弥撒，进去保持安静',q:'Cathedral of Our Lady of the Angels',def:1,w:'Cathedral_of_Our_Lady_of_the_Angels'},
+ park:{s:'Grand Park',n:'Grand Park',a:'Rios Clementi Hale Studios',y:'2012',m:'草坪、喷泉、洋红色长椅',k:'park',tags:['spot'],day:'1224',t:'09:40',dur:.3,la:[269,107],dt:[265,70],d:'从教堂往音乐厅走顺路穿过，市政厅和音乐厅能同框。',sh:'喷泉边把市政厅塔楼放进背景。',pk:'步行经过',h:'全天',q:'Grand Park, Los Angeles',def:1,w:'Grand_Park'},
+ disney:{s:'音乐厅',n:'华特·迪士尼音乐厅',a:'Frank Gehry',y:'2003',m:'不锈钢板、花旗松',k:'disney',tags:['arch'],day:'1224',t:'10:00',dur:1.2,la:[269,107],dt:[143,89],d:'可以免费参观内部，固定时段有讲解。走一遍大厅和公共区域，木质立柱和曲面天花很好看，约 1 小时。之后爬上屋顶的 Blue Ribbon Garden。想拍没人没车的外观，25 号早上可以再来一趟。',sh:'贴着外墙用广角往上拍不锈钢曲线；屋顶花园的“玫瑰”喷泉也值得拍。',pk:'音乐厅地下停车场，车停这里全天步行',h:'导览通常 10:00 起 · 节假日以官网为准',q:'Walt Disney Concert Hall',def:1,w:'Walt_Disney_Concert_Hall'},
+ broad:{s:'Broad',n:'The Broad',a:'Diller Scofidio + Renfro',y:'2015',m:'玻璃纤维增强混凝土“面纱”',k:'broad',tags:['art','arch'],day:'1224',t:'11:15',dur:1.5,la:[269,107],dt:[136,114],d:'白色蜂窝外壳包住整座馆，内部长扶梯隧道是经典机位。草间弥生无限镜屋、杰夫·昆斯气球狗都在这里。免费。',sh:'上午东侧来光，蜂窝纹理最立体。',pk:'Broad 地下停车场',h:'周一、圣诞闭馆 · 平安夜可能提前关',q:'The Broad, Los Angeles',def:1,bk:'The Broad 免费预约（12/24），无限镜屋另约',w:'The_Broad'},
+ moca:{s:'MOCA',n:'当代艺术博物馆 MOCA',a:'矶崎新 Arata Isozaki',y:'1986',m:'红色砂岩、金字塔天窗',k:'moca',tags:['art','arch'],day:'1224',t:'12:45',dur:1,la:[269,107],dt:[122,145],d:'Broad 对面那座常被忽略的砖红色建筑，金字塔天窗很有辨识度。自带书店很好逛，潮流艺术书刊多，一逛就很久。',sh:'站在下沉广场往上拍金字塔天窗。',pk:'步行 1 分钟',h:'周一闭馆',q:'MOCA Grand Avenue',def:1,bk:'MOCA 线上免费预约（12/24）',w:'Museum_of_Contemporary_Art,_Los_Angeles'},
+ rail:{s:'天使铁路',n:'天使铁路 Angels Flight',a:'1901 年至今',y:'1901',k:'rail',tags:['spot','film'],day:'1224',t:'13:45',dur:.2,la:[269,107],dt:[134,189],d:'就在 MOCA 旁边，“世界最短铁路”之一，不到两分钟到坡底。橙黑色小车厢随手一拍都是电影感，《爱乐之城》也在这里取景。',sh:'坡顶往下拍小车和老街。',pk:'从 MOCA 走过来',h:'每天 6:45–22:00 · 单程 $1.50',q:'Angels Flight Railway',def:1,bk:'天使铁路备好硬币或 TAP 卡',w:'Angels_Flight'},
+ gcm:{s:'中央市场',n:'中央市场 Grand Central Market',a:'1917 年至今',y:'1917',k:'mkt',tags:['food'],day:'1224',t:'14:00',dur:.8,la:[269,107],dt:[164,214],d:'缆车下来就是。墨西哥 tacos、生蚝、鲜榨果汁、阿根廷牛肉饼，各种小吃挤在一起，适合午饭。',sh:'门口的老霓虹招牌。',pk:'市场对面有停车楼',h:'节假日营业时间请确认',q:'Grand Central Market',def:1,w:'Grand_Central_Market_(Los_Angeles)'},
+ book:{s:'书店',n:'The Last Bookstore',a:'旧银行大楼改造',m:'二手书、旧金库',k:'book',tags:['art','spot'],day:'1224',t:'15:00',dur:.8,la:[269,107],dt:[150,300],d:'从市场走几个街区。门口不起眼，里面很好逛，二楼有用书搭成的拱洞隧道，二手书也多。',sh:'二楼书洞正面对称构图。',pk:'从中央市场步行约 8 分钟',h:'节假日营业时间请确认',q:'The Last Bookstore',def:1,w:'The_Last_Bookstore'},
+ lib:{s:'图书馆',n:'洛杉矶中央图书馆',a:'Bertram Goodhue',y:'1926',m:'混凝土、马赛克金字塔顶、壁画',k:'lib',tags:['arch','art'],day:'1224',t:'16:00',dur:.8,la:[269,107],dt:[23,223],d:'典型 Art Deco，融合古埃及和西班牙殖民风格。圆形大厅的加州历史壁画和楼前的 Maguire 花园都值得看。',sh:'圆厅正中仰拍吊灯与天顶。',pk:'步行约 6 分钟',h:'平安夜可能提前闭馆，可与书店调换顺序',q:'Los Angeles Central Library',def:1,w:'Los_Angeles_Central_Library'},
+ row:{s:'Row DTLA',n:'Row DTLA',a:'老仓库创意园区',k:'ware',tags:['spot','food'],day:'1224',t:'17:00',dur:1,la:[278,127],d:'艺术区的老工业仓库改造，白色立面和长廊很出片，园区里有不少咖啡和小店。',sh:'傍晚拍长廊的透视线。',pk:'园区停车前两小时免费',h:'商铺营业时间各不相同',q:'Row DTLA',def:0,cs:'Row DTLA Los Angeles',zone:'Arts District'},
+ holbox:{s:'Holbox',lo:[11,-8,'start'],n:'Holbox',a:'Gilberto Cetina · 米其林一星',k:'taco',tags:['food'],day:'1224',t:'11:00',dur:1.5,la:[251,138],d:'藏在 Mercado La Paloma 市场里的墨西哥海鲜柜台，海鲜现开现做。选它的话把午饭改到这里，Broad 和 MOCA 挪到下午。',sh:'开门前提前半小时以上去排队，看到吧台空位可以直接去坐。',pk:'市场自带停车场，从市中心开约 10 分钟',h:'周一休息',q:'Holbox, 3655 S Grand Ave',def:0,cs:'Mercado La Paloma Los Angeles'},
+ concierge:{s:'Concierge',zone:'Arts District',n:'Concierge Coffee',a:'来自柏林的咖啡店',k:'cup',tags:['food','spot'],day:'1224',t:'10:30',dur:.5,la:[281,118],d:'乍看像绿植店，拱形落地窗配几株绿植很出片，原木桌椅。店里有条隐秘通道通往对面的买手店。咖啡偏苦，主要是来拍。',sh:'从门外拍拱窗和绿植。',pk:'路边咪表',h:'营业时间请确认',q:'Concierge Coffee Arts District Los Angeles',def:0},
  maru:{s:'Maru',zone:'Arts District',n:'Maru Coffee',a:'日式侘寂风咖啡',k:'cup',tags:['food'],day:'1224',t:'10:30',dur:.5,la:[281,118],d:'LA 有好几家分店，这家日式侘寂风，豆子包装很清爽，可以买回去。招牌 cream latte 建议点冰的。',sh:'清水墙前的咖啡豆包装。',pk:'路边咪表',h:'营业时间请确认',q:'Maru Coffee Arts District',def:0},
  manuela:{s:'Manuela',zone:'Arts District',n:'Manuela',a:'Hauser & Wirth 院内餐厅',k:'brunch',tags:['food'],day:'1224',t:'11:30',dur:1.2,la:[281,118],d:'好吃又好看的早午餐：biscuits 配黄油和苹果酱不腻，popover Benedict 很特别，法式吐司不太甜。',sh:'院子里的自然光餐桌。',pk:'Hauser & Wirth 附近停车',h:'建议提前订位',q:'Manuela, 907 E 3rd St, Los Angeles',def:0},
- hw:{s:'Hauser & Wirth',zone:'Arts District',n:'Hauser & Wirth',a:'当代艺术画廊',y:'2016',m:'老面粉厂改造',k:'gallery',tags:['art','arch'],day:'1224',t:'12:45',dur:1.2,la:[281,118],d:'老工业建筑改造的当代艺术画廊，展览经常更换，几个展区和院子都可以慢慢逛。免费。',sh:'砖墙院子和工业桁架。',pk:'周边停车',h:'周一通常闭馆，营业日以官网为准',q:'Hauser & Wirth Los Angeles, 901 E 3rd St',def:0},
+ hw:{s:'Hauser & Wirth',zone:'Arts District',n:'Hauser & Wirth',a:'当代艺术画廊',y:'2016',m:'老面粉厂改造',k:'gallery',tags:['art','arch'],day:'1224',t:'12:45',dur:1.2,la:[281,118],d:'老工业建筑改造的当代艺术画廊，展览经常更换，几个展区和院子都可以慢慢逛。免费。',sh:'砖墙院子和工业桁架。',pk:'周边停车',h:'周一通常闭馆，以官网为准',q:'Hauser & Wirth Los Angeles, 901 E 3rd St',def:0,cs:'Hauser Wirth Los Angeles'},
  modref:{s:'MODREF',zone:'Arts District',n:'MODREF',a:'服装 · 软装',k:'bag',tags:['shop'],day:'1224',t:'14:00',dur:.4,la:[281,118],d:'素色系服装店，侘寂风软装，只逛不买也能拿到设计灵感。',sh:'素色衣架和水泥墙。',pk:'步行',h:'营业时间请确认',q:'MODREF Los Angeles',def:0},
  adj:{s:'ADJ',zone:'Arts District',n:'ADJ',a:'日本设计餐具',k:'cup',tags:['shop'],day:'1224',t:'14:30',dur:.4,la:[281,118],d:'好看餐具的合集，多数来自日本不同的设计师，进去就出不来。',sh:'陶器架子的局部特写。',pk:'步行',h:'营业时间请确认',q:'ADJ Arts District Los Angeles',def:0},
  reform:{s:'Reform',zone:'Arts District',n:'Reform',a:'厨房橱柜设计',k:'ware',tags:['shop','arch'],day:'1224',t:'15:00',dur:.4,la:[281,118],d:'精致的定制厨房橱柜展厅，能学到很多空间收纳的设计。',sh:'整面橱柜的正面构图。',pk:'步行',h:'营业时间请确认',q:'Reform Los Angeles showroom',def:0},
  friday:{s:'Friday Gallery',zone:'Arts District',n:'Friday Gallery',a:'东南亚买手店',k:'gallery',tags:['art','shop'],day:'1224',t:'15:30',dur:.5,la:[281,118],d:'东南亚的服装、艺术和家具买手店。',sh:'手工家具和织物的质感。',pk:'步行',h:'营业时间请确认',q:'Friday Gallery Los Angeles',def:0},
+
+ windsor:{s:'棕榈大道',lo:[11,16,'start'],n:'Windsor 棕榈大道',a:'523 S Windsor Blvd · W 6th St 路口',k:'palm',tags:['spot','film'],day:'1225',t:'09:00',dur:.5,la:[212,98],d:'两排高高的棕榈树，路的尽头就是 Hollywood 招牌，大概是最“加州”的一条街，在街上走走就拍不完。',sh:'用长焦压缩棕榈和远处的招牌，注意来车。',pk:'路边免费停车',h:'全天',q:'523 S Windsor Blvd, Los Angeles',def:1,cs:'Los Angeles palm trees Hollywood Sign street'},
+ lakehw:{s:'好莱坞招牌',lo:[-11,-8,'end'],n:'Lake Hollywood Park',a:'好莱坞招牌正面',y:'1923',k:'sign',tags:['spot','film'],day:'1225',t:'10:00',dur:.6,la:[207,44],d:'开车上山，停好车走几步，Hollywood 大招牌就稳稳出现在草坪后面。',sh:'上午顺光，招牌最清楚。',pk:'3160 Canyon Lake Dr，山路两边免费停',h:'公园白天开放',q:'Lake Hollywood Park, 3160 Canyon Lake Dr',def:1,w:'Hollywood_Sign'},
+ bh:{s:'比佛利酒店',n:'The Beverly Hills Hotel',a:'Elmer Grey · 粉色酒店',y:'1912',m:'粉色灰泥、手写体招牌',k:'pink',tags:['spot','arch'],day:'1225',t:'11:30',dur:.5,la:[144,82],d:'粉绿配色和手写体招牌，好莱坞黄金时代的符号。',sh:'在 Sunset 大道一侧拍招牌和棕榈。',pk:'N Crescent Dr 路两边可停',h:'外观全天',q:'The Beverly Hills Hotel',def:1,w:'Beverly_Hills_Hotel'},
+ sm:{s:'圣塔莫尼卡',n:'圣塔莫尼卡码头',a:'Santa Monica Pier',y:'1909',m:'木栈道、摩天轮、Route 66 终点',k:'pier',tags:['coast','spot'],day:'1225',t:'13:30',dur:1.5,la:[79,149],d:'老码头、摩天轮和 66 号公路终点牌，下午在沙滩上散步。',sh:'从沙滩上仰拍码头桥墩和摩天轮。',pk:'Parking Structure 6，步行约 5 分钟，前 90 分钟 $1',h:'圣诞当天部分设施可能不开',q:'Santa Monica Pier',def:1,w:'Santa_Monica_Pier'},
+ playa:{s:'Playa del Rey',n:'Playa del Rey 日落',a:'Vista Del Mar Ln',k:'sunset',tags:['coast'],day:'1225',t:'16:15',dur:.8,la:[120,190],d:'一条安静的海边小路，人比圣塔莫尼卡少很多，看太阳沉进海里。',sh:'日落约 16:50，落下后再等十几分钟拍晚霞。',pk:'6931 Vista Del Mar Ln，路两边可以临时停',h:'全天',q:'6931 Vista Del Mar Ln, Playa Del Rey',def:1,w:'Playa_del_Rey,_Los_Angeles'},
+ urban:{s:'Urban Light',lo:[-11,16,'end'],n:'Urban Light',a:'Chris Burden',y:'2008',m:'202 盏老式铸铁路灯',k:'lamps',tags:['art','spot','night'],day:'1225',t:'18:00',dur:.5,la:[185,98],d:'LACMA 门口的路灯森林，天黑后亮灯最好看；旁边就是 Zumthor 新馆横跨 Wilshire 的混凝土桥。',sh:'人少时从灯阵中间往里拍纵深。',pk:'LACMA 停车场或路边咪表',h:'户外全天，傍晚亮灯',q:'Urban Light, LACMA',def:1,w:'Urban_Light'},
+
+ villa:{s:'Getty Villa',n:'盖蒂别墅 Getty Villa',a:'Langdon & Wilson',y:'1974',m:'大理石、青铜、倒影池',k:'villa',tags:['arch','art'],day:'1226',t:'10:00',dur:2,la:[27,115],d:'按维苏威火山下的古罗马别墅复建，长柱廊围着倒影池，地中海感很强。',sh:'外柱廊倒影池两端是对称构图的最佳位置。',pk:'停车 $25，当天两馆通用',h:'10:00–17:00 · 周二闭馆',q:'Getty Villa',def:1,bk:'Getty Villa 免费分时段预约（12/26）',w:'Getty_Villa'},
+ dume:{s:'Point Dume',lo:[10,-8,'start'],n:'Point Dume 岬角',a:'马里布州立海滩',k:'cliff',tags:['coast','spot'],day:'1226',t:'12:30',dur:1.2,la:[6,106],d:'马里布最美的岬角，悬崖步道能俯瞰整片弧形海湾，冬天运气好能看到灰鲸迁徙。从 Villa 沿海岸再往西开约 30 分钟。',sh:'爬到岬角顶端拍弧形海湾。',pk:'7103 Westward Beach Rd 停车场',h:'白天开放',q:'Point Dume State Beach',def:0,w:'Point_Dume'},
+ getty:{s:'Getty Center',n:'盖蒂中心 Getty Center',a:'Richard Meier',y:'1997',m:'意大利石灰华、白色铝板',k:'getty',tags:['arch','art'],day:'1226',t:'14:00',dur:3,la:[97,85],d:'白色网格建筑群，坐小火车上山俯瞰整个洛杉矶。据说 2027 年起要闭馆翻修，这次正好赶上。',sh:'中央花园和仙人掌园；日落时去西侧平台看城市和海。',pk:'和 Villa 同一张停车票',h:'节假日请确认',q:'Getty Center',def:1,bk:'Getty Center 免费分时段预约（12/26）',w:'Getty_Center'},
+
+ wb:{s:'华纳影城',lo:[0,22,'middle'],n:'华纳兄弟影城',a:'Warner Bros. Studio Tour',m:'摄影棚、片场外景街、礼品店',k:'wb',tags:['film'],day:'1227',t:'09:30',dur:3.5,la:[203,20],d:'3400 Warner Blvd, Burbank。电瓶车导览约 1 小时：老友记拍摄棚、片头沙发和喷泉，还有哈利波特和 DC 区域；Central Perk 咖啡馆和礼品店很好逛。一共约 3–3.5 小时。进场前先上厕所。',sh:'片头喷泉和橙色沙发可以慢慢拍。',pk:'影城停车场 $15 不限时',h:'圣诞当天闭馆',q:'Warner Bros. Studio Tour Hollywood, Burbank',def:1,bk:'华纳兄弟影城门票（12/27 上午，官网约 $76/人），提前一两天买',w:'Warner_Bros._Studio_Tour_Hollywood'},
+ hunt:{s:'Huntington',lo:[8,24,'end'],n:'汉廷顿图书馆与植物园',a:'Myron Hunt & Elmer Grey',y:'1910',m:'宅邸、流芳园、日式庭园',k:'hunt',tags:['art','arch'],day:'1227',t:'14:00',dur:3,la:[373,38],d:'豪宅美术馆加上中式园林流芳园和日式庭园，时间有限就优先逛园林。',sh:'流芳园月洞门与湖边亭子，下午侧光最柔和。',pk:'自带停车场',h:'10:00–17:00 · 周二闭馆',q:'The Huntington Library, San Marino',def:1,bk:'The Huntington 门票（12/27），需提前买',w:'Huntington_Library'},
+ pas:{s:'Pasadena',lo:[-12,-6,'end'],n:'帕萨迪纳老城',a:'Old Pasadena',y:'1886',m:'红砖、拱窗、铸铁立面',k:'pas',tags:['arch','food'],day:'1227',t:'17:00',dur:1.3,la:[346,23],d:'19 世纪末的红砖商业街，傍晚亮灯后很有氛围，在这里吃晚饭。顺路看看市政厅的穹顶。',sh:'蓝调时刻拍街角红砖楼和暖色橱窗。',pk:'老城公共停车楼',h:'商店餐厅照常营业',q:'Old Pasadena',def:1,w:'Old_Pasadena'},
+ griffith:{s:'天文台',lo:[11,-4,'start'],n:'格里菲斯天文台',a:'John C. Austin & F. M. Ashley',y:'1935',m:'Art Deco、铜绿穹顶',k:'dome',tags:['arch','spot','night','film'],day:'1227',t:'19:00',dur:1.5,la:[230,48],d:'2800 E Observatory Rd。白色 Art Deco 建筑和铜绿穹顶，平台上一边是市中心夜景，一边是好莱坞招牌，《爱乐之城》的经典场景。入场免费。',sh:'西侧平台拍穹顶和城市灯海。',pk:'山顶停车 $10/小时，周末很难停，可以停山腰走上去',h:'周一闭馆 · 圣诞闭馆 · 晚上开到 22:00',q:'Griffith Observatory',def:1,w:'Griffith_Observatory'},
+ sqirl:{s:'Sqirl',zone:'Silver Lake',n:'Sqirl',a:'Silver Lake · 早午餐',k:'brunch',tags:['food'],day:'1227',t:'09:30',dur:1,la:[254,77],d:'很有自己风格的加州早午餐，招牌 ricotta toast 好吃而且不太甜。',sh:'果酱吐司俯拍。',pk:'周边路边停车',h:'早午餐时段，节假日请确认',q:'Sqirl, 720 N Virgil Ave, Los Angeles',def:0},
+ doto:{s:'doto',zone:'Silver Lake',n:'doto',a:'Silver Lake · 小众早午餐',k:'brunch',tags:['food'],day:'1227',t:'09:30',dur:1,la:[254,77],d:'很可爱的小众早午餐小店，可以带狗狗。',sh:'窗边自然光。',pk:'路边停车',h:'营业时间请确认',q:'doto Silver Lake Los Angeles',def:0},
+ gonggan:{s:'Gonggan',zone:'Silver Lake',n:'Gonggan',a:'Silver Lake · 咖啡',k:'cup',tags:['food','spot'],day:'1227',t:'10:00',dur:1,la:[254,77],d:'baby blue 色调的漂亮咖啡店，下午 4 点前也有早午餐。',sh:'整面浅蓝墙前的人像。',pk:'路边停车',h:'营业时间请确认',q:'Gonggan Silver Lake',def:0},
+ dayglow:{s:'Dayglow',zone:'Silver Lake',n:'Dayglow',a:'Silver Lake · 咖啡',k:'cup',tags:['food','spot'],day:'1227',t:'11:00',dur:.5,la:[254,77],d:'博主最爱的黑芝麻拿铁，店里粉粉的很可爱。',sh:'粉色吧台和杯子同框。',pk:'路边停车',h:'营业时间请确认',q:'Dayglow Silver Lake',def:0},
+ olive:{s:'Olive & James',zone:'Silver Lake',n:'Olive & James',a:'Silver Lake · 抹茶',k:'cup',tags:['food'],day:'1227',t:'11:30',dur:.4,la:[254,77],d:'颜值很高的抹茶饮品。',sh:'抹茶分层的侧面。',pk:'路边停车',h:'营业时间请确认',q:'Olive & James Los Angeles',def:0},
+ booth:{s:'照相亭博物馆',zone:'Silver Lake',n:'Photo Booth Museum',a:'Photomatica',m:'修复的老式胶片照相亭',k:'booth',tags:['spot','art'],day:'1227',t:'13:00',dur:.8,la:[254,77],d:'像 70 年代客厅的小空间，几台老式胶片照相亭可以选背景，拍完是复古黑白大头贴，还要用吹风机吹干。免费入场，按条付费。',sh:'拍完可以在手作台把照片做成钥匙扣。',pk:'Sunset Blvd 路边停车',h:'常要排队，营业时间请确认',q:'Photo Booth Museum, 3827 W Sunset Blvd',def:0},
+ lelabo:{s:'Le Labo',zone:'Silver Lake',n:'Le Labo',a:'香氛',k:'bag',tags:['shop'],day:'1227',t:'13:45',dur:.4,la:[254,77],d:'就在照相亭博物馆对面，依旧好闻好逛。',sh:'试香台的玻璃瓶。',pk:'步行过街',h:'营业时间请确认',q:'Le Labo Silver Lake',def:0},
+ sunsetrow:{s:'Sunset 小店',zone:'Silver Lake',n:'Sunset Junction 小店',a:'BAGGU · DS & Durga · Malin+Goetz',k:'bag',tags:['shop'],day:'1227',t:'14:15',dur:1,la:[254,77],d:'一小片聚集了很多小店的区域：BAGGU 很可爱的包店，隔壁 DS & Durga 和 Malin+Goetz 都是好逛的香氛。',sh:'BAGGU 的彩色包墙。',pk:'路边停车',h:'营业时间各店不同',q:'BAGGU Silver Lake',def:0},
+ salt:{s:'Salt & Straw',zone:'Silver Lake',n:'Salt & Straw',a:'冰淇淋',k:'cone',tags:['food'],day:'1227',t:'15:00',dur:.3,la:[254,77],d:'博主每次路过都会吃一个薰衣草口味。',sh:'举着甜筒对着街景。',pk:'路边停车',h:'营业时间请确认',q:'Salt & Straw Silver Lake',def:0},
+ erewhon:{s:'Erewhon',zone:'Silver Lake',n:'Erewhon Silver Lake',a:'加州超市',k:'mkt',tags:['food'],day:'1227',t:'15:30',dur:.6,la:[254,77],d:'博主最常来的一家，奇亚籽和奶昔很好喝。店在坡上，边吃边能看到远处的天文台。',sh:'拿着奶昔把天文台放进背景。',pk:'超市停车场',h:'营业时间请确认',q:'Erewhon Silver Lake',def:0},
+ sonmari:{s:'Sonmari',zone:'Silver Lake',n:'Sonmari',a:'手卷',k:'taco',tags:['food'],day:'1227',t:'18:00',dur:1.2,la:[254,77],d:'漂亮的手卷饭，还有海胆吐司。',sh:'吧台上手卷递过来的瞬间。',pk:'路边停车',h:'晚餐建议提前订位',q:'Sonmari Los Angeles',def:0},
+
+ nhm:{s:'自然史',lo:[-11,16,'end'],n:'洛杉矶自然历史博物馆',a:'Beaux-Arts 圆厅 · CO Architects 玻璃展亭',y:'1913',m:'大理石圆顶、玻璃、鲸鱼骨架',k:'nhm',tags:['arch'],day:'1228',t:'09:30',dur:1.5,la:[240,142],d:'百年老馆的大理石圆顶大厅，加上 2013 年玻璃展亭里悬挂的鲸鱼骨架，新旧对照。',sh:'在玻璃展亭外往里拍鲸骨的轮廓。',pk:'博物馆停车场',h:'通常 9:30–17:00',q:'Natural History Museum of Los Angeles County',def:1,w:'Natural_History_Museum_of_Los_Angeles_County'},
+ lacma:{s:'LACMA',lo:[-11,16,'end'],n:'LACMA · David Geffen Galleries',a:'Peter Zumthor',y:'2026',m:'清水混凝土、玻璃',k:'lacma',tags:['art','arch'],day:'1228',t:'11:15',dur:2.3,la:[185,98],d:'Zumthor 在美国的第一座建成作品，整层高架展厅横跨 Wilshire 大道。旁边还有 Renzo Piano 的两座展馆。',sh:'从桥下仰拍混凝土横梁切开天空。',pk:'LACMA Pritzker 停车场',h:'周三、圣诞闭馆 · 以官网为准',q:'LACMA, Wilshire Blvd',def:1,bk:'LACMA 门票（12/28）',w:'Los_Angeles_County_Museum_of_Art'},
+ tramway:{s:'Palm Springs',sug:1,mp:'jt',ll:[33.8406,-116.5524],lo:[10,-10,'start'],n:'Palm Springs 游客中心',a:'Albert Frey & Robson Chambers',y:'1965',m:'双曲抛物面屋顶、钢、玻璃',k:'tower',tags:['arch','spot'],day:'1228',t:'14:30',dur:.7,la:[396,96],d:'沙漠中世纪现代主义的代表作，原本是缆车站下面的加油站，屋顶像一片翘起的翅膀。去约书亚树顺路，但要放弃 LACMA 或自然史其中一个才赶得上日落。',sh:'站在路对面用广角拍整片翘起的屋顶和背后的山。',pk:'游客中心门口停车场',h:'通常白天开放，节假日请确认',q:'Palm Springs Visitor Center, 2901 N Palm Canyon Dr',def:0,w:'Tramway_Gas_Station'},
+ keys:{s:'Keys View',sug:1,mp:'jt',ll:[33.9268,-116.1873],n:'Keys View 日落',a:'约书亚树国家公园',k:'sunset',tags:['coast','spot'],day:'1228',t:'16:15',dur:.8,d:'公园里海拔最高的观景点之一，往下能看到整个 Coachella 山谷和 San Jacinto 雪山。从洛杉矶开过来，放下行李先冲这里看日落（约 16:40）。',sh:'日落后山谷里会一层层泛蓝，再多等 15 分钟。',pk:'观景点停车场',h:'全天 · 公园门票每车 $35（7 天有效）',q:'Keys View, Joshua Tree National Park',def:1,bk:'约书亚树国家公园门票（每车 $35，可在官网或门口买）',cs:'Keys View Joshua Tree'},
+
+ cholla:{s:'Cholla',sug:1,mp:'jt',ll:[33.9254,-115.9289],n:'Cholla 仙人掌园日出',a:'约书亚树国家公园',k:'cactus',tags:['spot','coast'],day:'1229',t:'06:30',dur:.8,d:'成千上万株泰迪熊仙人掌，日出时逆光会让每一根刺都发亮。沿着木栈道走一圈不到半小时。',sh:'压低机位，让太阳躲在仙人掌后面拍逆光轮廓。千万别碰，刺会粘在身上。',pk:'路边停车场',h:'全天',q:'Cholla Cactus Garden, Joshua Tree National Park',def:1,w:'Cholla_Cactus_Garden'},
+ skull:{s:'Skull Rock',sug:1,mp:'jt',ll:[34.0055,-116.0596],lo:[10,-10,'start'],n:'Skull Rock 与巨石阵',a:'约书亚树国家公园',k:'rock',tags:['spot'],day:'1229',t:'07:45',dur:.6,d:'风化出两个“眼窝”的巨石，就在公园主路边。周围是成片的约书亚树和圆滚滚的花岗岩，回程路上顺便拍。',sh:'早上侧光让眼窝的阴影最深。',pk:'路边小停车场',h:'全天',q:'Skull Rock, Joshua Tree National Park',def:1,cs:'Skull Rock Joshua Tree'},
+ sawdust:{s:'Sawdust',n:'Sawdust 艺术节',a:'Laguna Beach · 冬季场',k:'gallery',tags:['art','shop'],day:'1229',t:'11:30',dur:2.5,d:'935 Laguna Canyon Rd。180+ 艺术家摊位、3 个舞台、3 个免费 studio（进门先约时间）；11:15 第一场木偶戏；建议待到傍晚看灯串。成人 $12，6–12 岁 $5。',sh:'傍晚灯串亮起时拍摊位间的小路。',pk:'停 Lot 16，坐免费 trolley',h:'往年在圣诞前的周末结束',q:'Sawdust Art Festival, 935 Laguna Canyon Rd, Laguna Beach',def:0,flag:'往年冬季场在圣诞前的周末就结束了，12/29 大概率赶不上。出发前查官网日期。',cs:'Sawdust Art Festival Laguna Beach'},
+ geisel:{s:'Geisel',sug:1,mp:'sd',ll:[32.8812,-117.2376],lo:[10,10,'start'],n:'Geisel 图书馆',a:'William Pereira',y:'1970',m:'清水混凝土、玻璃',k:'geisel',tags:['arch','spot'],day:'1229',t:'14:30',dur:.6,d:'UCSD 校园里那座像倒立金字塔、又像外星飞船的粗野主义图书馆，以苏斯博士命名。外观随时可以看。',sh:'走到楼正下方，用广角往上拍层层外挑的混凝土。',pk:'校园访客停车场（按小时计费）',h:'年末寒假期间内部可能不开，外观随时可看',q:'Geisel Library, UC San Diego',def:1,w:'Geisel_Library'},
+ salk:{s:'Salk',sug:1,mp:'sd',ll:[32.8874,-117.2460],lo:[-10,-10,'end'],n:'索尔克生物研究所',a:'Louis Kahn',y:'1965',m:'清水混凝土、柚木、石灰华广场',k:'salk',tags:['arch','coast'],day:'1229',t:'15:45',dur:1,d:'这次行程里最重要的一座建筑。两排对称的混凝土楼夹着一片空无一物的石灰华广场，一条细水渠笔直地指向太平洋。日落前后最美。',sh:'站在水渠起点，让水线、广场和海平线三条线对齐。',pk:'研究所访客停车场',h:'通常工作日白天开放广场，建筑导览需预约 · 年末可能放假，务必查官网',q:'Salk Institute for Biological Studies',def:1,bk:'Salk 建筑导览预约（12/29），确认年末是否开放',w:'Salk_Institute_for_Biological_Studies'},
+
+ balboa:{s:'Balboa',sug:1,mp:'sd',ll:[32.7341,-117.1446],lo:[-10,-10,'end'],n:'Balboa Park 加州塔',a:'Bertram Goodhue',y:'1915',m:'西班牙殖民复兴风格、彩色瓷砖穹顶',k:'tower',tags:['arch','art'],day:'1230',t:'09:30',dur:2.5,d:'1915 年博览会留下的一整片西班牙复兴风格建筑群，加州塔和洛杉矶中央图书馆是同一位建筑师。El Prado 走一遍，再看植物馆和睡莲池倒影。',sh:'植物馆木格穹顶前的睡莲池，早上无风时倒影最完整。',pk:'公园内多个免费停车场',h:'户外全天，各博物馆开放时间不同',q:'California Tower, Balboa Park',def:1,w:'Balboa_Park_(San_Diego)'},
+ cove:{s:'La Jolla',sug:1,mp:'sd',ll:[32.8504,-117.2729],lo:[10,4,'start'],n:'La Jolla Cove 海狮',a:'La Jolla',k:'cliff',tags:['coast','spot'],day:'1230',t:'13:00',dur:1.5,d:'礁石上躺满了海狮和海豹，悬崖步道沿着海一路走。午饭在 La Jolla 小镇里解决。',sh:'别靠太近，用长焦拍海狮在礁石上的剪影。',pk:'路边停车很难找，可以停小镇里的付费停车场',h:'全天',q:'La Jolla Cove',def:1,w:'La_Jolla_Cove'},
+ torrey:{s:'Torrey Pines',sug:1,mp:'sd',ll:[32.9190,-117.2530],lo:[10,4,'start'],n:'Torrey Pines 海崖步道',a:'州立自然保护区',k:'cliff',tags:['coast'],day:'1230',t:'14:45',dur:1.3,d:'砂岩海崖上长着全美最稀有的松树，步道尽头能俯瞰整片海滩。',sh:'Razor Point 一带的砂岩纹理和海。',pk:'保护区停车场（收费）或海滩边',h:'白天开放',q:'Torrey Pines State Natural Reserve',def:0,w:'Torrey_Pines_State_Natural_Reserve'},
+ cliffs:{s:'Sunset Cliffs',sug:1,mp:'sd',ll:[32.7210,-117.2560],lo:[10,4,'start'],n:'Sunset Cliffs 日落',a:'Point Loma',k:'sunset',tags:['coast','spot'],day:'1230',t:'16:15',dur:1,d:'名字就是答案。海蚀拱、礁石和冲浪的人，日落约 16:50。',sh:'找一个海蚀拱，把落日框在拱里。悬崖边没有护栏，注意脚下。',pk:'Sunset Cliffs Blvd 路边停车',h:'全天',q:'Sunset Cliffs Natural Park',def:1,w:'Sunset_Cliffs'},
+ catalina:{s:'Catalina',sug:1,n:'Catalina Island 一日游',a:'Avalon · Catalina Casino',y:'1929',m:'Art Deco 圆形舞厅',k:'ship',tags:['coast','arch'],day:'1230',t:'08:00',dur:9,d:'从 Dana Point 坐 Catalina Express，单程约 1.5 小时。Avalon 港口边的 Catalina Casino 是 1929 年的 Art Deco 圆形舞厅（不是赌场），跟导览才能进内部。选它就代替 12/30 整天。',sh:'从港口另一侧拍白色圆形 Casino 和整片海湾。',pk:'Dana Point 码头停车场',h:'冬季船班少、风浪大，可能停航',q:'Catalina Express Dana Point',def:0,bk:'Catalina Express 船票 + Casino 导览（如果去）',flag:'冬季船班减少、海浪较大，容易晕船也可能停航。要去整个 12/30 都给它。',w:'Catalina_Casino'},
+
+ sdlib:{s:'中央图书馆',sug:1,mp:'sd',ll:[32.7083,-117.1536],lo:[10,4,'start'],n:'圣地亚哥中央图书馆',a:'Rob Wellington Quigley',y:'2013',m:'钢网格穹顶、混凝土',k:'dome',tags:['arch','spot'],day:'1231',t:'10:00',dur:1,d:'顶上是一个镂空的钢网格穹顶，9 楼阅览室和露台能看到整个市中心和海湾。',sh:'在顶层露台从穹顶下面往上拍网格。',pk:'图书馆地下停车场',h:'跨年夜可能提前闭馆，元旦闭馆',q:'San Diego Central Library',def:1,w:'San_Diego_Central_Library'},
+ italy:{s:'Little Italy',sug:1,mp:'sd',ll:[32.7237,-117.1690],lo:[-10,-10,'end'],n:'Little Italy',a:'圣地亚哥小意大利',k:'mkt',tags:['food','spot'],day:'1231',t:'12:00',dur:1.5,d:'街口的霓虹招牌、意式咖啡和各种餐厅，午饭和咖啡都在这里。',sh:'站在 India St 路口拍霓虹招牌。',pk:'街区路边咪表或停车楼',h:'餐厅照常营业',q:'Little Italy, San Diego',def:1,w:'Little_Italy,_San_Diego'},
+ hdc:{s:'Hotel del',sug:1,mp:'sd',ll:[32.6809,-117.1784],lo:[-10,14,'end'],n:'Hotel del Coronado',a:'James & Merritt Reid',y:'1888',m:'维多利亚式木构、红色尖顶',k:'hotel',tags:['arch','coast'],day:'1231',t:'14:30',dur:2,d:'1888 年的维多利亚式海滨酒店，红色尖顶在沙滩上特别显眼。玛丽莲·梦露在这里拍过《热情似火》。冬天大堂会有圣诞树。之后直接在 Coronado 海滩看跨年前最后一次日落。',sh:'走到沙滩上，回头拍红尖顶和棕榈。',pk:'酒店付费停车或周边路边',h:'公共区域全天',q:'Hotel del Coronado',def:1,w:'Hotel_del_Coronado'},
 };
+const ZW={'Silver Lake':'Silver_Lake,_Los_Angeles','Arts District':'Arts_District,_Los_Angeles'};
+
 const D=[
  {id:'1223',d:'23',w:'周三',city:'la',no:'00',title:'开幕前夜',map:'la',cur:'晚上 8:39 落地，坐接驳车去租车点取车。机场边上就是 In-N-Out，吃完再开去住处，约半小时。'},
- {id:'1224',d:'24',w:'周四',note:'平安夜',city:'la',no:'01',title:'市中心漫步',map:'dt',cur:'按小红书那条 citywalk 走：教堂 10 点前就开，再往下一路是音乐厅、美术馆、缆车和老市场。车停一次，全程步行。平安夜场馆可能提前关门，越早越稳。<br>想换口味：下午可以跳过书店和图书馆，开 5 分钟去 Arts District 喝咖啡、逛买手店和画廊。'},
- {id:'1225',d:'25',w:'周五',note:'圣诞节',city:'la',no:'02',title:'机位日',map:'la',cur:'圣诞当天博物馆大多闭馆，但户外机位全都在。从棕榈大道和好莱坞招牌开始，一路往西开到海边看日落，晚上回来拍亮灯的 Urban Light。'},
- {id:'1226',d:'26',w:'周六',city:'la',no:'03',title:'海岸与山顶',map:'la',cur:'一座古罗马，一座白色现代主义，中间可以插一段马里布海岸。两馆当天停车通用。'},
- {id:'1227',d:'27',w:'周日',city:'la',no:'04',title:'片场、园林与星空',map:'la',cur:'上午走进老友记，下午走进流芳园，晚饭后上山看城市夜景。<br>想慢一点的话：跳过华纳和 Huntington，换成 Silver Lake 早午餐、照相亭和小店，傍晚从那里上天文台只要 15 分钟。'},
- {id:'1228',d:'28',w:'周一',city:'la',no:'05',title:'最后两座馆，然后进沙漠',map:'la',jt:true,cur:'周一 Getty、Broad、天文台都闭馆，Holbox 也休息，但自然史和 LACMA 开门。早上退房，看完直接往东开，下午 4 点多到约书亚树赶日落。'},
- {id:'1229',d:'29',w:'周二',city:'jt',no:'06',title:'沙漠日出 → 海边',empty:'约书亚树的地点还没收到。<br>清晨拍日出，之后开往圣地亚哥约 <b>2.5–3 小时</b>。'},
- {id:'1230',d:'30',w:'周三',city:'sd',no:'07',title:'圣地亚哥',empty:'圣地亚哥的地点还没收到。<br>把刷到的笔记发给 Claude，这一展厅就会布置起来。'},
- {id:'1231',d:'31',w:'周四',city:'sd',no:'08',title:'跨年夜',empty:'在圣地亚哥跨年。<br>跨年的去处也可以一起发过来。'},
- {id:'0101',d:'1',w:'周五',city:'sd',no:'09',title:'闭幕',empty:'中午前从圣地亚哥出发，约 <b>2–2.5 小时</b>到 LAX 还车。<br>17:46 起飞，20:42 回到西雅图。'},
+ {id:'1224',d:'24',w:'周四',note:'平安夜',city:'la',no:'01',title:'市中心漫步',map:'dt',cur:'按那条 DTLA citywalk 走：教堂 10 点前就开，接着是音乐厅、美术馆、缆车和老市场。车停一次，全程步行。平安夜场馆可能提前关门，越早越稳。<br>想换口味：下午跳过书店和图书馆，开 5 分钟去 Arts District 喝咖啡、逛买手店和画廊。'},
+ {id:'1225',d:'25',w:'周五',note:'圣诞节',city:'la',no:'02',title:'机位日',map:'la',cur:'圣诞当天博物馆大多闭馆，但户外机位都在。从棕榈大道和好莱坞招牌开始，一路往西开到海边看日落，晚上回来拍亮灯的 Urban Light。'},
+ {id:'1226',d:'26',w:'周六',city:'la',no:'03',title:'古罗马与白色山城',map:'la',cur:'一座古罗马别墅，一座白色现代主义，中间可以插一段马里布海岸。两馆当天停车通用。'},
+ {id:'1227',d:'27',w:'周日',city:'la',no:'04',title:'片场、园林与星空',map:'la',cur:'上午走进老友记，下午走进流芳园，晚饭后上山看城市夜景。<br>想慢一点：跳过华纳和 Huntington，换成 Silver Lake 早午餐、照相亭和小店，傍晚从那里上天文台只要 15 分钟。'},
+ {id:'1228',d:'28',w:'周一',city:'la',no:'05',title:'最后两座馆，然后进沙漠',map:'la',jt:true,cur:'周一 Getty、Broad、天文台都闭馆，Holbox 也休息，但自然史和 LACMA 开门。早上退房，看完往东开约 2.5 小时，赶在 16:40 日落前到 Keys View。<br>如果更想看沙漠现代主义：跳过一座馆，下午在 Palm Springs 停一下。'},
+ {id:'1229',d:'29',w:'周二',city:'jt',no:'06',title:'沙漠日出 → Kahn 的海',map:'jt',cur:'天没亮就出门拍 Cholla 日出，回程看 Skull Rock，9 点前出公园。往圣地亚哥开约 2.5–3 小时，下午先看 UCSD 的 Geisel，再去 Salk 等日落。<br>这一天的地点是我按建筑主题先排的，你发来约书亚树的笔记后再换。'},
+ {id:'1230',d:'30',w:'周三',city:'sd',no:'07',title:'公园与海崖',map:'sd',cur:'上午在 Balboa Park 看 1915 年博览会留下的建筑群，下午去 La Jolla 看海狮、走海崖，日落去 Sunset Cliffs。<br>想要一天岛屿假期的话，可以整天换成 Catalina（见页尾问答）。'},
+ {id:'1231',d:'31',w:'周四',note:'跨年夜',city:'sd',no:'08',title:'穹顶、红尖顶与跨年',map:'sd',cur:'上午登上中央图书馆的钢穹顶，中午在 Little Italy，下午过桥去 Coronado，在 Hotel del 前看今年最后一次日落。跨年的去处发给我再补进来。'},
+ {id:'0101',d:'1',w:'周五',note:'元旦',city:'sd',no:'09',title:'闭幕',map:'sd',cur:'元旦早上睡个懒觉，中午前从圣地亚哥出发，约 2–2.5 小时到 LAX 还车（元旦路上车可能多，留足时间）。17:46 起飞，20:42 回到西雅图。'},
 ];
-const dayName=id=>{const d=D.find(x=>x.id===id);return d?(id==='0101'?'1/1':'12/'+d.d)+' '+(d.note||d.w):''};
+const SUN={la:[6.97,16.83],jt:[6.75,16.67],sd:[6.83,16.87]};
 
 /* ---------- state ---------- */
 const store={get(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch(e){return f}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-let pick=store.get('trip-pick',null);
-if(!pick){pick={};for(const k in P)pick[k]=!!P[k].def}
-for(const k in P)if(!(k in pick))pick[k]=!!P[k].def;
+const KEYS=Object.keys(P);
+let pick=store.get('trip-pick',null)||{};
+for(const k of KEYS)if(!(k in pick))pick[k]=!!P[k].def;
 const savePick=()=>store.set('trip-pick',pick);
-let photos={},credit={};
-let view='pick',theme='all',cur=1,sel=null,mapMode='la';
-const cityVar={la:'--la',jt:'--jt',sd:'--sd'};
+let view='mood',theme=store.get('trip-theme','arch'),city='all',cur=1,sel=null,mapMode='dt',yrMine=false;
+if(theme!=='all'&&!T[theme])theme='arch';
 const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tcOf=k=>T[P[k].tags[0]].c;
+const SD_DAYS=['1229','1230','1231','0101'];
+const cityOf=k=>P[k].mp||(SD_DAYS.includes(P[k].day)?'sd':'la');
+const dayName=id=>{const d=D.find(x=>x.id===id);return d?(id==='0101'?'1/1':'12/'+d.d)+' '+(d.note||d.w):''};
 const tagHtml=p=>`<div class="tags">${p.tags.map(t=>`<span class="tag" style="--tc:var(${T[t].c})">${T[t].n}</span>`).join('')}</div>`;
-const photoUrl=id=>photos[id]||null;
-const thumbFor=(id)=>{const u=photoUrl(id);return u?`<img src="${u}" alt="${P[id].n}" loading="lazy">`:thumb(P[id].k)};
-const thumb=k=>`<svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${M[k]}</svg>`;
+const sketch=k=>`<svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${M[k]||M.gallery}</svg>`;
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)}
-function toggle(id,force){pick[id]=force===undefined?!pick[id]:force;savePick();renderAll();toast((pick[id]?'已加入 ':'已移出 ')+P[id].n)}
 
-/* ---------- view switch ---------- */
-document.querySelectorAll('.views button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.v)));
-function setView(v){view=v;document.querySelectorAll('.views button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
- $('pick').classList.toggle('hide',v!=='pick');$('plan').classList.toggle('hide',v!=='plan');$('ribbon').classList.toggle('hide',v!=='plan');
- renderAll();window.scrollTo({top:document.querySelector('.dock').offsetTop,behavior:'smooth'})}
-
-/* ---------- pick view ---------- */
-function renderPick(){
- const ids=Object.keys(P);
- const count=t=>ids.filter(k=>t==='all'||P[k].tags.includes(t)).length;
- $('chips').innerHTML=`<button class="chip" data-t="all" aria-pressed="${theme==='all'}">全部 <small>${ids.length}</small></button>`+
-  Object.entries(T).map(([k,v])=>`<button class="chip" data-t="${k}" aria-pressed="${theme===k}" style="--tc:var(${v.c})"><i></i>${v.n} <small>${count(k)}</small></button>`).join('');
- $('chips').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{theme=c.dataset.t;renderPick()});
- const list=ids.filter(k=>theme==='all'||P[k].tags.includes(theme));
- const on=list.filter(k=>pick[k]).length;
- const title=theme==='all'?'全部地点':T[theme].n+'之旅';
- const desc=theme==='all'?'点卡片看详情，点 + 加入行程。选中的会出现在“按天走”里。':T[theme].d;
- $('themeHead').innerHTML=`<div class="theme-head"><div><h2>${title}</h2><p>${desc}</p></div><div class="bulk"><button data-a="1">全选</button><button data-a="0">清空</button></div></div>
-  <div class="sum">已选 <b>${on}</b> / ${list.length}</div>`;
- $('themeHead').querySelectorAll('.bulk button').forEach(b=>b.onclick=()=>{list.forEach(k=>pick[k]=b.dataset.a==='1');savePick();renderAll();toast(b.dataset.a==='1'?'已全部加入':'已全部移出')});
- $('grid').innerHTML=list.map(k=>{const p=P[k],tc=T[p.tags[0]].c;return `<div class="card${pick[k]?' picked':''}" data-k="${k}" style="--tc:var(${tc})" tabindex="0" role="button" aria-label="${p.n}">
-   <div class="thumb${photos[k]?' has':''}">${thumbFor(k)}</div>
-   <button class="add" data-k="${k}" aria-pressed="${!!pick[k]}" aria-label="${pick[k]?'移出':'加入'}${p.n}">${pick[k]?'✓':'+'}</button>
-   <h3>${p.n}</h3><div class="when">${dayName(p.day)} · ${p.t}</div>${tagHtml(p)}</div>`}).join('');
- $('grid').querySelectorAll('.card').forEach(c=>{c.onclick=e=>{if(e.target.closest('.add'))return;openSheet(c.dataset.k)};c.onkeydown=e=>{if(e.key==='Enter')openSheet(c.dataset.k)}});
- $('grid').querySelectorAll('.add').forEach(b=>b.onclick=()=>toggle(b.dataset.k));
+/* ---------- photos: images/<id>.jpg → Wikipedia lead image (Commons only) → Commons search → neighbourhood → sketch ---------- */
+const IMG={};
+const CK='trip-img-v3';
+let cache=store.get(CK,null);if(!cache||!cache.t||Date.now()-cache.t>5*864e5)cache={t:Date.now(),w:{},c:{}};
+const okSrc=s=>typeof s==='string'&&s.startsWith('https://upload.wikimedia.org/wikipedia/commons/');
+const fileUrl=f=>'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(String(f).replace(/^File:/,'').replace(/ /g,'_'));
+function ph(k,cls=''){const i=IMG[k];return `<div class="ph ${cls}" style="--tc:var(${tcOf(k)})"><div class="sk">${sketch(P[k].k)}</div>${i?`<img src="${esc(i.s)}" alt="${esc(P[k].n)}" loading="lazy" decoding="async" onload="this.classList.add('ok')" onerror="this.classList.add('bad')">${i.approx?'<span class="approx">街区</span>':''}`:''}</div>`}
+const probe=src=>new Promise(r=>{const i=new Image();i.onload=()=>r(true);i.onerror=()=>r(false);i.src=src});
+async function wikiBatch(titles){
+ const out={},todo=[];
+ titles.forEach(t=>{if(t in cache.w)out[t]=cache.w[t];else todo.push(t)});
+ for(let i=0;i<todo.length;i+=40){const part=todo.slice(i,i+40);
+  try{
+   const u='https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&prop=pageimages&piprop=thumbnail%7Cname&pithumbsize=1200&pilicense=free&titles='+encodeURIComponent(part.join('|'));
+   const r=await fetch(u);if(!r.ok)continue;const q=(await r.json()).query||{};
+   const fwd={};(q.normalized||[]).concat(q.redirects||[]).forEach(n=>fwd[n.from]=n.to);
+   const byT={};(q.pages||[]).forEach(p=>byT[p.title]=p);
+   part.forEach(t=>{let x=t;for(let g=0;g<4&&fwd[x];g++)x=fwd[x];const p=byT[x]||byT[x.replace(/_/g,' ')];
+    const s=p&&p.thumbnail&&p.thumbnail.source;cache.w[t]=okSrc(s)?{s,f:p.pageimage}:null;out[t]=cache.w[t]});
+  }catch(e){}}
+ return out}
+async function commons(q){
+ if(q in cache.c)return cache.c[q];
+ try{
+  const u='https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&generator=search&gsrnamespace=6&gsrlimit=4&gsrsearch='+encodeURIComponent(q+' filetype:bitmap')+'&prop=imageinfo&iiprop=url&iiurlwidth=1200';
+  const r=await fetch(u);if(!r.ok)return null;const j=await r.json();
+  const ps=((j.query||{}).pages||[]).slice().sort((a,b)=>(a.index||0)-(b.index||0));let hit=null;
+  for(const p of ps){const ii=p.imageinfo&&p.imageinfo[0];if(ii&&okSrc(ii.thumburl)){hit={s:ii.thumburl,f:p.title};break}}
+  cache.c[q]=hit;return hit}catch(e){return null}}
+let paintH=0;const repaint=()=>{cancelAnimationFrame(paintH);paintH=requestAnimationFrame(()=>{renderAll();slideNext(true)})};
+async function loadPhotos(){
+ await Promise.all(KEYS.map(async k=>{const own='images/'+k+'.jpg';if(await probe(own))IMG[k]={s:own,own:1}}));repaint();
+ const titles=[...new Set(KEYS.filter(k=>!IMG[k]).flatMap(k=>[P[k].w,ZW[P[k].zone]]).filter(Boolean))];
+ const W=await wikiBatch(titles);
+ KEYS.forEach(k=>{if(!IMG[k]&&P[k].w&&W[P[k].w])IMG[k]={...W[P[k].w]}});repaint();
+ await Promise.all(KEYS.filter(k=>!IMG[k]&&P[k].cs).map(async k=>{const c=await commons(P[k].cs);if(c&&!IMG[k])IMG[k]=c}));
+ KEYS.forEach(k=>{const z=ZW[P[k].zone];if(!IMG[k]&&z&&W[z])IMG[k]={...W[z],approx:1}});
+ store.set(CK,cache);repaint();
 }
 
-/* ---------- sheet ---------- */
-function openSheet(k){const p=P[k];const s=$('sheet');
- const u=photoUrl(k);s.style.setProperty('--tc',`var(${T[p.tags[0]].c})`);
- s.innerHTML=`<div class="photo">${u?`<img src="${u}" alt="${p.n}">`:thumb(p.k)}</div><button class="x" aria-label="关闭">✕</button>
-  ${p.a?`<p class="artist">${p.a}</p>`:''}<h3 class="ttl">${p.n}${p.y?`<em>${p.y}</em>`:''}</h3>${p.m?`<p class="medium">${p.m}</p>`:''}${tagHtml(p)}
-  <p style="margin-top:14px">${p.d}</p><p class="shot">📷 ${p.sh}</p>
-  <p class="park">🅿️ ${p.pk}</p><p class="meta">🕒 ${p.h}<br>📅 排在 ${dayName(p.day)}，建议 ${p.t}</p>
-  <div class="row"><button class="btn dark" id="sAdd">${pick[k]?'从行程移出':'加入行程'}</button><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}">在地图中打开 ↗</a></div>${credit[k]?`<p class="meta" style="margin-top:12px">图片：<a href="${credit[k]}" target="_blank" rel="noopener" style="color:inherit">维基共享资源</a></p>`:''}`;
+/* ---------- hero slideshow ---------- */
+let slideI=-1,slideT=0;
+function slideNext(soft){
+ const pool=KEYS.filter(k=>IMG[k]&&!IMG[k].approx&&P[k].tags.includes('arch'));
+ const box=$('slide');
+ if(!pool.length){if(!box.innerHTML){const k='disney';box.innerHTML=ph(k)+`<figcaption class="slide-cap"><div><b>${P[k].n}</b><span>${P[k].a} · ${P[k].y}</span></div><span>No.${String(KEYS.indexOf(k)+1).padStart(2,'0')}</span></figcaption>`}return}
+ if(soft&&slideI>=0&&box.querySelector('img'))return;
+ slideI=(slideI+1)%pool.length;const k=pool[slideI],i=IMG[k];
+ const pre=new Image();pre.onload=()=>{
+  box.innerHTML=`<div class="ph" style="--tc:var(${tcOf(k)})"><img src="${esc(i.s)}" alt="${esc(P[k].n)}"></div><figcaption class="slide-cap"><div><b>${P[k].n}</b><span>${esc(P[k].a||'')}${P[k].y?' · '+P[k].y:''}</span></div><span>${dayName(P[k].day)}</span></figcaption>`;
+  box.onclick=()=>openSheet(k);box.style.cursor='pointer';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{const im=box.querySelector('img');im&&im.classList.add('ok')}))};
+ pre.onerror=()=>{};pre.src=i.s;
+ clearTimeout(slideT);slideT=setTimeout(()=>slideNext(false),5200)}
+
+/* ---------- views ---------- */
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.v)));
+function setView(v){view=v;
+ document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));
+ $('v-mood').classList.toggle('hide',v!=='mood');$('v-days').classList.toggle('hide',v!=='days');
+ $('v-years').classList.toggle('hide',v!=='years');$('years').classList.toggle('hide',v!=='years');$('ribbon').classList.toggle('hide',v!=='days');
+ renderAll();const top=document.querySelector('.dock').offsetTop;if(scrollY>top||v!=='mood')scrollTo({top,behavior:'smooth'})}
+function toggle(k,force){pick[k]=force===undefined?!pick[k]:force;savePick();renderAll();toast((pick[k]?'已收入 ':'已移出 ')+P[k].n)}
+
+/* ---------- mood view ---------- */
+function inCity(k){return city==='all'||cityOf(k)===city}
+function renderMood(){
+ const cnt=t=>KEYS.filter(k=>inCity(k)&&(t==='all'||P[k].tags.includes(t))).length;
+ $('moods').innerHTML=Object.entries(T).map(([k,v])=>`<button class="mood" data-t="${k}" aria-pressed="${theme===k}" style="--tc:var(${v.c})">${v.n}之旅<sup>${cnt(k)}</sup></button>`).join('')+`<button class="mood" data-t="all" aria-pressed="${theme==='all'}">全部<sup>${cnt('all')}</sup></button>`;
+ $('moods').querySelectorAll('.mood').forEach(b=>b.onclick=()=>{theme=b.dataset.t;store.set('trip-theme',theme);renderMood()});
+ $('cities').innerHTML=[['all','全部城市'],...Object.entries(CITY).map(([k,v])=>[k,v.n])].map(([k,n])=>`<button class="pill" data-c="${k}" aria-pressed="${city===k}">${n}</button>`).join('');
+ $('cities').querySelectorAll('.pill').forEach(b=>b.onclick=()=>{city=b.dataset.c;renderMood()});
+ const list=KEYS.filter(k=>inCity(k)&&(theme==='all'||P[k].tags.includes(theme)));
+ $('allOn').onclick=()=>{list.forEach(k=>pick[k]=true);savePick();renderAll();toast('这一组全部收入')};
+ $('allOff').onclick=()=>{list.forEach(k=>pick[k]=false);savePick();renderAll();toast('这一组全部移出')};
+ const on=list.filter(k=>pick[k]).length;
+ $('blurb').innerHTML=`${theme==='all'?'所有地点。':T[theme].d} <span class="mono" style="color:var(--muted)">· 已选 ${on}/${list.length}</span>`;
+ $('grid').innerHTML=list.map((k,i)=>{const p=P[k];return `<div class="card${pick[k]?' picked':''}" data-k="${k}" role="button" tabindex="0" aria-label="${esc(p.n)}">
+  ${ph(k,'r'+(i%3))}
+  ${p.flag?'<span class="badge warn">日期存疑</span>':p.sug?'<span class="badge">Claude 推荐</span>':''}
+  <button class="add" data-k="${k}" aria-pressed="${!!pick[k]}" aria-label="${pick[k]?'移出':'收入'}${esc(p.n)}">${pick[k]?'✓':'+'}</button>
+  <div class="no"><span>No.${String(KEYS.indexOf(k)+1).padStart(2,'0')}</span><span>${dayName(p.day)} · ${p.t}</span></div>
+  <h3>${p.n}</h3><p class="by">${esc(p.a||'')}${p.y?' · '+p.y:''}</p></div>`}).join('');
+ $('grid').querySelectorAll('.card').forEach(c=>{c.onclick=e=>{if(e.target.closest('.add'))return;openSheet(c.dataset.k)};c.onkeydown=e=>{if(e.key==='Enter'&&e.target===c)openSheet(c.dataset.k)}});
+ $('grid').querySelectorAll('.add').forEach(b=>b.onclick=e=>{e.stopPropagation();toggle(b.dataset.k)});
+}
+
+/* ---------- detail sheet ---------- */
+function openSheet(k){const p=P[k],s=$('sheet'),i=IMG[k];
+ s.style.setProperty('--tc',`var(${tcOf(k)})`);
+ s.innerHTML=`${ph(k)}<button class="x" aria-label="关闭">✕</button><div class="sheet-b">
+  ${p.a?`<p class="by">${esc(p.a)}</p>`:''}<h3>${p.n}${p.y?`<em>${p.y}</em>`:''}</h3>${p.m?`<p class="mat">${p.m}</p>`:''}${tagHtml(p)}
+  ${p.flag?`<div class="flag">⚠︎ ${p.flag}</div>`:''}
+  <p>${p.d}</p><p class="note">📷 ${p.sh}</p>
+  <dl class="facts"><dt>停车</dt><dd>${p.pk}</dd><dt>时间</dt><dd>${p.h}</dd><dt>安排</dt><dd>${dayName(p.day)}，建议 ${p.t}，约 ${p.dur} 小时</dd>${p.bk?`<dt>预约</dt><dd>${p.bk}</dd>`:''}</dl>
+  <div class="btns"><button class="btn dark" id="sAdd">${pick[k]?'从行程移出':'收入行程'}</button><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}">在地图中打开 ↗</a></div>
+  <p class="credit">${i?(i.own?'照片：自己拍的':`图片：<a href="${fileUrl(i.f)}" target="_blank" rel="noopener">Wikimedia Commons</a>${i.approx?' · 附近街区，不是店本身':''}`):'还没有照片 · 放一张 images/'+k+'.jpg 就会显示'}</p></div>`;
  s.querySelector('.x').onclick=closeSheet;$('sAdd').onclick=()=>{toggle(k);closeSheet()};
- $('sheetBg').classList.add('open');requestAnimationFrame(()=>s.classList.add('open'));s.querySelector('.x').focus()}
-function closeSheet(){$('sheet').classList.remove('open');$('sheetBg').classList.remove('open')}
-$('sheetBg').onclick=closeSheet;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+ $('veil').classList.add('open');s.scrollTop=0;requestAnimationFrame(()=>s.classList.add('open'));s.querySelector('.x').focus()}
+function closeSheet(){$('sheet').classList.remove('open');$('veil').classList.remove('open')}
+$('veil').onclick=closeSheet;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
 
-/* ---------- plan view ---------- */
-$('ribbon').innerHTML=D.map((x,i)=>`<button class="day-tab" role="tab" id="tab-${x.id}" aria-selected="false" style="--c:var(${cityVar[x.city]})" data-i="${i}"><span class="d">${x.d}</span><span class="w">${x.note||x.w}</span></button>`).join('');
-$('ribbon').addEventListener('click',e=>{const b=e.target.closest('.day-tab');if(b){cur=+b.dataset.i;sel=null;mapMode=D[cur].map||'la';renderPlan(true)}});
-const dayStops=id=>Object.keys(P).filter(k=>P[k].day===id).sort((a,b)=>P[a].t.localeCompare(P[b].t));
-
-function laBase(){return `<rect width="400" height="232" fill="var(--wall)"/>
- <path d="M0,104 L27,118 L60,131 L85,148 L102,168 L124,200 L134,232 L0,232Z" fill="color-mix(in srgb,var(--sea) 22%,transparent)"/>
- <text x="30" y="214" font-size="11" fill="var(--muted)">太平洋</text>
- <g stroke="var(--line)" stroke-width="1" fill="none"><path d="M60,131 C120,110 220,100 400,96"/><path d="M150,232 C150,150 160,80 200,0"/><path d="M260,232 C262,160 270,120 300,0"/></g>`}
-function dtBase(){return `<rect width="320" height="320" fill="var(--wall)"/>
- <g stroke="var(--line)" stroke-width="1"><path d="M0,40 L320,120M0,120 L320,200M0,200 L320,280M60,0 L0,320M150,0 L90,320M240,0 L180,320M320,40 L270,320"/></g>
- <text x="196" y="314" font-size="10" fill="var(--muted)">Downtown LA · 步行</text>`}
+/* ---------- maps ---------- */
+const MAPS={
+ la:{vb:[400,232],n:'全城',base:()=>`<rect width="400" height="232" fill="var(--card)"/>
+  <path d="M0,104 L27,118 L60,131 L85,148 L102,168 L124,200 L134,232 L0,232Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
+  <text x="30" y="214" font-size="11" fill="var(--muted)">太平洋</text>
+  <g stroke="var(--line)" stroke-width="1" fill="none"><path d="M60,131 C120,110 220,100 400,96"/><path d="M150,232 C150,150 160,80 200,0"/><path d="M260,232 C262,160 270,120 300,0"/></g>`},
+ dt:{vb:[320,320],n:'市中心',base:()=>`<rect width="320" height="320" fill="var(--card)"/>
+  <g stroke="var(--line)" stroke-width="1"><path d="M0,40 L320,120M0,120 L320,200M0,200 L320,280M60,0 L0,320M150,0 L90,320M240,0 L180,320M320,40 L270,320"/></g>
+  <text x="196" y="314" font-size="10" fill="var(--muted)">Downtown LA · 步行</text>`},
+ jt:{vb:[400,240],n:'沙漠',proj:([la,lo])=>[(lo+116.62)/.80*400,(34.18-la)/.40*240],base:()=>`<rect width="400" height="240" fill="var(--card)"/>
+  <path d="M120,70 C170,40 260,45 330,70 C380,90 392,140 380,190 C330,200 250,190 200,170 C150,150 110,110 120,70Z" fill="color-mix(in srgb,var(--jt) 16%,transparent)"/>
+  <path d="M0,214 C80,200 140,190 220,200 S340,214 400,206" stroke="var(--line)" stroke-width="2" fill="none"/>
+  <path d="M60,200 C90,120 130,40 150,28 L300,28" stroke="var(--line)" stroke-width="1" fill="none"/>
+  <text x="150" y="20" font-size="10" fill="var(--muted)">Joshua Tree 镇</text><text x="270" y="20" font-size="10" fill="var(--muted)">29 Palms</text>
+  <text x="300" y="232" font-size="10" fill="var(--muted)">I-10</text><text x="235" y="128" font-size="10" fill="var(--muted)" opacity=".8">国家公园</text>`},
+ sd:{vb:[300,330],n:'圣地亚哥',proj:([la,lo])=>[(lo+117.30)/.18*300,(32.94-la)/.28*320],base:()=>`<rect width="300" height="330" fill="var(--card)"/>
+  <path d="M0,0 L63,0 L78,57 L33,103 L33,120 L70,160 L80,200 L75,217 L72,251 L100,309 L167,303 L217,306 L250,330 L0,330Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
+  <path d="M183,234 L225,251 L242,274 L275,309 L290,330 L262,330 L233,291 L183,280 L125,269 L125,246Z" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
+  <ellipse cx="112" cy="183" rx="22" ry="14" fill="color-mix(in srgb,var(--coast) 20%,transparent)"/>
+  <text x="12" y="300" font-size="11" fill="var(--muted)">太平洋</text><text x="244" y="322" font-size="9" fill="var(--muted)">海湾</text>`}
+};
+function coord(k,key){const p=P[k];if(key==='la'||key==='dt')return p[key]||null;const m=MAPS[key];return p.mp===key&&p.ll?m.proj(p.ll).map(v=>Math.round(v)):null}
+const dayStops=id=>KEYS.filter(k=>P[k].day===id).sort((a,b)=>P[a].t.localeCompare(P[b].t));
+function mapsFor(stops){return ['dt','la','jt','sd'].filter(m=>stops.some(k=>coord(k,m)))}
 function renderMap(){
- const day=D[cur],box=$('map');if(!box)return;const isLa=mapMode==='la',key=isLa?'la':'dt';
+ const day=D[cur],box=$('map');if(!box)return;const m=MAPS[mapMode],[W,H]=m.vb;
  const stops=dayStops(day.id).filter(k=>pick[k]);
- const pts=[];stops.forEach(k=>{const c=P[k][key];if(!c)return;const l=pts[pts.length-1];if(l&&l.c.join()===c.join())l.ks.push(k);else pts.push({c,ks:[k]})});
+ const pts=[];stops.forEach(k=>{const c=coord(k,mapMode);if(!c)return;const l=pts[pts.length-1];if(l&&l.c.join()===c.join())l.ks.push(k);else pts.push({c,ks:[k]})});
  const used=new Set(pts.map(x=>x.c.join()));
- let svg=`<svg viewBox="0 0 ${isLa?'400 232':'320 320'}" role="img" aria-label="${day.title}路线图">${isLa?laBase():dtBase()}`;
- Object.values(P).forEach(v=>{if(v[key]&&!used.has(v[key].join()))svg+=`<circle cx="${v[key][0]}" cy="${v[key][1]}" r="3" fill="var(--muted)" opacity=".3"/>`});
- if(pts.length>1)svg+=`<path d="M${pts.map(x=>x.c.join(',')).join(' L')}" fill="none" stroke="var(--c)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" ${isLa?'stroke-dasharray="7 6"':''}/>`;
- if(isLa&&day.jt){const l=pts.length?pts[pts.length-1].c:[185,98];svg+=`<path d="M${l[0]},${l[1]} Q300,92 396,72" fill="none" stroke="var(--jt)" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/><text x="392" y="86" text-anchor="end" font-size="11" fill="var(--muted)">→ 约书亚树</text>`}
- pts.forEach((x,n)=>{const dtl=isLa&&x.c.join()==='269,107';const lab=dtl?'DTLA':(x.ks.length>1&&P[x.ks[0]].zone?P[x.ks[0]].zone+' · '+x.ks.length:P[x.ks[0]].s);const on=sel&&x.ks.includes(sel);
-  const right=x.c[0]>(isLa?300:220),edge=x.c[0]<20;let tx=right?x.c[0]-11:x.c[0]+11,an=right?'end':'start',ty=x.c[1]<30?x.c[1]+20:x.c[1]-10;const lo=isLa&&!dtl&&P[x.ks[0]].lo;if(lo){tx=x.c[0]+lo[0];ty=x.c[1]+lo[1];an=lo[2]}
-  svg+=`<g class="pin${on?' on':''}" data-k="${x.ks[0]}" tabindex="0" role="button" aria-label="${lab}"><circle cx="${x.c[0]}" cy="${x.c[1]}" r="${on?10:8}" fill="var(--c)"/><text x="${x.c[0]}" y="${x.c[1]+3.5}" text-anchor="middle" style="fill:#fff;stroke:none;font-size:10px">${n+1}</text><text x="${tx}" y="${ty}" text-anchor="${an}">${edge?'← ':''}${lab}</text></g>`});
+ let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${day.title}路线图">${m.base()}`;
+ KEYS.forEach(k=>{const c=coord(k,mapMode);if(c&&!used.has(c.join())){used.add(c.join());svg+=`<circle cx="${c[0]}" cy="${c[1]}" r="3" fill="var(--muted)" opacity=".35"/>`}});
+ if(pts.length>1)svg+=`<path d="M${pts.map(x=>x.c.join(',')).join(' L')}" fill="none" stroke="var(--c)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" ${mapMode!=='dt'?'stroke-dasharray="7 6"':''}/>`;
+ if(mapMode==='la'&&day.jt){const l=pts.length?pts[pts.length-1].c:[185,98];svg+=`<path d="M${l[0]},${l[1]} Q300,92 396,72" fill="none" stroke="var(--jt)" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/><text x="392" y="64" text-anchor="end" font-size="11" fill="var(--muted)">→ 约书亚树</text>`}
+ if(mapMode==='jt'&&day.id==='1229')svg+=`<text x="8" y="236" font-size="11" fill="var(--muted)">← 圣地亚哥 2.5–3h</text>`;
+ pts.forEach((x,n)=>{const p0=P[x.ks[0]],dtl=mapMode==='la'&&x.c.join()==='269,107';
+  const lab=dtl?'DTLA':(x.ks.length>1&&p0.zone?p0.zone+' · '+x.ks.length:p0.s);const on=sel&&x.ks.includes(sel);
+  const right=x.c[0]>W-100,edge=x.c[0]<20;let tx=right?x.c[0]-11:x.c[0]+11,an=right?'end':'start',ty=x.c[1]<30?x.c[1]+20:x.c[1]-10;
+  const lo=mapMode!=='dt'&&!dtl&&p0.lo;if(lo){tx=x.c[0]+lo[0];ty=x.c[1]+lo[1];an=lo[2]}
+  svg+=`<g class="pin${on?' on':''}" data-k="${x.ks[0]}" tabindex="0" role="button" aria-label="${esc(lab)}"><circle cx="${x.c[0]}" cy="${x.c[1]}" r="${on?10:8}" fill="var(--c)"/><text x="${x.c[0]}" y="${x.c[1]+3.5}" text-anchor="middle" style="fill:#fff;font-size:10px;font-weight:600">${stops.indexOf(x.ks[0])+1}</text><text class="lb" x="${tx}" y="${ty}" text-anchor="${an}">${edge?'← ':''}${esc(lab)}</text></g>`});
  box.innerHTML=svg+'</svg>';
  box.querySelectorAll('.pin').forEach(g=>{const f=()=>selectStop(g.dataset.k,true);g.onclick=f;g.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();f()}}});
- document.querySelectorAll('#hall .seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===mapMode));
+ document.querySelectorAll('#day .seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===mapMode));
 }
-function lightBar(stops,city){
- const sr=city==='jt'?6.75:6.92,ss=city==='jt'?16.67:16.83,X=h=>(h-6)/16*340+10;
- let s=`<svg viewBox="0 0 360 52" role="img" aria-label="当天光线与行程时间"><rect x="10" y="18" width="340" height="10" rx="5" fill="var(--bg)"/>
-  <rect x="${X(sr)}" y="18" width="${X(ss)-X(sr)}" height="10" fill="color-mix(in srgb,var(--sun) 18%,transparent)"/>
-  <rect x="${X(sr)}" y="18" width="${X(sr+1)-X(sr)}" height="10" fill="var(--sun)" opacity=".8"/>
-  <rect x="${X(ss-1)}" y="18" width="${X(ss)-X(ss-1)}" height="10" fill="var(--sun)" opacity=".8"/>
-  <rect x="${X(ss)}" y="18" width="${X(ss+.5)-X(ss)}" height="10" fill="var(--violet)" opacity=".7"/>`;
- [6,10,14,18,22].forEach(h=>s+=`<text x="${X(h)}" y="46" font-size="10" text-anchor="middle" fill="var(--muted)">${h}:00</text>`);
- stops.forEach((k,i)=>{const[hh,mm]=P[k].t.split(':').map(Number);const h=hh+mm/60;s+=`<line x1="${X(h)}" x2="${X(h)}" y1="10" y2="30" stroke="var(--ink)" stroke-width="1.5"/><text x="${X(h)}" y="9" font-size="9" text-anchor="middle" fill="var(--ink)">${i+1}</text>`});
+function lightBar(stops,c){
+ const [sr,ss]=SUN[c],X=h=>(h-6)/16*340+10;
+ let s=`<svg viewBox="0 0 360 52" role="img" aria-label="当天光线与行程时间"><rect x="10" y="18" width="340" height="10" rx="2" fill="var(--paper)"/>
+  <rect x="${X(sr)}" y="18" width="${X(ss)-X(sr)}" height="10" fill="color-mix(in srgb,var(--spot) 18%,transparent)"/>
+  <rect x="${X(sr)}" y="18" width="${X(sr+1)-X(sr)}" height="10" fill="var(--spot)" opacity=".85"/>
+  <rect x="${X(ss-1)}" y="18" width="${X(ss)-X(ss-1)}" height="10" fill="var(--spot)" opacity=".85"/>
+  <rect x="${X(ss)}" y="18" width="${X(ss+.5)-X(ss)}" height="10" fill="var(--night)" opacity=".75"/>
+  <rect x="${X(sr-.5)}" y="18" width="${X(sr)-X(sr-.5)}" height="10" fill="var(--night)" opacity=".75"/>`;
+ [6,10,14,18,22].forEach(h=>s+=`<text x="${X(h)}" y="46" font-size="10" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${h}:00</text>`);
+ stops.forEach((k,i)=>{const[hh,mm]=P[k].t.split(':').map(Number);const x=X(Math.max(6,hh+mm/60));s+=`<line x1="${x}" x2="${x}" y1="12" y2="30" stroke="var(--ink)" stroke-width="1.5"/><text x="${x}" y="9" font-size="9" text-anchor="middle" fill="var(--ink)">${i+1}</text>`});
  return s+'</svg>'}
-function gm(stops,jt){const q=stops.map(k=>P[k].q);if(jt)q.push('Joshua Tree, CA');if(q.length<2)return null;const e=encodeURIComponent,w=q.slice(1,-1);
+function gm(stops,jt){const q=stops.map(k=>P[k].q);if(jt&&!stops.some(k=>P[k].mp==='jt'))q.push('Joshua Tree National Park');if(q.length<2)return null;const e=encodeURIComponent,w=q.slice(1,-1);
  return `https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${e(q[0])}&destination=${e(q[q.length-1])}${w.length?'&waypoints='+e(w.join('|')):''}`}
 
-function renderPlan(scroll){
- const day=D[cur],hall=$('hall');hall.style.setProperty('--c',`var(${cityVar[day.city]})`);
- document.querySelectorAll('.day-tab').forEach((b,k)=>b.setAttribute('aria-selected',k===cur));
- const tab=$('tab-'+day.id);tab&&tab.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
- let h=`<p class="hall-no">${day.no}</p><h2>${day.title}</h2><div class="wk">${day.id==='0101'?'1月1日':'12月'+day.d+'日'} · ${day.w}${day.note?' · '+day.note:''}</div>`;
- if(day.empty){hall.innerHTML=h+`<div class="empty">${day.empty}</div>`;if(scroll)hall.scrollIntoView({behavior:'smooth'});return}
+/* ---------- day view ---------- */
+$('ribbon').innerHTML=D.map((x,i)=>`<button class="dt" role="tab" id="tab-${x.id}" aria-selected="false" style="--c:var(${CITY[x.city].c})" data-i="${i}"><b>${x.d}</b><span>${x.note||x.w}</span></button>`).join('');
+$('ribbon').addEventListener('click',e=>{const b=e.target.closest('.dt');if(b){cur=+b.dataset.i;sel=null;mapMode=D[cur].map;renderDay(true)}});
+function renderDay(scroll){
+ const day=D[cur],el=$('day');el.style.setProperty('--c',`var(${CITY[day.city].c})`);
+ document.querySelectorAll('.dt').forEach((b,i)=>b.setAttribute('aria-selected',i===cur));
+ const tab=$('tab-'+day.id);tab&&tab.scrollIntoView({inline:'center',block:'nearest',behavior:scroll?'smooth':'auto'});
  const all=dayStops(day.id),on=all.filter(k=>pick[k]),off=all.filter(k=>!pick[k]);
  const hrs=on.reduce((a,k)=>a+P[k].dur,0);
- const hasDt=on.some(k=>P[k].dt);if(mapMode==='dt'&&!hasDt)mapMode='la';
- h+=`<p class="curator">${day.cur}</p><div class="sum">今天选了 <b>${on.length}</b> 站，停留约 <b>${Math.round(hrs*2)/2}</b> 小时（不含路上）${hrs>9?'<span style="color:var(--pink)">· 有点满，可以跳过几站</span>':''}</div>`;
+ const avail=mapsFor(on);if(avail.length&&!avail.includes(mapMode))mapMode=avail[0];
+ let h=`<div class="day-head"><p class="day-no">${day.no}</p><span class="mono">${day.id==='0101'?'2027.01.01':'2026.12.'+day.d} · ${day.w}${day.note?' · '+day.note:''} · ${CITY[day.city].n}</span><h2>${day.title}</h2></div>
+  <p class="curator">${day.cur}</p>
+  <div class="stat"><span><b>${on.length}</b>站</span><span><b>${Math.round(hrs*2)/2}</b>小时停留（不含路上）</span>${hrs>9?'<span class="warn-t">有点满，可以跳过几站</span>':''}</div>`;
  if(on.length){
-  h+=`<div class="panel"><div class="panel-head"><span class="panel-title">ROUTE</span>${hasDt?`<span class="seg"><button data-m="dt">市中心</button><button data-m="la">全城</button></span>`:''}</div><div class="mapbox" id="map"></div></div>
-  <div class="panel light"><div class="panel-head"><span class="panel-title">LIGHT</span></div>${lightBar(on,day.city)}
-  <div class="light-legend"><span><i style="background:var(--sun)"></i>黄金时刻</span><span><i style="background:var(--violet);opacity:.7"></i>蓝调时刻</span><span>竖线是每站建议到达时间</span></div></div><ol class="labels">`;
-  on.forEach((k,i)=>{const p=P[k];h+=`<li class="label${sel===k?' on':''}" data-k="${k}" id="lb-${k}"><div class="label-top"><div class="thumb${photos[k]?' has':''}">${thumbFor(k)}</div>
-   <div><div class="lt-time">${String(i+1).padStart(2,'0')} · ${p.t}</div>${p.a?`<p class="artist">${p.a}</p>`:''}<h3 class="ttl">${p.n}${p.y?`<em>${p.y}</em>`:''}</h3>${p.m?`<p class="medium">${p.m}</p>`:''}${tagHtml(p)}</div>
-   <button class="rm" data-k="${k}" aria-label="跳过${p.n}">跳过</button></div>
-   <div class="more"><div><div class="more-in"><p>${p.d}</p><p class="park">🅿️ ${p.pk}</p><p class="shot">📷 ${p.sh}</p><p class="meta">🕒 ${p.h}</p></div></div></div></li>`});
+  h+=`<div class="panels">${avail.length?`<div class="panel"><div class="panel-h"><span class="mono">Route</span>${avail.length>1?`<span class="seg">${avail.map(m=>`<button data-m="${m}">${MAPS[m].n}</button>`).join('')}</span>`:''}</div><div class="mapbox" id="map"></div></div>`:''}
+   <div class="panel light"><div class="panel-h"><span class="mono">Light · 日出 ${fmt(SUN[day.city][0])} · 日落 ${fmt(SUN[day.city][1])}</span></div>${lightBar(on,day.city)}
+   <div class="legend"><span><i style="background:var(--spot)"></i>黄金时刻</span><span><i style="background:var(--night);opacity:.75"></i>蓝调时刻</span><span>竖线 = 每站建议到达</span></div></div></div>
+   <ol class="sheetline">`;
+  on.forEach((k,i)=>{const p=P[k];h+=`<li class="stop" id="lb-${k}"><div class="tm">${p.t}<small>${String(i+1).padStart(2,'0')}</small></div><span class="dot"></span>
+   <div class="frame${sel===k?' on':''}" data-k="${k}">${ph(k)}<div class="frame-b">${p.a?`<p class="by">${esc(p.a)}</p>`:''}<h3>${p.n}${p.y?`<em>${p.y}</em>`:''}</h3>
+   <div class="frame-row">${tagHtml(p)}<button class="skip" data-k="${k}" aria-label="跳过${esc(p.n)}">跳过</button></div>
+   <div class="more"><div>${p.flag?`<div class="flag">⚠︎ ${p.flag}</div>`:''}<p>${p.d}</p><p class="note">📷 ${p.sh}</p><dl class="facts"><dt>停车</dt><dd>${p.pk}</dd><dt>时间</dt><dd>${p.h}</dd>${p.bk?`<dt>预约</dt><dd>${p.bk}</dd>`:''}</dl></div></div></div></div></li>`});
   h+='</ol>';const link=gm(on,day.jt);if(link)h+=`<a class="go" href="${link}" target="_blank" rel="noopener">在 Google 地图打开今天的路线 ↗</a>`;
- } else h+=`<div class="empty">今天还没选任何地点。<br>从下面挑几个，或者就当休息日。</div>`;
- if(day.jt)h+=`<p class="curator" style="margin-top:22px">看完最后一站往东开约 2.5 小时到约书亚树，日落约 16:40。</p>`;
- if(off.length)h+=`<div class="pool"><h4>今天也可以加</h4><div class="pool-list">${off.map(k=>`<button class="pool-item" data-k="${k}"><span class="pi-t"><b>${P[k].n}</b><span>${P[k].t} · ${P[k].tags.map(t=>T[t].n).join(' / ')}</span></span><span class="plus">+</span></button>`).join('')}</div></div>`;
- hall.innerHTML=h;
- hall.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{mapMode=b.dataset.m;renderMap()});
- hall.querySelectorAll('.label').forEach(l=>l.onclick=e=>{if(e.target.closest('.rm'))return;selectStop(sel===l.dataset.k?null:l.dataset.k,false)});
- hall.querySelectorAll('.rm').forEach(b=>b.onclick=()=>toggle(b.dataset.k,false));
- hall.querySelectorAll('.pool-item').forEach(b=>b.onclick=()=>toggle(b.dataset.k,true));
- renderMap();if(scroll)hall.scrollIntoView({behavior:'smooth'});
+ }else h+=`<div class="empty">今天还没选任何地点。<br>从下面挑几个，或者就当休息日。</div>`;
+ if(off.length)h+=`<div class="pool"><h4>今天也可以加</h4><div class="pool-row">${off.map(k=>`<div class="pool-c" data-k="${k}" role="button" tabindex="0">${ph(k)}<button class="add" data-k="${k}" aria-pressed="false" aria-label="收入${esc(P[k].n)}">+</button><b>${P[k].n}</b><span>${P[k].t} · ${P[k].tags.map(t=>T[t].n).join(' / ')}${P[k].flag?' · 日期存疑':''}</span></div>`).join('')}</div></div>`;
+ el.innerHTML=h;
+ el.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{mapMode=b.dataset.m;renderMap()});
+ el.querySelectorAll('.frame').forEach(f=>f.onclick=e=>{if(e.target.closest('.skip'))return;selectStop(sel===f.dataset.k?null:f.dataset.k,false)});
+ el.querySelectorAll('.skip').forEach(b=>b.onclick=()=>toggle(b.dataset.k,false));
+ el.querySelectorAll('.pool-c').forEach(c=>c.onclick=e=>{if(e.target.closest('.add'))return;openSheet(c.dataset.k)});
+ el.querySelectorAll('.pool-c .add').forEach(b=>b.onclick=e=>{e.stopPropagation();toggle(b.dataset.k,true)});
+ renderMap();if(scroll)scrollTo({top:document.querySelector('.dock').offsetTop,behavior:'smooth'});
 }
-function selectStop(k,fromMap){sel=k;if(k&&mapMode==='dt'&&!P[k].dt)mapMode='la';
- document.querySelectorAll('.label').forEach(l=>l.classList.toggle('on',l.dataset.k===k));renderMap();
+const fmt=h=>Math.floor(h)+':'+String(Math.round(h%1*60)).padStart(2,'0');
+function selectStop(k,fromMap){sel=k;
+ if(k&&!coord(k,mapMode)){const a=mapsFor([k]);if(a.length)mapMode=a[0]}
+ document.querySelectorAll('.frame').forEach(f=>f.classList.toggle('on',f.dataset.k===k));renderMap();
  if(fromMap&&k){const el=$('lb-'+k);el&&el.scrollIntoView({behavior:'smooth',block:'center'})}}
+
+/* ---------- years ---------- */
+$('yrAll').onclick=()=>{yrMine=false;renderYears()};$('yrMine').onclick=()=>{yrMine=true;renderYears()};
+function renderYears(){
+ $('yrAll').setAttribute('aria-pressed',!yrMine);$('yrMine').setAttribute('aria-pressed',yrMine);
+ const ks=KEYS.filter(k=>P[k].y&&(!yrMine||pick[k])).sort((a,b)=>parseInt(P[a].y)-parseInt(P[b].y));
+ let h='',prev=null;
+ ks.forEach(k=>{const y=parseInt(P[k].y);
+  if(prev!==null&&y-prev>=6){const w=Math.min(110,Math.max(18,(y-prev)*2.2));h+=`<div class="gap" style="width:${w}px">${y-prev} 年</div>`}
+  prev=y;const p=P[k];
+  h+=`<button class="yr${pick[k]?' picked':''}" data-k="${k}" style="--tc:var(${CITY[cityOf(k)].c})"><span class="y">${y}</span><span class="tick"></span>${ph(k)}<b>${p.n}</b><span>${esc(p.a||'')}</span><span>${CITY[cityOf(k)].n} · ${dayName(p.day)}</span></button>`});
+ $('yearsIn').innerHTML=h||'<p class="empty" style="margin:0">还没有选建筑。</p>';
+ $('yearsIn').querySelectorAll('.yr').forEach(b=>b.onclick=()=>openSheet(b.dataset.k));
+}
 
 /* ---------- checklist ---------- */
 let done=store.get('trip-check2',{});
 function renderCheck(){
- const items=Object.keys(P).filter(k=>pick[k]&&P[k].bk).map(k=>({id:k,t:P[k].bk}));
- items.push({id:'h-la',t:'洛杉矶酒店 5 晚（建议 Mid-Wilshire / 韩国城），确认含停车'},{id:'h-jt',t:'约书亚树住宿 1 晚（12/28）'},{id:'h-sd',t:'圣地亚哥住宿 3 晚（12/29–1/1）'});
- if(pick.holbox)items.push({id:'x-holbox',t:'Holbox：提前半小时以上排队，周一休息'});
+ const items=KEYS.filter(k=>pick[k]&&P[k].bk).map(k=>({id:k,t:P[k].bk}));
+ items.push({id:'h-la',t:'洛杉矶酒店 5 晚（12/23–12/28，建议 Mid-Wilshire / 韩国城一带），确认含停车'},{id:'h-jt',t:'约书亚树住宿 1 晚（12/28，住 Joshua Tree 镇或 29 Palms，离公园北门近）'},{id:'h-sd',t:'圣地亚哥住宿 3 晚（12/29–1/1，La Jolla 或市中心）'},{id:'car',t:'租车：LAX 取还同一地点，确认保险和 1/1 还车时间'});
+ if(pick.holbox)items.push({id:'x-holbox',t:'Holbox：开门前提前半小时以上排队，周一休息'});
  $('check').innerHTML=items.map(x=>`<li><label><input type="checkbox" data-i="${x.id}" ${done[x.id]?'checked':''}><span>${x.t}</span></label></li>`).join('');
  $('prog').textContent=`${items.filter(x=>done[x.id]).length} / ${items.length}`}
 $('check').addEventListener('change',e=>{done[e.target.dataset.i]=e.target.checked;store.set('trip-check2',done);renderCheck()});
 
-function renderAll(){if(view==='pick')renderPick();else renderPlan(false);renderCheck()}
-mapMode=D[cur].map;renderAll();
-
-/* ---------- photos: images/<id>.jpg → Wikimedia Commons (via Wikipedia summary) → line sketch ---------- */
-const WIKI={
- cath:'Cathedral_of_Our_Lady_of_the_Angels',park:'Grand_Park',disney:'Walt_Disney_Concert_Hall',broad:'The_Broad',
- moca:'Museum_of_Contemporary_Art,_Los_Angeles',rail:'Angels_Flight',gcm:'Grand_Central_Market_(Los_Angeles)',
- book:'The_Last_Bookstore',lib:'Los_Angeles_Central_Library',lakehw:'Hollywood_Sign',bh:'Beverly_Hills_Hotel',
- sm:'Santa_Monica_Pier',playa:'Playa_del_Rey,_Los_Angeles',urban:'Urban_Light',villa:'Getty_Villa',dume:'Point_Dume',
- getty:'Getty_Center',wb:'Warner_Bros._Studio_Tour_Hollywood',hunt:'Huntington_Library',pas:'Old_Pasadena',
- griffith:'Griffith_Observatory',nhm:'Natural_History_Museum_of_Los_Angeles_County',lacma:'Los_Angeles_County_Museum_of_Art'
-};
-const probe=src=>new Promise(r=>{const i=new Image();i.onload=()=>r(true);i.onerror=()=>r(false);i.src=src});
-async function wikiImg(title){
- const ck='wiki:'+title;try{const c=sessionStorage.getItem(ck);if(c!==null)return c?JSON.parse(c):null}catch(e){}
- let out=null;
- try{const r=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(title));
-  if(r.ok){const j=await r.json(),s=(j.thumbnail&&j.thumbnail.source)||'';
-   if(s.includes('/wikipedia/commons/')){const f=decodeURIComponent(s.split('/').filter(x=>/\.(jpe?g|png|webp|tif)/i.test(x))[0]||'');
-    out={src:s.replace(/\/(\d+)px-/,'/640px-'),page:f?'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f):(j.content_urls&&j.content_urls.desktop.page)}}}}catch(e){}
- try{sessionStorage.setItem(ck,out?JSON.stringify(out):'')}catch(e){}
- return out}
-let paint=0;const repaint=()=>{cancelAnimationFrame(paint);paint=requestAnimationFrame(renderAll)};
-Object.keys(P).forEach(async k=>{
- const own='images/'+k+'.jpg';
- if(await probe(own)){photos[k]=own;delete credit[k];repaint();return}
- if(!WIKI[k])return;const w=await wikiImg(WIKI[k]);
- if(w&&!photos[k]){photos[k]=w.src;credit[k]=w.page;repaint()}
-});
+function renderAll(){
+ $('cnt').textContent=KEYS.filter(k=>pick[k]).length;
+ if(view==='mood')renderMood();else if(view==='days')renderDay(false);else renderYears();
+ renderCheck()}
+mapMode=D[cur].map;renderAll();slideNext(true);loadPhotos();
 </script>
 </body>
 </html>
