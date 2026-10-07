@@ -1,4 +1,11 @@
 {
+ "adj": {
+  "approx": true,
+  "artist": "Thomas Quine",
+  "file": "File:Meiji Japanese monkey bowl (45822999942).jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Meiji_Japanese_monkey_bowl_(45822999942).jpg"
+ },
  "balboa": {
   "approx": false,
   "artist": "Rhododendrites",
@@ -19,6 +26,13 @@
   "file": "File:The Last Bookstore (19270292680).jpg",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_Last_Bookstore_(19270292680).jpg"
+ },
+ "booth": {
+  "approx": true,
+  "artist": "Pete Brown from Gambrills, MD, USA",
+  "file": "File:Yamaha DX1 (1983) - VINTAGE SYNTH @ YAMAHA BOOTH - 2015 NAMM Show.jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamaha_DX1_(1983)_-_VINTAGE_SYNTH_@_YAMAHA_BOOTH_-_2015_NAMM_Show.jpg"
  },
  "broad": {
   "approx": false,
@@ -41,12 +55,26 @@
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_Cathedral_of_Our_Lady_of_the_Angels_dllu.jpg"
  },
+ "cholla": {
+  "approx": false,
+  "artist": "Dietmar Rabich",
+  "file": "File:Joshua Tree National Park (California, USA) -- 2012 -- 5666.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joshua_Tree_National_Park_(California,_USA)_--_2012_--_5666.jpg"
+ },
  "cliffs": {
   "approx": false,
   "artist": "Rob Reviewer, http://www.ReviewerPhoto.com",
   "file": "File:Sunsetcliffswikibyreviewer.jpg",
   "license": "CC BY 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Sunsetcliffswikibyreviewer.jpg"
+ },
+ "concierge": {
+  "approx": true,
+  "artist": "Chuck Homler d/b/a Focus On Wildlife",
+  "file": "File:Rufa red knot (Calidris canutus rufa) in Delaware Bay, New Jersey.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rufa_red_knot_(Calidris_canutus_rufa)_in_Delaware_Bay,_New_Jersey.jpg"
  },
  "cove": {
   "approx": false,
@@ -55,6 +83,13 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:LaJolla-2_(45716612345).jpg"
  },
+ "dayglow": {
+  "approx": true,
+  "artist": "Kgbo",
+  "file": "File:Coppa Cafe Latte art, Brisbane, Queensland.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coppa_Cafe_Latte_art,_Brisbane,_Queensland.jpg"
+ },
  "disney": {
   "approx": false,
   "artist": "jjron",
@@ -62,12 +97,26 @@
   "license": "GFDL 1.2",
   "page": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Concert_Hall,_LA,_CA,_jjron_22.03.2012.jpg"
  },
+ "doto": {
+  "approx": true,
+  "artist": "Andy Li",
+  "file": "File:NOT avocado on toast with fried egg - Black Mocha 2025-08-12.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:NOT_avocado_on_toast_with_fried_egg_-_Black_Mocha_2025-08-12.jpg"
+ },
  "dume": {
   "approx": false,
   "artist": "OMCV",
   "file": "File:Point Dume Climbing.JPG",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Point_Dume_Climbing.JPG"
+ },
+ "erewhon": {
+  "approx": true,
+  "artist": "Mx. Granger",
+  "file": "File:Erewhon in Santa Monica.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Erewhon_in_Santa_Monica.jpg"
  },
  "friday": {
   "approx": true,
@@ -97,6 +146,13 @@
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Aerial_Getty_Museum.jpg"
  },
+ "gonggan": {
+  "approx": true,
+  "artist": "Junkyardsparkle",
+  "file": "File:Silver Lake Reservoir looking northwest pano 2015-10-11.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir_looking_northwest_pano_2015-10-11.jpg"
+ },
  "griffith": {
   "approx": false,
   "artist": "Matthew Field",
@@ -110,6 +166,20 @@
   "file": "File:Hotel Del Coronado Drone Picture Turf Lawn.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Hotel_Del_Coronado_Drone_Picture_Turf_Lawn.jpg"
+ },
+ "holbox": {
+  "approx": true,
+  "artist": "Pequeño mar",
+  "file": "File:Aguachile verde.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aguachile_verde.jpg"
+ },
+ "hunt": {
+  "approx": false,
+  "artist": "Plane777 at English Wikipedia",
+  "file": "File:Huntington Library Chinese garden.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Huntington_Library_Chinese_garden.jpg"
  },
  "hw": {
   "approx": false,
@@ -153,12 +223,33 @@
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_(8485145044).jpg"
  },
+ "lelabo": {
+  "approx": true,
+  "artist": "The Honest Channel",
+  "file": "File:Le Labo Santal 33 in a 50 milliliter bottle.jpg",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Le_Labo_Santal_33_in_a_50_milliliter_bottle.jpg"
+ },
  "lib": {
   "approx": false,
   "artist": "Mfield, Matthew Field, http://www.photography.mattfield.com",
   "file": "File:Los-angeles-central-library.jpg",
   "license": "GFDL 1.2",
   "page": "https://commons.wikimedia.org/wiki/File:Los-angeles-central-library.jpg"
+ },
+ "manuela": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "maru": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
  },
  "moca": {
   "approx": false,
@@ -173,6 +264,20 @@
   "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "nhm": {
+  "approx": false,
+  "artist": "Unknown authorUnknown author",
+  "file": "File:Exterior view of the facade of Los Angeles Natural History Museum (formerly Los Angeles County Historical Art Museum?), ca.1905 (CHS-5698).jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Exterior_view_of_the_facade_of_Los_Angeles_Natural_History_Museum_(formerly_Los_Angeles_County_Historical_Art_Museum%3F),_ca.1905_(CHS-5698).jpg"
+ },
+ "olive": {
+  "approx": true,
+  "artist": "Irvan Ary Maulana",
+  "file": "File:Matcha tea latte with rosetta latte art.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matcha_tea_latte_with_rosetta_latte_art.jpg"
  },
  "park": {
   "approx": false,
@@ -209,12 +314,26 @@
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
  },
+ "row": {
+  "approx": true,
+  "artist": "The original uploader was Bobak at English Wikipedia.",
+  "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
  "salk": {
   "approx": false,
   "artist": "Codera23",
   "file": "File:Salk Institute 2.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Salk_Institute_2.jpg"
+ },
+ "salt": {
+  "approx": true,
+  "artist": "Missvain",
+  "file": "File:Salt and Straw patio - August 2025 - Sarah Stierch.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salt_and_Straw_patio_-_August_2025_-_Sarah_Stierch.jpg"
  },
  "sawdust": {
   "approx": false,
@@ -244,6 +363,27 @@
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Santa_monica_pier_entrance_evening.jpg"
  },
+ "sonmari": {
+  "approx": true,
+  "artist": "Andy Li",
+  "file": "File:Sushi hand roll combo set B - Goemon Hand Roll Bar 2024-09-12.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sushi_hand_roll_combo_set_B_-_Goemon_Hand_Roll_Bar_2024-09-12.jpg"
+ },
+ "sqirl": {
+  "approx": true,
+  "artist": "Matsujima",
+  "file": "File:Silver Lake Reservoir.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "sunsetrow": {
+  "approx": true,
+  "artist": "jaysonh",
+  "file": "File:Sunset@Junction, Jodhpur, India 焦特布尔 06-07-13 - panoramio.jpg",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunset@Junction,_Jodhpur,_India_%E7%84%A6%E7%89%B9%E5%B8%83%E5%B0%94_06-07-13_-_panoramio.jpg"
+ },
  "torrey": {
   "approx": false,
   "artist": "User:Nauticashades.",
@@ -258,12 +398,26 @@
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Palm_Springs_Visitor_Center_Sideview-(revised)2.jpg"
  },
+ "urban": {
+  "approx": false,
+  "artist": "joey zanotti from Rancho Palos Verdes, CA, USA",
+  "file": "File:She Is Enchanted Within Urban Lights^ In Explore May 31-22 - Flickr - Joey Z1.jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:She_Is_Enchanted_Within_Urban_Lights%5E_In_Explore_May_31-22_-_Flickr_-_Joey_Z1.jpg"
+ },
  "villa": {
   "approx": false,
   "artist": "Bobak Ha'Eri",
   "file": "File:060807-002-GettyVilla001.jpg",
   "license": "CC BY 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:060807-002-GettyVilla001.jpg"
+ },
+ "wb": {
+  "approx": false,
+  "artist": "Headsillroll",
+  "file": "File:Warner Bros studios Burbank -water tower.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Warner_Bros_studios_Burbank_-water_tower.jpg"
  },
  "windsor": {
   "approx": false,
