@@ -27,13 +27,6 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_Last_Bookstore_(19270292680).jpg"
  },
- "booth": {
-  "approx": true,
-  "artist": "Pete Brown from Gambrills, MD, USA",
-  "file": "File:Yamaha DX1 (1983) - VINTAGE SYNTH @ YAMAHA BOOTH - 2015 NAMM Show.jpg",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Yamaha_DX1_(1983)_-_VINTAGE_SYNTH_@_YAMAHA_BOOTH_-_2015_NAMM_Show.jpg"
- },
  "broad": {
   "approx": false,
   "artist": "Dllu",
@@ -68,13 +61,6 @@
   "file": "File:Sunsetcliffswikibyreviewer.jpg",
   "license": "CC BY 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Sunsetcliffswikibyreviewer.jpg"
- },
- "concierge": {
-  "approx": true,
-  "artist": "Chuck Homler d/b/a Focus On Wildlife",
-  "file": "File:Rufa red knot (Calidris canutus rufa) in Delaware Bay, New Jersey.jpg",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Rufa_red_knot_(Calidris_canutus_rufa)_in_Delaware_Bay,_New_Jersey.jpg"
  },
  "cove": {
   "approx": false,
@@ -376,13 +362,6 @@
   "file": "File:Silver Lake Reservoir.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
- },
- "sunsetrow": {
-  "approx": true,
-  "artist": "jaysonh",
-  "file": "File:Sunset@Junction, Jodhpur, India 焦特布尔 06-07-13 - panoramio.jpg",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunset@Junction,_Jodhpur,_India_%E7%84%A6%E7%89%B9%E5%B8%83%E5%B0%94_06-07-13_-_panoramio.jpg"
  },
  "torrey": {
   "approx": false,
