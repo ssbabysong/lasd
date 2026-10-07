@@ -6,6 +6,13 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Meiji_Japanese_monkey_bowl_(45822999942).jpg"
  },
+ "apm": {
+  "approx": true,
+  "artist": "Tktktk",
+  "file": "File:John Muir College, UCSD.JPG",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Muir_College,_UCSD.JPG"
+ },
  "balboa": {
   "approx": false,
   "artist": "Rhododendrites",
