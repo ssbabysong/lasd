@@ -4,7 +4,9 @@ Order per place: Wikipedia lead image (only if it lives on Commons) -> Commons s
 article image (marked approx). Photos you add yourself (images/<key>.jpg not listed in credits.json)
 are never touched. Writes images/credits.json with author/license for attribution.
 """
-import html, json, os, re, sys, time, urllib.parse, urllib.request
+import html, io, json, os, re, sys, time, urllib.parse, urllib.request
+
+from PIL import Image, ImageOps
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = os.path.join(ROOT, "images")
@@ -39,7 +41,8 @@ def parse_places():
     for m in re.finditer(r"^\s*(\w+):\{(.*)\},?\s*$", block, re.M):
         body = m.group(2)
         f = lambda k: (re.search(k + r":'([^']+)'", body) or [None, None])[1]
-        places[m.group(1)] = {"w": f("w"), "cs": f("cs"), "zone": f("zone"), "n": f("n")}
+        places[m.group(1)] = {"w": f("w"), "cs": f("cs"), "zone": f("zone"), "n": f("n"),
+                              "ax": bool(re.search(r"\bax:1\b", body))}
     zw = dict(re.findall(r"'([^']+)':'([^']+)'", re.search(r"const ZW=\{(.*?)\};", src).group(1)))
     return places, zw
 
@@ -49,7 +52,7 @@ def commons_info(titles):
     out = {}
     for i in range(0, len(titles), 40):
         q = api("commons.wikimedia.org", action="query", titles="|".join(titles[i:i + 40]),
-                prop="imageinfo", iiprop="url|extmetadata|mime", iiurlwidth=WIDTH)
+                prop="imageinfo", iiprop="url|extmetadata|mime|size", iiurlwidth=WIDTH)
         for p in q.get("query", {}).get("pages", []):
             ii = (p.get("imageinfo") or [None])[0]
             if ii and not p.get("missing") and ii.get("mime", "").startswith("image/"):
@@ -79,13 +82,30 @@ def wiki_files(titles):
 def search(q):
     r = api("commons.wikimedia.org", action="query", generator="search", gsrnamespace="6",
             gsrsearch=q + " filetype:bitmap", gsrlimit="5", prop="imageinfo",
-            iiprop="url|extmetadata|mime", iiurlwidth=WIDTH)
+            iiprop="url|extmetadata|mime|size", iiurlwidth=WIDTH)
     pages = sorted(r.get("query", {}).get("pages", []), key=lambda p: p.get("index", 0))
     for p in pages:
         ii = (p.get("imageinfo") or [None])[0]
-        if ii and ii.get("mime") in ("image/jpeg", "image/png", "image/webp"):
+        if ii and usable(p["title"], ii):
             return p["title"], ii
     return None
+
+
+def shrink(data, max_w=1000):
+    """Re-encode as a progressive JPEG no wider than max_w so the page stays light on phones."""
+    im = ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert("RGB")
+    if im.width > max_w:
+        im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+    out = io.BytesIO()
+    im.save(out, "JPEG", quality=80, optimize=True, progressive=True)
+    return out.getvalue()
+
+
+def usable(title, ii):
+    """Skip logos and tiny graphics so places get real photos."""
+    if re.search(r"logo|icon|map|seal|flag|wordmark", title, re.I):
+        return False
+    return ii.get("mime") in ("image/jpeg", "image/png", "image/webp") and (ii.get("width") or 9999) >= 600
 
 
 def clean(s):
@@ -116,10 +136,11 @@ def main():
     for k in todo:
         p, hit, approx = places[k], None, False
         f = wfile.get(p["w"] or "")
-        if f in info:
+        if f in info and usable(f, info[f]):
             hit = (f, info[f])
         if not hit and p["cs"]:
             hit = search(p["cs"])
+            approx = bool(hit) and p["ax"]
         if not hit and p["zone"]:
             f = wfile.get(zw.get(p["zone"], ""))
             if f in info:
@@ -131,6 +152,11 @@ def main():
         data = get(ii.get("thumburl") or ii["url"], raw=True)
         if not data:
             print(k, "-> download failed")
+            continue
+        try:
+            data = shrink(data)
+        except Exception as e:
+            print(k, "-> not an image", e)
             continue
         with open(os.path.join(IMG, k + ".jpg"), "wb") as fh:
             fh.write(data)
