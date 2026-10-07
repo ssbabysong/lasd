@@ -143,7 +143,7 @@ def main():
             approx = bool(hit) and p["ax"]
         if not hit and p["zone"]:
             f = wfile.get(zw.get(p["zone"], ""))
-            if f in info:
+            if f in info and usable(f, info[f]):
                 hit, approx = (f, info[f]), True
         if not hit:
             print(k, "-> nothing found")
