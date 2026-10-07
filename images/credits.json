@@ -188,12 +188,40 @@
   "license": "CC BY 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg"
  },
+ "h_29": {
+  "approx": true,
+  "artist": "Robb Hannawacker, while working for Joshua Tree National Park",
+  "file": "File:Oasis of Mara; Twentynine Palms, CA - 07.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Oasis_of_Mara;_Twentynine_Palms,_CA_-_07.jpg"
+ },
+ "h_estancia": {
+  "approx": true,
+  "artist": "Dirk Hansen",
+  "file": "File:La Jolla Shores view.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Jolla_Shores_view.jpg"
+ },
  "h_line": {
   "approx": true,
   "artist": "Downtowngal",
   "file": "File:Wilshire Boulevard at Normandie, Los Angeles.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Wilshire_Boulevard_at_Normandie,_Los_Angeles.jpg"
+ },
+ "h_lodge": {
+  "approx": true,
+  "artist": "Dirk Hansen",
+  "file": "File:La Jolla Shores view.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Jolla_Shores_view.jpg"
+ },
+ "h_mojave": {
+  "approx": true,
+  "artist": "Bernard Gagnon",
+  "file": "File:Joshua Tree, California 01.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joshua_Tree,_California_01.jpg"
  },
  "h_normandie": {
   "approx": false,
