@@ -6,6 +6,13 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Meiji_Japanese_monkey_bowl_(45822999942).jpg"
  },
+ "apm": {
+  "approx": true,
+  "artist": "Tiffany & Co.",
+  "file": "File:Seal of the University of California, San Diego.svg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_University_of_California,_San_Diego.svg"
+ },
  "balboa": {
   "approx": false,
   "artist": "Rhododendrites",
@@ -131,6 +138,13 @@
   "file": "File:Erewhon in Santa Monica.jpg",
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Erewhon_in_Santa_Monica.jpg"
+ },
+ "fallen": {
+  "approx": false,
+  "artist": "sarahmirk",
+  "file": "File:Fallen Star by Do Ho Suh.jpg",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fallen_Star_by_Do_Ho_Suh.jpg"
  },
  "friday": {
   "approx": true,
@@ -425,6 +439,13 @@
   "file": "File:Silver Lake Reservoir.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Silver_Lake_Reservoir.jpg"
+ },
+ "temple": {
+  "approx": false,
+  "artist": "Beyond My Ken",
+  "file": "File:2019 San Diego LDS Temple 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_San_Diego_LDS_Temple_1.jpg"
  },
  "torrey": {
   "approx": false,
