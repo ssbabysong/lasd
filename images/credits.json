@@ -349,6 +349,13 @@
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Exterior_view_of_the_facade_of_Los_Angeles_Natural_History_Museum_(formerly_Los_Angeles_County_Historical_Art_Museum%3F),_ca.1905_(CHS-5698).jpg"
  },
+ "nnaka": {
+  "approx": false,
+  "artist": "T.Tseng",
+  "file": "File:Saki Zuke Kumamoto oyster, turnip gelee, mochi with shiitake mushroom, pickled radish, turnip puree (26029020518).jpg",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saki_Zuke_Kumamoto_oyster,_turnip_gelee,_mochi_with_shiitake_mushroom,_pickled_radish,_turnip_puree_(26029020518).jpg"
+ },
  "northpark": {
   "approx": false,
   "artist": "Jlantzy",
@@ -369,6 +376,13 @@
   "file": "File:Matcha tea latte with rosetta latte art.jpg",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Matcha_tea_latte_with_rosetta_latte_art.jpg"
+ },
+ "pappy": {
+  "approx": false,
+  "artist": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+  "file": "File:Pioneertown california saloon and bath house.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pioneertown_california_saloon_and_bath_house.jpg"
  },
  "park": {
   "approx": false,
