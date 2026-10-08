@@ -167,6 +167,13 @@
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Geisel_Library,_UCSD.jpg"
  },
+ "georges": {
+  "approx": true,
+  "artist": "Dirk Hansen",
+  "file": "File:La Jolla Shores view.jpg",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Jolla_Shores_view.jpg"
+ },
  "getty": {
   "approx": false,
   "artist": "Jelson25",
@@ -418,6 +425,13 @@
   "file": "File:Artist District, Los Angeles, California, 05-29-2001.jpg",
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Artist_District,_Los_Angeles,_California,_05-29-2001.jpg"
+ },
+ "republique": {
+  "approx": true,
+  "artist": "Phatblackmama",
+  "file": "File:MiracleMileSignage.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:MiracleMileSignage.jpg"
  },
  "row": {
   "approx": true,
