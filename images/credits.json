@@ -398,6 +398,13 @@
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Grand_Park_in_Los_Angeles_1.jpg"
  },
+ "parks": {
+  "approx": true,
+  "artist": "Eric Polk",
+  "file": "File:GEN Korean BBQ sign.jpg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GEN_Korean_BBQ_sign.jpg"
+ },
  "pas": {
   "approx": false,
   "artist": "Adbar",
